@@ -1,2 +1,5 @@
-# portfolio-pages
-Creting a portfolio website. As well used to learn and try managing projects with github.
+# Portfolio-Pages
+Creting a portfolio website. 
+<br/>
+<br/>
+Created to learn and try managing projects with github.
