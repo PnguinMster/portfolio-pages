@@ -1,16 +1,29 @@
 <!doctype html>
+<<<<<<< HEAD
 <html lang="en">
+=======
+<html lang="en" id="top">
+>>>>>>> dev
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio Website" />
     <meta name="author" content="[Name]" />
     <title>Portfolio Website</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="styles.css" />
+=======
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+>>>>>>> dev
   </head>
 
   <body>
     <header>
+<<<<<<< HEAD
       <h2>[Name]</h2>
       <nav>
         <ul>
@@ -94,10 +107,219 @@
         <h2>Contact Me</h2>
         <p>ContactMe@email.com</p>
         <br />
+=======
+      <div class="logo">
+        <a href="index.html"> <img src="images/pages_logo.svg" alt="logo" /></a>
+        <a class="href" ="index.html"> Marco </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="html/projects.html">Projects</a></li>
+          <li><a href="html/about.html">About</a></li>
+          <li><a href="html/contact.html">Contact</a></li>
+          <li>
+            <a href="#"> <img class="dark-img" src="images/dark_mode.svg" alt="dark mode" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Home -->
+      <section id="hero" class="hero">
+        <div class="hero-text">
+          <h1>Junior Programmer</h1>
+          <h4>Because imposter syndrome exists</h4>
+        </div>
+        <input type="checkbox" id="play-toggle" hidden />
+        <label for="play-toggle" class="animation-wrapper">
+          <img class="hero-static" src="images/HeroStatic_HelloWorld.webp" alt="Hero Static" />
+          <img class="hero-animation" src="images/HeroAnimation_Helloworld.webp" alt="Hero Animation" />
+        </label>
+      </section>
+      <div class="hr-container">
+        <hr class="hero-underline" />
+      </div>
+
+      <!-- Behind the Scenes -->
+      <section id="behind-the-scenes" class="behind-the-scenes">
+        <div class="bts-header">
+          <h2>Behind The Scenes</h2>
+          <div class="bts-underline"></div>
+        </div>
+        <div class="bts-border">
+          <div class="project-content">
+            <div class="project-text">
+              <h3>Portfolio Website</h3>
+              <div class="project-underline"></div>
+              <p>
+                The creation of the website you are on. Take a behind the scenes look of the creation of this website.
+                Look at the struggles and concepts that occurred during the creation. As well as in depth analysis of
+                it’s creation.
+              </p>
+            </div>
+            <div class="tag-container">
+              <small class="html-tag">HTML</small>
+              <small class="css-tag">CSS</small>
+            </div>
+          </div>
+          <a class="bts-shadow" href="html/Blogs/PortfoloWebsite_Blog.html">
+            <img class="bts-img" src="images/PortfolioWebsite_main.png" alt="Portfolio Website Image" />
+            <img class="link-icon" src="images/link_arrow.svg" alt="" aria-hidden="true" />
+          </a>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="projects-home">
+        <div class="projects-header">
+          <h2>Projects</h2>
+          <div class="projects-underline"></div>
+        </div>
+        <div class="projects-container">
+          <div class="project-panel">
+            <a class="project-shadow" href="html/Blogs/PortfoloWebsite_Blog.html">
+              <img class="project-img" src="images/PortfolioWebsite_main.png" alt="Portfolio Website Image" />
+              <img class="link-icon" src="images/link_arrow.svg" alt="" aria-hidden="true" />
+            </a>
+            <div class="panel-content">
+              <div class="panel-header">
+                <h3>Portfolio Website</h3>
+                <div class="panel-underline"></div>
+              </div>
+              <div class="tag-container">
+                <small class="html-tag">HTML</small>
+                <small class="css-tag">CSS</small>
+              </div>
+            </div>
+          </div>
+          <div class="project-panel">
+            <a class="project-shadow" href="html/Blogs/PortfoloWebsite_Blog.html">
+              <img class="project-img" src="images/PortfolioWebsite_main.png" alt="Portfolio Website Image" />
+              <img class="link-icon" src="images/link_arrow.svg" alt="" aria-hidden="true" />
+            </a>
+            <div class="panel-content">
+              <div class="panel-header">
+                <h3>Portfolio Website</h3>
+                <div class="panel-underline"></div>
+              </div>
+              <div class="tag-container">
+                <small class="html-tag">HTML</small>
+                <small class="css-tag">CSS</small>
+              </div>
+            </div>
+          </div>
+          <div class="project-panel">
+            <a class="project-shadow" href="html/Blogs/PortfoloWebsite_Blog.html">
+              <img class="project-img" src="images/PortfolioWebsite_main.png" alt="Portfolio Website Image" />
+              <img class="link-icon" src="images/link_arrow.svg" alt="" aria-hidden="true" />
+            </a>
+            <div class="panel-content">
+              <div class="panel-header">
+                <h3>Portfolio Website</h3>
+                <div class="panel-underline"></div>
+              </div>
+              <div class="tag-container">
+                <small class="html-tag">HTML</small>
+                <small class="css-tag">CSS</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-button">
+          <a href="html/projects.html">More Projects</a>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about-home">
+        <div class="about-header">
+          <h2>About Me</h2>
+          <div class="about-underline"></div>
+        </div>
+        <div class="about-content">
+          <p>
+            Oh, Hello! I’m Marco, and this is my portfolio website. I am a programmer who has dabbled in different
+            programming languages and aspects of programming. Including creating games, software, and other tools.<br /><br />
+            I have utilized various software to create projects, such as Unity, Godot, Unreal Engine, Visual Studio
+            Code, Github, and Trello. While sometimes I do not finish a game project, I still gain valuable knowledge.
+            Each time I learn more about the programming language and game engine.<br /><br />
+            I thrive on diving into the little details and optimizing them. I enjoy learning new techniques and
+            discovering exciting new topics. Especially in an ever-evolving industry.I always enjoy learning and
+            experiencing new things. This is shown in my music playlist which is filled with various genres and the
+            various shows I have seen. I am always interested in learning new things.
+          </p>
+          <div class="about-buttons">
+            <a class="download-button" href="#">Download Resume</a>
+            <a class="read-button" href="html/about.html">Read More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Me -->
+      <section id="contact" class="contact-home">
+        <div class="contact-header">
+          <h2>Contact Me</h2>
+          <div class="contact-underline"></div>
+        </div>
+        <div class="contact-content">
+          <p>
+            If for some reason you would like to know more about me or have a question. Feel free to contact me and ask.
+            I am happy to answer it here: <b>marco0ga7@gmail.com</b>
+          </p>
+          <div class="contact-button">
+            <a href="html/contact.html">More Info</a>
+          </div>
+        </div>
+>>>>>>> dev
       </section>
     </main>
 
     <!-- Footer -->
+<<<<<<< HEAD
     <footer><p>&copy; 2025 [Name]. All rights reserved.</p></footer>
+=======
+    <footer>
+      <div class="hr-container">
+        <hr class="footer-underline" />
+      </div>
+      <div class="footer-content">
+        <div class="footer-top">
+          <div class="footer-back-to-top">
+            <a href="#top">Back to top</a>
+            <div class="top-underline"></div>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="html/projects.html">Projects</a></li>
+            <li><a href="html/about.html">About</a></li>
+            <li><a href="html/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <small>Created by marco0ga7@gmail.com</small>
+          <ul class="footer-images">
+            <li>
+              <a href="#"><img src="images/github-mark-white.svg" alt="Github" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/InBug-White.png" alt="LinkedIn" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/itchio-logo-textless-white.svg" alt="Itch.io" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <small>&copy; 2025 Marco Gambo. All rights reserved.</small>
+          <div class="footer-resume">
+            <a href="#">Download Resume</a>
+            <div class="resume-underline"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+>>>>>>> dev
   </body>
 </html>
