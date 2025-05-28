@@ -695,6 +695,13 @@ header {
   background-color: var(--primary);
 }
 
+.footer-underline-projects {
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background-color: var(--secondary);
+}
+
 .footer-content {
   display: flex;
   flex-direction: column;
@@ -805,6 +812,8 @@ header {
   display: flex;
   flex-direction: column;
   padding: 6.25rem 10rem;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
 .projects-hero h2 {
