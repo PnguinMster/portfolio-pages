@@ -10,6 +10,7 @@
   --primary5: hsl(201.14, 100%, 65.49%, 5%);
   --primary45: hsl(201.14, 100%, 65.49%, 45%);
   --primary85: hsl(201.14, 100%, 65.49%, 85%);
+  --secondary4: hsl(160.11, 75.73%, 53.14%, 4%);
   --secondary5: hsl(160.11, 75.73%, 53.14%, 5%);
   --accent65: hsl(23.49, 100%, 62.94%, 65%);
   --accent85: hsl(23.49, 100%, 62.94%, 85%);
@@ -1011,7 +1012,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--primary5);
+  background: var(--secondary4);
   border-radius: 11px;
   pointer-events: none;
 }
