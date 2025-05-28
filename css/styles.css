@@ -702,6 +702,13 @@ header {
   background-color: var(--secondary);
 }
 
+.footer-underline-blog {
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background-color: var(--accent);
+}
+
 .footer-content {
   display: flex;
   flex-direction: column;
@@ -1031,3 +1038,7 @@ header {
   width: 100%;
   background: var(--secondary);
 }
+
+/*
+* Project Blog
+*/
