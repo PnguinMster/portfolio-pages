@@ -885,6 +885,13 @@ header {
   margin: 0;
 }
 
+.projects-content h4 {
+  font-family: "Rubik";
+  font-weight: var(--medium);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
 .projects-content p {
   font-family: "Poppins";
   font-weight: normal;
