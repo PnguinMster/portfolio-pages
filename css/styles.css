@@ -794,3 +794,38 @@ header {
   vertical-align: middle;
   height: 1.44rem;
 }
+
+/*
+* Projects Hero
+*/
+
+.projects-hero {
+  display: flex;
+  flex-direction: column;
+  padding: 6.25rem 10rem;
+}
+
+.projects-hero h2 {
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+  font-size: 2.063rem;
+  font-family: "Rubik";
+}
+
+.projects-hero h1 {
+  color: var(--text);
+  margin: 0;
+  font-size: 3rem;
+  font-family: "Rubik";
+  font-weight: var(--semi-bold);
+}
+
+.projects-hero-underline {
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background-image: var(--secondary-gradient);
+}
