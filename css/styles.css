@@ -1089,3 +1089,26 @@ header {
   height: 1px;
   background-image: var(--accent-gradient-alt);
 }
+
+/*
+* Project Blog Article
+*/
+
+.blog-article {
+  display: flex;
+  padding: 0.25rem 10rem;
+}
+
+.blog-article p {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.blog-content {
+  padding-left: 2.5rem;
+}
+
+.blog-info {
+  padding-right: 2.5rem;
+}
