@@ -1153,6 +1153,7 @@ header {
 .blog-table-of-contents-contents {
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
 }
 
 .blog-table-of-contents-contents small {
