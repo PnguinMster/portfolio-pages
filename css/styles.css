@@ -1174,3 +1174,10 @@ header {
   flex-direction: column;
   gap: 0.25rem;
 }
+
+.blog-more-info-header h4 {
+  margin: 0;
+  font-family: "Rubik";
+  font-weight: var(--semi-bold);
+  font-size: 1.2rem;
+}
