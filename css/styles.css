@@ -1101,6 +1101,8 @@ header {
 
 .blog-content {
   padding-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-content p {
@@ -1110,10 +1112,12 @@ header {
 }
 
 .blog-content img {
-  margin-right: 1rem;
+  margin-right: 2.5rem;
   border-radius: 8px;
 }
 
 .blog-info {
   padding-right: 2.5rem;
+  padding-left: 1.25rem;
 }
+
