@@ -1155,6 +1155,12 @@ header {
   flex-direction: column;
 }
 
+.blog-table-of-contents-contents small {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 0.813rem;
+}
+
 .blog-more-info {
   display: flex;
   flex-direction: column;
