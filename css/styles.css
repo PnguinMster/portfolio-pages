@@ -1182,3 +1182,10 @@ header {
   font-weight: var(--semi-bold);
   font-size: 1.2rem;
 }
+
+.blog-more-info-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
