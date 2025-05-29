@@ -17,6 +17,7 @@
   --primary-gradient: linear-gradient(to right, #4fc1ff, #2de2a6);
   --secondary-gradient: linear-gradient(to right, #2de2a6, #4fc1ff);
   --accent-gradient: linear-gradient(to right, #ff8c42, #4fc1ff);
+  --accent-gradient-alt: linear-gradient(to right, #ff8c42, #2de2a6);
   --contact-gradient: linear-gradient(to right, #ff8c42, #2de2a6);
   --project-wide-gradient: linear-gradient(to right, #4fc1ff, #ff8c42);
   --projects-gradient: linear-gradient(to right, #2de2a6, #ff8c42);
@@ -1048,3 +1049,43 @@ header {
 /*
 * Project Blog
 */
+
+.blog-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10rem;
+  padding-top: 1rem;
+}
+
+.blog-header h2 {
+  font-size: 2.063rem;
+  font-family: "Rubik";
+  font-weight: normal;
+  color: var(--accent);
+  margin: 0;
+}
+
+.blog-header h4 {
+  font-size: 1.2rem;
+  font-family: "Rubik";
+  font-weight: normal;
+  margin: 0;
+}
+
+.blog-header small {
+  font-family: "Poppins";
+  font-size: 0.813rem;
+  padding: 1.25rem 2.5rem;
+}
+
+.blog-title {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 2.5rem;
+}
+
+.blog-underline {
+  margin: 0 2.5rem;
+  height: 1px;
+  background-image: var(--accent-gradient-alt);
+}
