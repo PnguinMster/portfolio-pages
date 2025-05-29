@@ -1099,14 +1099,19 @@ header {
   padding: 0.25rem 10rem;
 }
 
-.blog-article p {
+.blog-content {
+  padding-left: 2.5rem;
+}
+
+.blog-content p {
   font-family: "Poppins";
   font-weight: normal;
   font-size: 1rem;
 }
 
-.blog-content {
-  padding-left: 2.5rem;
+.blog-content img {
+  margin: 0 1rem;
+  border-radius: 8px;
 }
 
 .blog-info {
