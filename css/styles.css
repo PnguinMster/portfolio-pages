@@ -1114,6 +1114,7 @@ header {
 .blog-content img {
   margin-right: 2.5rem;
   border-radius: 8px;
+  width: 100%;
 }
 
 .blog-info {
@@ -1135,6 +1136,18 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+}
+
+.blog-table-of-contents-header h4 {
+  margin: 0;
+  font-family: "Rubik";
+  font-weight: var(--semi-bold);
+  font-size: 1.2rem;
+}
+
+.blog-info-underline {
+  height: 1px;
+  background-color: var(--accent);
 }
 
 .blog-table-of-contents-contents {
