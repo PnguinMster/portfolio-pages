@@ -1117,7 +1117,33 @@ header {
 }
 
 .blog-info {
-  padding-right: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-right: 3.75rem;
   padding-left: 1.25rem;
 }
 
+.blog-table-of-contents {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem;
+  gap: 0.5rem;
+}
+
+.blog-table-of-contents-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.blog-table-of-contents-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-more-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem;
+}
