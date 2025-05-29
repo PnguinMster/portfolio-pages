@@ -349,12 +349,18 @@ header {
   background-color: var(--html-tag);
   border-radius: 8px;
   padding: 0.25rem 0.75rem;
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 0.813rem;
 }
 
 .css-tag {
   background-color: var(--css-tag);
   border-radius: 8px;
   padding: 0.25rem 0.75rem;
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 0.813rem;
 }
 
 /*
