@@ -1194,3 +1194,7 @@ header {
   align-items: flex-start;
   gap: 1rem;
 }
+
+.blog-more-info-info img {
+  width: 3.75rem;
+}
