@@ -1097,7 +1097,7 @@ header {
 
 .blog-article {
   display: flex;
-  padding: 0.25rem 10rem;
+  padding: 0.25rem 10rem 3.75rem;
 }
 
 .blog-content {
