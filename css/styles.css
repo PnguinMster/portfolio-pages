@@ -168,6 +168,7 @@ header {
 }
 
 .hero-underline {
+  width: 100%;
   margin: 0;
   border: 0;
   height: 1px;
@@ -1120,7 +1121,6 @@ header {
 .blog-info {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding-right: 3.75rem;
   padding-left: 1.25rem;
   gap: 1.75rem;
@@ -1137,6 +1137,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  width: fit-content;
 }
 
 .blog-table-of-contents-header h4 {
@@ -1144,11 +1145,13 @@ header {
   font-family: "Rubik";
   font-weight: var(--semi-bold);
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 
 .blog-info-underline {
   height: 1px;
   background-color: var(--accent);
+  margin-right: -0.25rem;
 }
 
 .blog-table-of-contents-contents {
@@ -1174,6 +1177,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  width: fit-content;
 }
 
 .blog-more-info-header h4 {
@@ -1181,6 +1185,7 @@ header {
   font-family: "Rubik";
   font-weight: var(--semi-bold);
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 
 .blog-more-info-info {
