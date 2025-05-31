@@ -138,12 +138,6 @@ header {
   padding: 1.75rem 2.5rem;
 }
 
-.home-hero-animation-container {
-  border: 1px solid var(--primary);
-  border-radius: 8px 8px 0px 0px;
-  border-bottom: 0px;
-}
-
 #home-hero-play-toggle:checked + label .home-hero-static {
   display: none;
 }
@@ -158,6 +152,9 @@ header {
 }
 
 .home-hero-img {
+  border: 1px solid var(--primary);
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 0px;
   vertical-align: top;
   object-fit: contain;
   width: auto;
@@ -1234,11 +1231,6 @@ header {
   font-size: 1rem;
 }
 
-.animation-container {
-  border: 1px solid var(--secondary);
-  border-radius: 8px 8px 0px 0px;
-}
-
 #about-bio-play-toggle:checked + label .about-bio-static {
   display: none;
 }
@@ -1253,6 +1245,8 @@ header {
 }
 
 .about-bio-img {
+  border: 1px solid var(--secondary);
+  border-radius: 8px 8px 0px 0px;
   vertical-align: top;
   object-fit: contain;
   width: auto;
