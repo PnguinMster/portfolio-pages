@@ -1295,53 +1295,42 @@ header {
   gap: 3.75rem;
 }
 
-.about-stats-started-container {
+.about-stats-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--secondary);
-  flex: 1;
   gap: 1rem;
   border-radius: 8px;
   padding: 3.75rem 2.5rem;
+}
+
+.about-stats-started-container {
+  background-color: var(--secondary);
+  flex: 1;
 }
 
 .about-stats-progress-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: var(--primary);
   flex: 2;
-  gap: 1rem;
-  border-radius: 8px;
-  padding: 3.75rem 2.5rem;
 }
 
 .about-stats-finished-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: var(--secondary);
   flex: 1;
-  gap: 1rem;
-  border-radius: 8px;
-  padding: 3.75rem 2.5rem;
+}
+
+.about-stats-texts {
+  text-align: center;
+  color: var(--bg);
+  font-family: "Rubik";
+  font-weight: var(--semi-bold);
+  margin: 0;
 }
 
 .about-stats-number {
-  text-align: center;
-  color: var(--bg);
-  font-family: "Rubik";
   font-size: 2.063rem;
-  font-weight: var(--semi-bold);
-  margin: 0;
 }
 
 .about-stats-text {
-  text-align: center;
-  color: var(--bg);
-  font-family: "Rubik";
   font-size: 1.44rem;
-  font-weight: var(--semi-bold);
-  margin: 0;
 }
