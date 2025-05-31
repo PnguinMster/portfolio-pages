@@ -138,6 +138,12 @@ header {
   padding: 1.75rem 2.5rem;
 }
 
+.home-hero-animation-container {
+  border: 1px solid var(--primary);
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 0px;
+}
+
 #home-hero-play-toggle:checked + label .home-hero-static {
   display: none;
 }
@@ -153,14 +159,11 @@ header {
 
 .home-hero-img {
   vertical-align: top;
-  border: 1px solid var(--primary);
-  border-radius: 8px 8px 0px 0px;
   object-fit: contain;
   width: auto;
   height: auto;
   max-height: 100%;
   max-width: 100%;
-  border-bottom: 0px;
 }
 
 .home-hero-animation {
