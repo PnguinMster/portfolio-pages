@@ -367,7 +367,7 @@ header {
 * Projects Home
 */
 
-.projects-home {
+.home-showcase {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -376,52 +376,33 @@ header {
   gap: 2.5rem;
 }
 
-.projects-home h2 {
-  font-family: "Rubik";
-  font-weight: bold;
-  font-size: 2.063rem;
-  margin: 0;
-}
-
-.projects-underline {
-  height: 1px;
-  width: 100%;
-  background: var(--projects-gradient);
-}
-
-.projects-home h3 {
-  font-family: "Rubik";
-  font-weight: var(--medium);
-  font-size: 1.44rem;
-  margin: 0;
-}
-
-.projects-home small {
-  font-family: "Poppins";
-  font-weight: normal;
-  font-size: 0.813rem;
-}
-
-.panel-underline {
-  height: 1px;
-  width: 100%;
-  background: var(--secondary);
-}
-
-.projects-header {
+.home-showcase-title-bar {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 1rem;
 }
 
-.projects-container {
+.home-showcase-title {
+  font-family: "Rubik";
+  font-weight: bold;
+  font-size: 2.063rem;
+  margin: 0;
+}
+
+.home-showcase-title-underline {
+  height: 1px;
+  width: 100%;
+  background: var(--projects-gradient);
+}
+
+.home-showcase-container {
   display: flex;
   padding: 0 2.5rem;
   gap: 3.75rem;
 }
 
-.project-panel {
+.home-showcase-panel {
   display: flex;
   flex-direction: column;
   display: flex;
@@ -431,7 +412,7 @@ header {
   gap: 1rem;
 }
 
-.project-panel:before {
+.home-showcase-panel:before {
   content: "";
   position: absolute;
   top: -1px;
@@ -443,7 +424,7 @@ header {
   border-radius: 12px;
 }
 
-.project-panel::after {
+.home-showcase-panel::after {
   content: "";
   position: absolute;
   top: 0;
@@ -455,7 +436,7 @@ header {
   pointer-events: none;
 }
 
-.project-shadow {
+.home-showcase-panel-img--shadow {
   position: relative;
   border-radius: 12px 12px 4px 4px;
   aspect-ratio: 4/3;
@@ -466,7 +447,7 @@ header {
   transform: translateY(0);
 }
 
-.project-shadow::after {
+.home-showcase-panel-img--shadow::after {
   content: "";
   position: absolute;
   top: 0;
@@ -477,29 +458,29 @@ header {
   pointer-events: none;
 }
 
-.project-shadow:hover::after {
+.home-showcase-panel-img--shadow:hover::after {
   box-shadow: none;
 }
 
-.project-shadow:hover {
+.home-showcase-panel-img--shadow:hover {
   border-radius: 4px;
   opacity: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   transform: translateY(-16px);
 }
 
-.project-shadow:hover .link-icon {
-  opacity: 0;
-}
-
-.project-img {
+.home-showcase-panel-img {
   object-fit: cover;
   object-position: left;
   width: 100%;
   height: 100%;
 }
 
-.project-shadow .link-icon {
+.home-showcase-panel-img--shadow:hover .home-showcase-panel-link-icon {
+  opacity: 0;
+}
+
+.home-showcase-panel-img--shadow .home-showcase-panel-link-icon {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -509,25 +490,38 @@ header {
   transition: opacity 0.2s ease;
 }
 
-.panel-content {
+.home-showcase-panel-content {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
 }
 
-.panel-header {
+.home-showcase-panel-texts {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
 
-.project-button {
+.home-showcase-panel-name {
+  font-family: "Rubik";
+  font-weight: var(--medium);
+  font-size: 1.44rem;
+  margin: 0;
+}
+
+.home-showcase-panel-underline {
+  height: 1px;
+  width: 100%;
+  background: var(--secondary);
+}
+
+.home-showcase-button-container {
   align-self: flex-end;
   padding: 0 2.5rem;
 }
 
-.project-button a {
+.home-showcase-button {
   display: inline-block;
   background-color: var(--secondary);
   padding: 0.5rem;
