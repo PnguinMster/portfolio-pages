@@ -1256,6 +1256,7 @@ header {
 
 .about-bio-img {
   border: 1px solid var(--secondary);
+  border-bottom-width: 2px;
   border-radius: 8px 8px 0px 0px;
   vertical-align: top;
   object-fit: contain;
