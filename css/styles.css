@@ -639,7 +639,6 @@ header {
   margin: 0;
 }
 
-
 .home-contact-title-underline {
   margin: 0;
   border: 0;
@@ -656,7 +655,7 @@ header {
   padding: 0 2.5rem;
 }
 
-.home-contact-text  {
+.home-contact-text {
   font-family: "Poppins";
   font-weight: normal;
   font-size: 1rem;
@@ -675,7 +674,7 @@ header {
   border-radius: 8px;
 }
 
-.home-contact-button  {
+.home-contact-button {
   color: var(--bg);
   display: inline-block;
   padding: 0.5rem;
@@ -807,7 +806,7 @@ header {
   gap: 0.5rem;
 }
 
-.projects-hero h2 {
+.projects-hero-text-main {
   background: var(--primary-gradient);
   background-clip: text;
   -webkit-background-clip: text;
@@ -817,7 +816,7 @@ header {
   font-family: "Rubik";
 }
 
-.projects-hero h1 {
+.projects-hero-text-secondary {
   color: var(--text);
   margin: 0;
   font-size: 3rem;
@@ -825,7 +824,7 @@ header {
   font-weight: var(--semi-bold);
 }
 
-.projects-hero-underline {
+.projects-hero-hr {
   margin: 0;
   border: 0;
   height: 1px;
