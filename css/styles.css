@@ -8,10 +8,12 @@
   --html-tag: #e34c26;
   --css-tag: #663399;
   --primary5: hsl(201.14, 100%, 65.49%, 5%);
+  --primary16: hsl(201.14, 100%, 65.49%, 16%);
   --primary45: hsl(201.14, 100%, 65.49%, 45%);
   --primary85: hsl(201.14, 100%, 65.49%, 85%);
   --secondary4: hsl(160.11, 75.73%, 53.14%, 4%);
   --secondary5: hsl(160.11, 75.73%, 53.14%, 5%);
+  --secondary16: hsl(160.11, 75.73%, 53.14%, 16%);
   --accent65: hsl(23.49, 100%, 62.94%, 65%);
   --accent85: hsl(23.49, 100%, 62.94%, 85%);
   --primary-gradient: linear-gradient(to right, #4fc1ff, #2de2a6);
@@ -1333,4 +1335,74 @@ header {
 
 .about-stats-text {
   font-size: 1.44rem;
+}
+
+/*
+* About Me Skills
+*/
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  padding: 3.75rem 10rem;
+  gap: 1.75rem;
+}
+
+.about-skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.about-skills-title-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: fit-content;
+}
+
+.about-skills-title {
+  font-family: "Rubik";
+  font-weight: bold;
+  font-size: 1.44rem;
+  margin: 0;
+}
+
+.about-skills-title-underline {
+  height: 1px;
+  background-color: var(--accent);
+}
+
+.about-skills-skill {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.about-skills-skill-name {
+  font-family: "Rubik";
+  font-weight: var(--medium);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.about-skills-skill-bar--border {
+  background-color: var(--secondary16);
+  border-radius: 4px;
+  width: 500px;
+  height: 21px;
+}
+
+.about-skills-skill-bar--fill {
+  background-color: var(--secondary);
+  border-radius: 4px;
+  width: 60%;
+  height: 100%;
+}
+
+.about-skills-skill-percent {
+  color: var(--accent);
+  font-family: "Rubik";
+  font-weight: var(--medium);
+  font-size: 1.2rem;
+  margin: 0;
 }
