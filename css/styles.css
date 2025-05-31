@@ -537,7 +537,7 @@ header {
 * About Home
 */
 
-.about-home {
+.home-about {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -546,28 +546,28 @@ header {
   gap: 2.5rem;
 }
 
-.about-home h2 {
-  font-family: "Rubik";
-  font-weight: bold;
-  font-size: 2.063rem;
-  margin: 0;
-}
-
-.about-header {
+.home-about-title-bar {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 1rem;
 }
 
-.about-underline {
+.home-about-title {
+  font-family: "Rubik";
+  font-weight: bold;
+  font-size: 2.063rem;
+  margin: 0;
+}
+
+.home-about-underline {
   margin: 0;
   border: 0;
   height: 1px;
   background-image: var(--accent-gradient);
 }
 
-.about-content {
+.home-about-container {
   display: flex;
   box-sizing: border-box;
   width: 100%;
@@ -576,7 +576,7 @@ header {
   padding: 0 2.5rem;
 }
 
-.about-content p {
+.home-about-text {
   font-family: "Poppins";
   font-weight: normal;
   font-size: 1rem;
@@ -586,23 +586,23 @@ header {
   margin: 0;
 }
 
-.about-buttons {
+.home-about-buttons-container {
   display: flex;
   align-self: flex-end;
   gap: 1rem;
   /*padding: 0 1.75rem;*/
 }
 
-.about-buttons .download-button {
+.home-about-download-button {
   background-color: var(--primary);
   color: var(--bg);
 }
 
-.about-buttons .read-button {
+.home-about-read-button {
   background-color: var(--primary45);
 }
 
-.about-buttons a {
+.home-about-button-link {
   display: inline-block;
   padding: 0.5rem;
   border: none;
