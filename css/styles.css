@@ -1264,3 +1264,16 @@ header {
 .about-bio-animation {
   display: none;
 }
+
+.about-bio-resume-button {
+  display: inline-block;
+  align-self: flex-start;
+  background-color: var(--primary);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-size: 1rem;
+  color: var(--bg);
+  cursor: pointer;
+}
