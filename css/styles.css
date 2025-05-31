@@ -1217,6 +1217,8 @@ header {
   font-weight: var(--semi-bold);
   font-size: 1.44rem;
   margin: 0;
+  padding: 1rem;
+  margin: 0;
 }
 
 .about-bio-content {
@@ -1226,9 +1228,17 @@ header {
 }
 
 .about-bio-text {
+  /*background-color: var(--primary5);*/
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1;
   font-family: "Poppins";
   font-weight: normal;
   font-size: 1rem;
+}
+
+.animation-container {
+  flex: 1;
 }
 
 #about-bio-play-toggle:checked + label .about-bio-static {
