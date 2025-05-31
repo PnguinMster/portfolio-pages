@@ -1127,7 +1127,7 @@ header {
   gap: 0.25rem;
 }
 
-.blog-table-of-contents-chapter  {
+.blog-table-of-contents-chapter {
   font-family: "Poppins";
   font-weight: normal;
   font-size: 0.813rem;
@@ -1202,4 +1202,65 @@ header {
   border: 0;
   height: 1px;
   background-image: var(--secondary-gradient);
+}
+
+/*
+* About Me Bio
+*/
+
+.about-bio-container {
+  display: flex;
+  flex-direction: column;
+  padding: 6.25rem 10rem;
+  gap: 1.25rem;
+}
+
+.about-bio-subheading {
+  font-family: "Rubik";
+  font-weight: var(--semi-bold);
+  font-size: 1.44rem;
+  margin: 0;
+}
+
+.about-bio-content {
+  display: flex;
+  flex-direction: row;
+  gap: 3.75rem;
+}
+
+.about-bio-text {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.animation-container {
+  border: 1px solid var(--secondary);
+  border-radius: 8px 8px 0px 0px;
+}
+
+#about-bio-play-toggle:checked + label .about-bio-static {
+  display: none;
+}
+
+#about-bio-play-toggle:checked + label .about-bio-animation {
+  display: block;
+}
+
+.about-bio-animation-wrapper {
+  display: block;
+  cursor: pointer;
+}
+
+.about-bio-img {
+  vertical-align: top;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.about-bio-animation {
+  display: none;
 }
