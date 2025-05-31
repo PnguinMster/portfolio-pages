@@ -104,7 +104,7 @@ header {
 * Home Hero
 */
 
-.hero {
+.home-hero {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -112,7 +112,7 @@ header {
   padding-right: 6.25rem;
 }
 
-.hero img {
+.home-hero img {
   vertical-align: top;
   border: 1px solid var(--primary);
   border-radius: 8px 8px 0px 0px;
@@ -124,24 +124,7 @@ header {
   border-bottom: 0px;
 }
 
-.animation-wrapper {
-  display: block;
-  cursor: pointer;
-}
-
-.hero-animation {
-  display: none;
-}
-
-#play-toggle:checked + label .hero-static {
-  display: none;
-}
-
-#play-toggle:checked + label .hero-animation {
-  display: block;
-}
-
-.hero h1 {
+.home-hero h1 {
   background: var(--primary-gradient);
   background-clip: text;
   -webkit-background-clip: text;
@@ -152,14 +135,14 @@ header {
   font-weight: bold;
 }
 
-.hero h4 {
+.home-hero h4 {
   margin: 0;
   font-size: 1.44rem;
   font-family: "Poppins";
   font-weight: normal;
 }
 
-.hero-text {
+.home-hero-texts {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -167,7 +150,24 @@ header {
   padding: 1.75rem 2.5rem;
 }
 
-.hero-underline {
+#home-hero-play-toggle:checked + label .home-hero-static {
+  display: none;
+}
+
+#home-hero-play-toggle:checked + label .home-hero-animation {
+  display: block;
+}
+
+.home-hero-animation-wrapper {
+  display: block;
+  cursor: pointer;
+}
+
+.home-hero-animation {
+  display: none;
+}
+
+.home-hero-hr {
   width: 100%;
   margin: 0;
   border: 0;
