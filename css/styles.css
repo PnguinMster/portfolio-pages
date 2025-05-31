@@ -179,7 +179,7 @@ header {
 * Home Behind the Scenes
 */
 
-.behind-the-scenes {
+.home-project {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -188,46 +188,27 @@ header {
   gap: 2.5rem;
 }
 
-.behind-the-scenes h2 {
+.home-project-title {
   font-family: "Rubik";
   font-weight: bold;
   font-size: 2.063rem;
   margin: 0;
 }
 
-.behind-the-scenes h3 {
-  font-family: "Rubik";
-  font-weight: var(--medium);
-  font-size: 1.44rem;
-  margin: 0;
-}
-
-.behind-the-scenes p {
-  font-family: "Poppins";
-  font-weight: normal;
-  font-size: 1rem;
-}
-
-.behind-the-scenes small {
-  font-family: "Poppins";
-  font-weight: normal;
-  font-size: 0.813rem;
-}
-
-.bts-header {
+.home-project-title-bar {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 1rem;
 }
 
-.bts-underline {
+.home-project-title-underline {
   height: 1px;
   width: 100%;
   background: var(--secondary-gradient);
 }
 
-.bts-border {
+.home-project-border {
   display: flex;
   position: relative;
   background: var(--bg);
@@ -236,7 +217,7 @@ header {
   gap: 1rem;
 }
 
-.bts-border::before {
+.home-project-border::before {
   content: "";
   position: absolute;
   top: -1px;
@@ -248,7 +229,7 @@ header {
   border-radius: 12px;
 }
 
-.bts-border::after {
+.home-project-border::after {
   content: "";
   position: absolute;
   top: 0;
@@ -260,14 +241,14 @@ header {
   pointer-events: none;
 }
 
-.project-content {
+.home-project-content {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1.75rem;
 }
 
-.project-text {
+.home-project-texts {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -275,13 +256,26 @@ header {
   gap: 0.5rem;
 }
 
-.project-underline {
+.home-project-underline {
   height: 1px;
   width: 100%;
   background: var(--primary);
 }
 
-.bts-shadow {
+.home-project-name {
+  font-family: "Rubik";
+  font-weight: var(--medium);
+  font-size: 1.44rem;
+  margin: 0;
+}
+
+.home-project-text {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.home-project-img--shadow {
   position: relative;
   display: inline-block;
   border-radius: 4px 12px 12px 4px;
@@ -291,29 +285,29 @@ header {
   opacity: 0.8;
 }
 
-.bts-shadow:hover {
+.home-project-img--shadow:hover {
   border-radius: 4px;
   opacity: 1;
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
-.bts-shadow:hover::after {
+.home-project-img--shadow:hover::after {
   box-shadow: none;
 }
 
-.bts-shadow:hover {
+.home-project-img--shadow:hover {
   border-radius: 4px;
   opacity: 1;
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
-.bts-shadow:hover .link-icon {
+.home-project-img--shadow:hover .home-project-link-icon {
   opacity: 0;
 }
 
-.bts-shadow::after {
+.home-project-img--shadow::after {
   content: "";
   position: absolute;
   top: 0;
@@ -324,7 +318,7 @@ header {
   pointer-events: none;
 }
 
-.bts-img {
+.home-project-img {
   display: block;
   object-fit: cover;
   object-position: left;
@@ -332,7 +326,7 @@ header {
   height: 100%;
 }
 
-.bts-shadow .link-icon {
+.home-project-link-icon {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -341,6 +335,10 @@ header {
   opacity: 90%;
   transition: opacity 0.2s ease;
 }
+
+/*
+* Tags
+*/
 
 .tag-container {
   display: flex;
