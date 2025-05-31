@@ -693,24 +693,24 @@ header {
 }
 
 /*
-*  Footer Home
+*  Footer 
 */
 
-.footer-underline {
+.footer-hr--primary {
   margin: 0;
   border: 0;
   height: 1px;
   background-color: var(--primary);
 }
 
-.footer-underline-projects {
+.footer-hr--secondary {
   margin: 0;
   border: 0;
   height: 1px;
   background-color: var(--secondary);
 }
 
-.footer-underline-blog {
+.footer-hr--accent {
   margin: 0;
   border: 0;
   height: 1px;
@@ -732,53 +732,22 @@ header {
   font-size: 0.813rem;
 }
 
-.footer-content li a {
-  font-weight: bold;
+.footer-row-top,
+.footer-row-middle,
+.footer-row-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.footer-back-to-top {
+.footer-top-link-container {
   display: flex;
   flex-direction: column;
   gap: 0.125rem;
 }
 
-.footer-resume {
-  display: flex;
-  flex-direction: column;
-  gap: 0.125rem;
-  font-weight: var(--semi-bold);
-}
-
-.resume-underline {
-  height: 1px;
-  width: 100%;
-  background-color: var(--accent65);
-}
-
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.footer-middle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.footer-top,
-.footer-middle,
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.top-underline {
+.footer-top-link-underline {
   height: 1px;
   width: 100%;
   background-color: var(--accent65);
@@ -791,32 +760,46 @@ header {
   margin: 0;
 }
 
-.footer-nav li {
+.footer-nav-item {
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
-.footer-nav li:not(:last-child)::after {
+.footer-nav-item:not(:last-child)::after {
   content: "•";
   margin-left: 1rem;
   padding-right: 1rem;
   color: var(--accent85);
 }
 
-.footer-images {
+.footer-connect-links {
   display: flex;
   margin: 0;
   gap: 1rem;
 }
 
-.footer-images li {
+.footer-connect-item {
   display: inline-block;
   text-decoration: none;
 }
 
-.footer-images img {
+.footer-connect-img {
   vertical-align: middle;
   height: 1.44rem;
+}
+
+.footer-resume-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  font-weight: var(--semi-bold);
+}
+
+.footer-resume-link-underline {
+  height: 1px;
+  width: 100%;
+  background-color: var(--accent65);
 }
 
 /*
