@@ -1427,3 +1427,9 @@ header {
   font-size: 1.2rem;
   margin: 0;
 }
+
+.about-skills-caption {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 0.813rem;
+}
