@@ -1473,6 +1473,15 @@ header {
 }
 
 /*
+* Contact
+*/
+
+.contact-container {
+  display: flex;
+  padding: 6.25rem 10rem;
+}
+
+/*
 * Contact Animation
 */
 
@@ -1492,7 +1501,7 @@ header {
 .contact-img {
   border: 1px solid var(--secondary);
   border-radius: 8px 8px 0px 0px;
-  border-bottom: 0px;
+  border-bottom-width: 2px;
   vertical-align: top;
   object-fit: contain;
   width: auto;
@@ -1504,3 +1513,9 @@ header {
 .contact-img-animation {
   display: none;
 }
+
+/*
+* Contact Info
+*/
+
+
