@@ -1351,7 +1351,7 @@ header {
 .about-skills-container {
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
+  gap: 1.25rem;
 }
 
 .about-skills-title-bar {
@@ -1373,9 +1373,11 @@ header {
   background-color: var(--accent);
 }
 
-.about-skills-skill {
-  display: flex;
-  gap: 2.5rem;
+.about-skills-grid {
+  display: grid;
+  grid-template-columns: auto 30vw 1fr;
+  gap: 1.75rem 2.5rem;
+  align-items: center;
 }
 
 .about-skills-skill-name {
@@ -1386,17 +1388,36 @@ header {
 }
 
 .about-skills-skill-bar--border {
-  background-color: var(--secondary16);
+  background-color: var(--primary16);
   border-radius: 4px;
-  width: 500px;
-  height: 21px;
+  /*width: 500px;*/
+  height: 1.75rem;
 }
 
 .about-skills-skill-bar--fill {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   border-radius: 4px;
-  width: 60%;
   height: 100%;
+}
+
+.about-skills-skill-bar--80 {
+  width: 80%;
+}
+
+.about-skills-skill-bar--60 {
+  width: 60%;
+}
+
+.about-skills-skill-bar--50 {
+  width: 50%;
+}
+
+.about-skills-skill-bar--40 {
+  width: 40%;
+}
+
+.about-skills-skill-bar--30 {
+  width: 30%;
 }
 
 .about-skills-skill-percent {
