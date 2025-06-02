@@ -1433,3 +1433,41 @@ header {
   font-weight: normal;
   font-size: 0.813rem;
 }
+
+/*
+* Contact Me Hero
+*/
+
+.contact-hero {
+  display: flex;
+  flex-direction: column;
+  padding: 6.25rem 10rem;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.contact-hero-text-main {
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+  font-size: 2.063rem;
+  font-family: "Rubik";
+  font-weight: normal;
+}
+
+.contact-hero-text-secondary {
+  color: var(--text);
+  margin: 0;
+  font-size: 3rem;
+  font-family: "Rubik";
+  font-weight: var(--semi-bold);
+}
+
+.contact-hero-hr {
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background-image: var(--secondary-gradient);
+}
