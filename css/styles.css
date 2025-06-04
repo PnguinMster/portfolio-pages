@@ -742,6 +742,10 @@ header {
   gap: 0.125rem;
 }
 
+.footer-top-link-container:hover {
+  transform: scale(1.05);
+}
+
 .footer-top-link-underline {
   height: 1px;
   width: 100%;
@@ -768,6 +772,10 @@ header {
   color: var(--accent85);
 }
 
+.footer-nav-link:hover {
+  transform: scale(1.05);
+}
+
 .footer-connect-links {
   display: flex;
   margin: 0;
@@ -777,6 +785,10 @@ header {
 .footer-connect-item {
   display: inline-block;
   text-decoration: none;
+}
+
+.footer-connect-item:hover {
+  transform: scale(1.05);
 }
 
 .footer-connect-img {
@@ -789,6 +801,10 @@ header {
   flex-direction: column;
   gap: 0.125rem;
   font-weight: var(--semi-bold);
+}
+
+.footer-resume-link-container:hover {
+  transform: scale(1.05);
 }
 
 .footer-resume-link-underline {
