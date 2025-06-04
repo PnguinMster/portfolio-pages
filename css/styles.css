@@ -1149,6 +1149,11 @@ header {
   font-size: 0.813rem;
 }
 
+.blog-table-of-contents-chapter:hover {
+  transform: scale(1.05);
+  font-weight: var(--semi-bold);
+}
+
 .blog-more-info {
   display: flex;
   flex-direction: column;
@@ -1176,6 +1181,15 @@ header {
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
+}
+
+.blog-more-info-link {
+  opacity: 0.9;
+}
+
+.blog-more-info-link:hover {
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 .blog-more-info-img {
