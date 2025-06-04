@@ -1580,6 +1580,12 @@ header {
 .contact-info-link-img {
   vertical-align: middle;
   height: 3.75rem;
+  opacity: 0.9;
+}
+
+.contact-info-link-img:hover {
+  transform: scale(1.05);
+  opacity: 1;
 }
 
 .contact-info-link-texts {
@@ -1593,6 +1599,12 @@ header {
   font-weight: var(--semi-bold);
   font-size: 1.2rem;
   margin: 0;
+  opacity: 0.9;
+}
+
+.contact-info-link-title:hover {
+  transform: scale(1.05);
+  opacity: 1;
 }
 
 .contact-info-link-content {
