@@ -1110,6 +1110,9 @@ header {
 
 .blog-article-info {
   display: flex;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
   flex-direction: column;
   padding-right: 3.75rem;
   padding-left: 1.25rem;
