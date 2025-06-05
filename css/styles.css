@@ -947,11 +947,18 @@ header {
 .projects-panel-img--shadow {
   position: relative;
   display: inline-block;
-  border-radius: 4px 12px 12px 4px;
   overflow: hidden;
   width: 100%;
   transition: all 0.3s ease;
   opacity: 0.8;
+}
+
+.projects-panel-img--border--primary {
+  border-radius: 4px 12px 12px 4px;
+}
+
+.projects-panel-img--border--secondary {
+  border-radius: 12px 4px 4px 12px;
 }
 
 .projects-panel-img--shadow:hover {
