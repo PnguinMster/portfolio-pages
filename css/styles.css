@@ -986,7 +986,7 @@ footer {
   box-shadow: none;
 }
 
-.projects-panel-img--shadow:hover .link-icon {
+.projects-panel-img--shadow:hover .projects-panel-link-icon {
   opacity: 0;
 }
 
