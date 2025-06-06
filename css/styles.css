@@ -56,6 +56,25 @@ a {
   color: var(--text);
 }
 
+.hero-text-main {
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+  font-family: var(--rubik);
+}
+
+.home-hero-text--font {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.other-hero-text--font {
+  font-size: 2.063rem;
+  font-weight: normal;
+}
+
 /* 
 * Navigation Bar
 */
@@ -133,17 +152,6 @@ header {
   align-items: center;
   padding-left: 6.25rem;
   padding-right: 6.25rem;
-}
-
-.home-hero-text-main {
-  background: var(--primary-gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  margin: 0;
-  font-size: 3rem;
-  font-family: var(--rubik);
-  font-weight: bold;
 }
 
 .home-hero-text-secondary {
@@ -849,17 +857,6 @@ footer {
   gap: 0.5rem;
 }
 
-.projects-hero-text-main {
-  background: var(--primary-gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  margin: 0;
-  font-size: 2.063rem;
-  font-family: var(--rubik);
-  font-weight: normal;
-}
-
 .projects-hero-text-secondary {
   color: var(--text);
   margin: 0;
@@ -1242,17 +1239,6 @@ footer {
   gap: 0.5rem;
 }
 
-.about-hero-text-main {
-  background: var(--primary-gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  margin: 0;
-  font-size: 2.063rem;
-  font-family: var(--rubik);
-  font-weight: normal;
-}
-
 .about-hero-text-secondary {
   color: var(--text);
   margin: 0;
@@ -1509,17 +1495,6 @@ footer {
   padding: 6.25rem 10rem;
   align-items: flex-start;
   gap: 0.5rem;
-}
-
-.contact-hero-text-main {
-  background: var(--primary-gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  margin: 0;
-  font-size: 2.063rem;
-  font-family: var(--rubik);
-  font-weight: normal;
 }
 
 .contact-hero-text-secondary {
