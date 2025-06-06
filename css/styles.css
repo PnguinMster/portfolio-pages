@@ -779,7 +779,7 @@ footer {
 .footer-top-link {
   padding-left: 0.125rem;
   padding-right: 0.125rem;
-  border-bottom: 1px solid var(--accent85);
+  border-bottom: 1px solid var(--accent65);
 }
 
 .footer-top-link:hover {
