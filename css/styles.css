@@ -776,20 +776,13 @@ footer {
   width: 100%;
 }
 
-.footer-top-link-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.125rem;
+.footer-top-link {
+  padding-bottom: 0.125rem;
+  border-bottom: 1px solid var(--accent85);
 }
 
 .footer-top-link-container:hover {
   transform: scale(1.05);
-}
-
-.footer-top-link-underline {
-  height: 1px;
-  width: 100%;
-  background-color: var(--accent65);
 }
 
 .footer-nav {
