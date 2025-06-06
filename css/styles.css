@@ -777,11 +777,12 @@ footer {
 }
 
 .footer-top-link {
-  padding-bottom: 0.125rem;
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
   border-bottom: 1px solid var(--accent85);
 }
 
-.footer-top-link-container:hover {
+.footer-top-link:hover {
   transform: scale(1.05);
 }
 
