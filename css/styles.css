@@ -340,13 +340,6 @@ header {
   box-shadow: none;
 }
 
-.home-project-img--shadow:hover {
-  border-radius: 4px;
-  opacity: 1;
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-}
-
 .home-project-img--shadow:hover .home-project-link-icon {
   opacity: 0;
 }
