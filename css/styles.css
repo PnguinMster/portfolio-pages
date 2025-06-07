@@ -325,7 +325,7 @@ header {
   border-radius: 4px 12px 12px 4px;
   overflow: hidden;
   width: 100%;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   opacity: 0.8;
 }
 
@@ -965,7 +965,7 @@ footer {
   display: inline-block;
   overflow: hidden;
   width: 100%;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   opacity: 0.8;
 }
 
