@@ -1386,23 +1386,16 @@ footer {
   gap: 1.25rem;
 }
 
-.about-skills-title-bar {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  width: fit-content;
-}
-
 .about-skills-title {
   font-family: var(--rubik);
   font-weight: bold;
   font-size: 1.44rem;
   margin: 0;
-}
-
-.about-skills-title-underline {
-  height: 1px;
-  background-color: var(--accent);
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--accent);
+  width: fit-content;
 }
 
 .about-skills-grid {
