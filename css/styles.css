@@ -91,6 +91,13 @@ a {
   font-weight: normal;
 }
 
+.home-title {
+  font-family: var(--rubik);
+  font-weight: bold;
+  font-size: 2.063rem;
+  margin: 0;
+}
+
 /* 
 * Navigation Bar
 */
@@ -420,13 +427,6 @@ header {
   gap: 1rem;
 }
 
-.home-showcase-title {
-  font-family: var(--rubik);
-  font-weight: bold;
-  font-size: 2.063rem;
-  margin: 0;
-}
-
 .home-showcase-title-underline {
   height: 1px;
   width: 100%;
@@ -594,13 +594,6 @@ header {
   gap: 1rem;
 }
 
-.home-about-title {
-  font-family: var(--rubik);
-  font-weight: bold;
-  font-size: 2.063rem;
-  margin: 0;
-}
-
 .home-about-title-underline {
   margin: 0;
   border: 0;
@@ -679,13 +672,6 @@ header {
   flex-direction: column;
   width: 100%;
   gap: 1rem;
-}
-
-.home-contact-title {
-  font-family: var(--rubik);
-  font-weight: bold;
-  font-size: 2.063rem;
-  margin: 0;
 }
 
 .home-contact-title-underline {
