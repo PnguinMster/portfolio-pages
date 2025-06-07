@@ -1321,6 +1321,10 @@ footer {
   max-width: 100%;
 }
 
+.about-bio-img:hover {
+  background-color: var(--secondary5);
+}
+
 .about-bio-animation {
   display: none;
 }
@@ -1336,6 +1340,10 @@ footer {
   font-size: 1rem;
   color: var(--bg);
   cursor: pointer;
+}
+
+.about-bio-resume-button:hover {
+  background-color: var(--primary85);
 }
 
 /*
@@ -1537,6 +1545,10 @@ footer {
   height: auto;
   max-height: 100%;
   max-width: 100%;
+}
+
+.contact-img:hover {
+  background-color: var(--secondary5);
 }
 
 .contact-img-animation {
