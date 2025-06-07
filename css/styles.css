@@ -830,21 +830,16 @@ footer {
   height: 1.44rem;
 }
 
-.footer-resume-link-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.125rem;
+.footer-resume-link {
   font-weight: var(--semi-bold);
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+  padding-bottom: 0.125rem;
+  border-bottom: 1px solid var(--accent65);
 }
 
-.footer-resume-link-container:hover {
+.footer-resume-link:hover {
   transform: scale(1.05);
-}
-
-.footer-resume-link-underline {
-  height: 1px;
-  width: 100%;
-  background-color: var(--accent65);
 }
 
 /*
