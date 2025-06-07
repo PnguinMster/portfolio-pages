@@ -803,7 +803,7 @@ footer {
   content: "•";
   margin-left: 1rem;
   padding-right: 1rem;
-  color: var(--accent85);
+  color: var(--accent65);
 }
 
 .footer-nav-link:hover {
