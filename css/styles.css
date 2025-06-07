@@ -9,6 +9,7 @@
   --css-tag: #663399;
   --primary5: hsl(201.14, 100%, 65.49%, 5%);
   --primary16: hsl(201.14, 100%, 65.49%, 16%);
+  --primary30: hsl(201.14, 100%, 65.49%, 30%);
   --primary45: hsl(201.14, 100%, 65.49%, 45%);
   --primary85: hsl(201.14, 100%, 65.49%, 85%);
   --secondary4: hsl(160.11, 75.73%, 53.14%, 4%);
@@ -200,6 +201,10 @@ header {
   height: auto;
   max-height: 100%;
   max-width: 100%;
+}
+
+.home-hero-img:hover {
+  background-color: var(--primary5);
 }
 
 .home-hero-animation {
@@ -572,6 +577,10 @@ header {
   cursor: pointer;
 }
 
+.home-showcase-button:hover {
+  background-color: var(--secondary85);
+}
+
 /*
 * About Home
 */
@@ -637,8 +646,16 @@ header {
   color: var(--bg);
 }
 
+.home-about-download-button:hover {
+  background-color: var(--primary85);
+}
+
 .home-about-read-button {
   background-color: var(--primary45);
+}
+
+.home-about-read-button:hover {
+  background-color: var(--primary30);
 }
 
 .home-about-button-link {
@@ -709,11 +726,11 @@ header {
   align-self: flex-end;
   gap: 1rem;
   /*padding: 0 1.75rem;*/
-  background-color: var(--secondary);
-  border-radius: 8px;
 }
 
 .home-contact-button {
+  border-radius: 8px;
+  background-color: var(--secondary);
   color: var(--bg);
   display: inline-block;
   padding: 0.5rem;
@@ -721,6 +738,10 @@ header {
   font-family: var(--poppins);
   font-size: 1rem;
   cursor: pointer;
+}
+
+.home-contact-button:hover {
+  background-color: var(--secondary85);
 }
 
 /*
