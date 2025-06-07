@@ -1394,7 +1394,7 @@ footer {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   padding-bottom: 0.25rem;
-  border-bottom: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent85);
   width: fit-content;
 }
 
@@ -1533,23 +1533,16 @@ footer {
   gap: 0.75rem;
 }
 
-.contact-info-title-bar {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  width: fit-content;
-}
-
 .contact-info-title {
   font-family: var(--rubik);
   font-weight: bold;
   font-size: 1.44rem;
   margin: 0;
-}
-
-.contact-info-title-underline {
-  height: 1px;
-  background-color: var(--secondary85);
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--secondary85);
+  width: fit-content;
 }
 
 .contact-info-content {
