@@ -311,12 +311,6 @@ header {
   height: 100%;
 }
 
-.home-project-underline {
-  height: 1px;
-  width: 100%;
-  background: var(--primary);
-}
-
 .home-project-text {
   font-family: var(--poppins);
   font-weight: normal;
@@ -524,16 +518,9 @@ header {
   padding: 1rem;
 }
 
-.home-showcase-panel-texts {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
 .home-showcase-panel-underline {
-  height: 1px;
-  width: 100%;
-  background: var(--secondary);
+  border-bottom: 1px solid var(--secondary);
+  padding-bottom: 0.25rem;
 }
 
 .home-showcase-button-container {
