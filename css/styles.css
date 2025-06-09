@@ -884,9 +884,8 @@ footer {
 }
 
 .projects-panel-underline {
-  height: 1px;
-  width: 100%;
-  background: var(--primary);
+  border-bottom: 1px solid var(--primary);
+  padding-bottom: 0.25rem;
 }
 
 .projects-panel-subheading {
@@ -997,9 +996,8 @@ footer {
 }
 
 .projects-panel-underline-alt {
-  height: 1px;
-  width: 100%;
-  background: var(--secondary);
+  border-bottom: 1px solid var(--secondary);
+  padding-bottom: 0.25rem;
 }
 
 /*
