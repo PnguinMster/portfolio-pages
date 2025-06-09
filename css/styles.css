@@ -825,7 +825,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 10rem;
-  gap: 3.75rem;
+  gap: 6.25rem;
 }
 
 .projects-panel-border {
