@@ -380,22 +380,20 @@ header {
   gap: 0.75rem;
 }
 
-.html-tag {
-  background-color: var(--html-tag);
-  border-radius: 8px;
-  padding: 0.25rem 0.75rem;
+.tag-content {
   font-family: var(--poppins);
   font-weight: normal;
   font-size: 0.813rem;
+  border-radius: 8px;
+  padding: 0.25rem 0.75rem;
 }
 
-.css-tag {
+.tag-color-html {
+  background-color: var(--html-tag);
+}
+
+.tag-color-css {
   background-color: var(--css-tag);
-  border-radius: 8px;
-  padding: 0.25rem 0.75rem;
-  font-family: var(--poppins);
-  font-weight: normal;
-  font-size: 0.813rem;
 }
 
 /*
