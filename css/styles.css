@@ -420,7 +420,6 @@ header {
 .home-showcase-panel {
   display: flex;
   flex-direction: column;
-  display: flex;
   position: relative;
   background: var(--bg);
   border-radius: 11px;
@@ -1539,12 +1538,6 @@ footer {
 .contact-info-link-title:hover {
   transform: scale(1.05);
   opacity: 1;
-}
-
-.contact-info-link-content {
-  display: flex;
-  flex-direction: row;
-  gap: 0.125rem;
 }
 
 .contact-info-link-name {
