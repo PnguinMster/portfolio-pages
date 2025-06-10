@@ -1508,17 +1508,17 @@ footer {
   border: 1px solid var(--secondary);
   background-color: var(--secondary5);
   border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.contact-info-link-panel:hover {
+  transform: scale(1.1);
 }
 
 .contact-info-link-img {
   vertical-align: middle;
   height: 3.75rem;
   opacity: 0.9;
-}
-
-.contact-info-link-img:hover {
-  transform: scale(1.05);
-  opacity: 1;
 }
 
 .contact-info-link-texts {
@@ -1533,11 +1533,6 @@ footer {
   font-size: 1.2rem;
   margin: 0;
   opacity: 0.9;
-}
-
-.contact-info-link-title:hover {
-  transform: scale(1.05);
-  opacity: 1;
 }
 
 .contact-info-link-name {
