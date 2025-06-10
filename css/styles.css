@@ -499,7 +499,7 @@ header {
   opacity: 0;
 }
 
-.home-showcase-panel-img--shadow .home-showcase-panel-link-icon {
+.home-showcase-panel-link-icon {
   position: absolute;
   bottom: 10px;
   right: 10px;
