@@ -131,8 +131,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 6.25rem;
-  padding-right: 6.25rem;
+  padding: 0 6.25rem;
 }
 
 .header-logo {
@@ -171,9 +170,7 @@ header {
 .header-link {
   display: flex;
   flex-direction: column;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding: 0 0.75rem 0.5rem;
 }
 
 .header-link:hover {
@@ -198,8 +195,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-left: 6.25rem;
-  padding-right: 6.25rem;
+  padding: 0 6.25rem;
 }
 
 .home-hero-texts {
@@ -780,9 +776,7 @@ footer {
 
 .footer-resume-link {
   font-weight: var(--semi-bold);
-  padding-right: 0.25rem;
-  padding-left: 0.25rem;
-  padding-bottom: 0.125rem;
+  padding: 0 0.25rem 0.125rem;
   border-bottom: 1px solid var(--accent65);
 }
 
@@ -1335,9 +1329,7 @@ footer {
   font-weight: bold;
   font-size: 1.44rem;
   margin: 0;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding: 0 0.25rem 0.25rem;
   border-bottom: 1px solid var(--accent85);
   width: fit-content;
 }
@@ -1486,9 +1478,7 @@ footer {
   font-weight: bold;
   font-size: 1.44rem;
   margin: 0;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding: 0 0.25rem 0.25rem;
   border-bottom: 1px solid var(--secondary85);
   width: fit-content;
 }
