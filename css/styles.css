@@ -322,7 +322,7 @@ header {
 .home-project-img--shadow:hover {
   border-radius: 4px;
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.01);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
@@ -351,6 +351,12 @@ header {
   object-position: left;
   width: 100%;
   height: 100%;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+.home-project-img:hover {
+  transform: scale(1);
 }
 
 .home-project-link-icon {
@@ -484,6 +490,12 @@ header {
   object-position: left;
   width: 100%;
   height: 100%;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.home-showcase-panel-img:hover {
+  transform: scale(1);
 }
 
 .home-showcase-panel-img--shadow:hover .home-showcase-panel-link-icon {
