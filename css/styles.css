@@ -18,15 +18,19 @@
   --secondary85: hsl(160.11, 75.73%, 53.14%, 85%);
   --accent65: hsl(23.49, 100%, 62.94%, 65%);
   --accent85: hsl(23.49, 100%, 62.94%, 85%);
-  --primary-gradient: linear-gradient(to right, #4fc1ff, #2de2a6);
-  --secondary-gradient: linear-gradient(to right, #2de2a6, #4fc1ff);
-  --accent-gradient: linear-gradient(to right, #ff8c42, #4fc1ff);
-  --accent-gradient-alt: linear-gradient(to right, #ff8c42, #2de2a6);
-  --contact-gradient: linear-gradient(to right, #ff8c42, #2de2a6);
-  --project-wide-gradient: linear-gradient(to right, #4fc1ff, #ff8c42);
-  --projects-gradient: linear-gradient(to right, #2de2a6, #ff8c42);
-  --projects-wide-gradient: linear-gradient(to right, #ff8c42, #2de2a6);
-  --project-panel-gradient: linear-gradient(#ff8c42, #2de2a6);
+  --gradient-primary-secondary: linear-gradient(to right, #4fc1ff, #2de2a6); /*hr, header*/
+  --gradient-secondary-primary: linear-gradient(to right, #2de2a6, #4fc1ff); /*hr underline*/
+  --gradient-accent-primary: linear-gradient(to right, #ff8c42, #4fc1ff); /*underline */
+  --gradient-accent-secondary: linear-gradient(to right, #ff8c42, #2de2a6); /* underlin*/
+  --gradient-secondary-accent: linear-gradient(to right, #2de2a6, #ff8c42); /*underline*/
+  --gradient-primary-accent: linear-gradient(to right, #4fc1ff, #ff8c42); /*border*/
+  --gradient-accent-secondary: linear-gradient(to right, #ff8c42, #2de2a6); /*border*/
+  --gradient-accent-secondary-vertical: linear-gradient(#ff8c42, #2de2a6); /*border*/
+  --gradient-secondary-opacity: linear-gradient(
+    to right,
+    hsla(160.11, 75.73%, 53.14%, 2%),
+    hsla(160.11, 75.73%, 53.14%, 6%)
+  );
   --medium: 500;
   --semi-bold: 600;
   --poppins: "Poppins", "Helvetica Neue", sans-serif;
@@ -65,7 +69,7 @@ a {
 }
 
 .hero-text-main {
-  background: var(--primary-gradient);
+  background: var(--gradient-primary-secondary);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -308,7 +312,7 @@ header {
   margin: 0;
   border: 0;
   height: 1px;
-  background-image: var(--primary-gradient);
+  background-image: var(--gradient-primary-secondary);
 }
 
 /*
@@ -327,7 +331,7 @@ header {
 .home-project-title-underline {
   height: 1px;
   width: 100%;
-  background: var(--secondary-gradient);
+  background: var(--gradient-secondary-primary);
 }
 
 .home-project-border {
@@ -346,7 +350,7 @@ header {
   left: -1px;
   right: -1px;
   bottom: -1px;
-  background: var(--project-wide-gradient);
+  background: var(--gradient-primary-accent);
   z-index: -1;
   border-radius: 12px;
 }
@@ -419,7 +423,7 @@ header {
 .home-showcase-title-underline {
   height: 1px;
   width: 100%;
-  background: var(--projects-gradient);
+  background: var(--gradient-secondary-accent);
 }
 
 .home-showcase-container {
@@ -444,7 +448,7 @@ header {
   left: -1px;
   right: -1px;
   bottom: -1px;
-  background: var(--project-panel-gradient);
+  background: var(--gradient-accent-secondary-vertical);
   z-index: -1;
   border-radius: 12px;
 }
@@ -571,7 +575,7 @@ header {
   margin: 0;
   border: 0;
   height: 1px;
-  background-image: var(--accent-gradient);
+  background-image: var(--gradient-accent-primary);
 }
 
 .home-about-container {
@@ -641,7 +645,7 @@ header {
   margin: 0;
   border: 0;
   height: 1px;
-  background-image: var(--contact-gradient);
+  background-image: var(--gradient-accent-secondary);
 }
 
 .home-contact-container {
@@ -815,7 +819,7 @@ footer {
   margin: 0;
   border: 0;
   height: 1px;
-  background-image: var(--secondary-gradient);
+  background-image: var(--gradient-secondary-primary);
 }
 
 /*
@@ -845,7 +849,7 @@ footer {
   left: -1px;
   right: -1px;
   bottom: -1px;
-  background: var(--project-wide-gradient);
+  background: var(--gradient-primary-accent);
   z-index: -1;
   border-radius: 12px;
 }
@@ -918,7 +922,7 @@ footer {
   left: -1px;
   right: -1px;
   bottom: -1px;
-  background: var(--projects-wide-gradient);
+  background: var(--gradient-accent-secondary);
   z-index: -1;
   border-radius: 12px;
 }
@@ -975,7 +979,7 @@ footer {
 .blog-title-underline {
   margin: 0 2.5rem;
   height: 1px;
-  background-image: var(--accent-gradient-alt);
+  background-image: var(--gradient-accent-secondary);
 }
 
 .blog-updated-caption {
@@ -1126,7 +1130,7 @@ footer {
   margin: 0;
   border: 0;
   height: 1px;
-  background-image: var(--secondary-gradient);
+  background-image: var(--gradient-secondary-primary);
 }
 
 /*
@@ -1371,7 +1375,7 @@ footer {
   margin: 0;
   border: 0;
   height: 1px;
-  background-image: var(--secondary-gradient);
+  background-image: var(--gradient-secondary-primary);
 }
 
 /*
@@ -1467,7 +1471,8 @@ footer {
   padding: 1rem;
   gap: 0.75rem;
   border: 1px solid var(--secondary);
-  background-color: var(--secondary5);
+  background: var(--gradient-secondary-opacity);
+  backdrop-filter: blur(15px);
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
