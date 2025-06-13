@@ -18,14 +18,14 @@
   --secondary85: hsl(160.11, 75.73%, 53.14%, 85%);
   --accent65: hsl(23.49, 100%, 62.94%, 65%);
   --accent85: hsl(23.49, 100%, 62.94%, 85%);
-  --gradient-primary-secondary: linear-gradient(to right, #4fc1ff, #2de2a6); /*hr, header*/
-  --gradient-secondary-primary: linear-gradient(to right, #2de2a6, #4fc1ff); /*hr underline*/
-  --gradient-accent-primary: linear-gradient(to right, #ff8c42, #4fc1ff); /*underline */
-  --gradient-accent-secondary: linear-gradient(to right, #ff8c42, #2de2a6); /* underlin*/
-  --gradient-secondary-accent: linear-gradient(to right, #2de2a6, #ff8c42); /*underline*/
-  --gradient-primary-accent: linear-gradient(to right, #4fc1ff, #ff8c42); /*border*/
-  --gradient-accent-secondary: linear-gradient(to right, #ff8c42, #2de2a6); /*border*/
-  --gradient-accent-secondary-vertical: linear-gradient(#ff8c42, #2de2a6); /*border*/
+  --gradient-primary-secondary: linear-gradient(to right, #4fc1ff, #2de2a6);
+  --gradient-secondary-primary: linear-gradient(to right, #2de2a6, #4fc1ff);
+  --gradient-accent-primary: linear-gradient(to right, #ff8c42, #4fc1ff);
+  --gradient-accent-secondary: linear-gradient(to right, #ff8c42, #2de2a6);
+  --gradient-secondary-accent: linear-gradient(to right, #2de2a6, #ff8c42);
+  --gradient-primary-accent: linear-gradient(to right, #4fc1ff, #ff8c42);
+  --gradient-accent-secondary: linear-gradient(to right, #ff8c42, #2de2a6);
+  --gradient-accent-secondary-vertical: linear-gradient(#ff8c42, #2de2a6);
   --gradient-secondary-opacity: linear-gradient(
     to right,
     hsla(160.11, 75.73%, 53.14%, 2%),
