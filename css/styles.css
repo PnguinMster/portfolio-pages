@@ -261,6 +261,19 @@ a {
   padding: 1.75rem;
 }
 
+.project-panel-bio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-panel-subheading {
+  font-family: var(--rubik);
+  font-weight: var(--medium);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
 /* 
 * Navigation Bar
 */
@@ -849,19 +862,6 @@ footer {
   flex-direction: column;
   padding: 10rem 12.5rem;
   gap: 6.25rem;
-}
-
-.projects-panel-bio-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.projects-panel-subheading {
-  font-family: var(--rubik);
-  font-weight: var(--medium);
-  font-size: 1.2rem;
-  margin: 0;
 }
 
 /*
