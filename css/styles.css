@@ -254,6 +254,13 @@ a {
   gap: 1.25rem;
 }
 
+.project-panel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.75rem;
+}
+
 /* 
 * Navigation Bar
 */
@@ -391,13 +398,6 @@ header {
   height: 1px;
   width: 100%;
   background: var(--gradient-secondary-primary);
-}
-
-.home-project-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 1.75rem;
 }
 
 /*
@@ -849,13 +849,6 @@ footer {
   flex-direction: column;
   padding: 10rem 12.5rem;
   gap: 6.25rem;
-}
-
-.projects-panel-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 1.75rem;
 }
 
 .projects-panel-bio-container {
