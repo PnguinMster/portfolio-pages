@@ -116,16 +116,16 @@ a {
   gap: 1rem;
 }
 
-.home-panel-name {
+.project-panel-title {
   font-family: var(--rubik);
   font-weight: var(--medium);
   font-size: 1.44rem;
   margin: 0;
 }
 
-.home-panel-underline {
-  padding-bottom: 0.5rem;
+.project-panel-underline {
   border-bottom: 1px solid var(--primary);
+  padding-bottom: 0.5rem;
 }
 
 .project-panel-img--shadow {
@@ -852,18 +852,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-}
-
-.projects-panel-title {
-  font-family: var(--rubik);
-  font-weight: var(--medium);
-  font-size: 1.44rem;
-  margin: 0;
-}
-
-.projects-panel-underline {
-  border-bottom: 1px solid var(--primary);
-  padding-bottom: 0.25rem;
 }
 
 .projects-panel-subheading {
