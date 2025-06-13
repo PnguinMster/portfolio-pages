@@ -195,6 +195,39 @@ a {
   border-radius: 12px 4px 4px 12px;
 }
 
+.project-panel-border {
+  display: flex;
+  position: relative;
+  background: var(--bg);
+  border-radius: 11px;
+  margin: 0 2.5rem;
+  gap: 1rem;
+}
+
+.project-panel-border::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: var(--gradient-primary-accent);
+  z-index: -1;
+  border-radius: 12px;
+}
+
+.project-panel-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--primary5);
+  border-radius: 11px;
+  pointer-events: none;
+}
+
 /* 
 * Navigation Bar
 */
@@ -332,39 +365,6 @@ header {
   height: 1px;
   width: 100%;
   background: var(--gradient-secondary-primary);
-}
-
-.home-project-border {
-  display: flex;
-  position: relative;
-  background: var(--bg);
-  border-radius: 11px;
-  margin: 0 2.5rem;
-  gap: 1rem;
-}
-
-.home-project-border::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  right: -1px;
-  bottom: -1px;
-  background: var(--gradient-primary-accent);
-  z-index: -1;
-  border-radius: 12px;
-}
-
-.home-project-border::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--primary5);
-  border-radius: 11px;
-  pointer-events: none;
 }
 
 .home-project-content {
@@ -831,39 +831,6 @@ footer {
   flex-direction: column;
   padding: 10rem 12.5rem;
   gap: 6.25rem;
-}
-
-.projects-panel-border {
-  display: flex;
-  position: relative;
-  background: var(--bg);
-  border-radius: 11px;
-  margin: 0 2rem;
-  gap: 1rem;
-}
-
-.projects-panel-border::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  right: -1px;
-  bottom: -1px;
-  background: var(--gradient-primary-accent);
-  z-index: -1;
-  border-radius: 12px;
-}
-
-.projects-panel-border::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--primary5);
-  border-radius: 11px;
-  pointer-events: none;
 }
 
 .projects-panel-content {
