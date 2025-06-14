@@ -124,14 +124,6 @@ a {
   padding-bottom: 0.5rem;
 }
 
-.project-panel-underline--primary {
-  border-bottom: 1px solid var(--primary);
-}
-
-.project-panel-underline--secondary {
-  border-bottom: 1px solid var(--secondary);
-}
-
 .project-panel-img--shadow {
   position: relative;
   display: inline-block;
@@ -301,6 +293,50 @@ a {
   background-color: var(--accent);
 }
 
+.underline--gradient-secondary-primary {
+  height: 1px;
+  background: var(--gradient-secondary-primary);
+}
+
+.underline--gradient-secondary-accent {
+  height: 1px;
+  background: var(--gradient-secondary-accent);
+}
+
+.underline--gradient-accent-primary {
+  height: 1px;
+  background-image: var(--gradient-accent-primary);
+}
+
+.underline--gradient-accent-secondary {
+  height: 1px;
+  background-image: var(--gradient-accent-secondary);
+}
+
+.border-underline--primary {
+  border-bottom: 1px solid var(--primary);
+}
+
+.border-underline--secondary {
+  border-bottom: 1px solid var(--secondary);
+}
+
+.border-underline--secondary85 {
+  border-bottom: 1px solid var(--secondary85);
+}
+
+.border-underline--accent {
+  border-bottom: 1px solid var(--accent);
+}
+
+.border-underline--accent65 {
+  border-bottom: 1px solid var(--accent65);
+}
+
+.border-underline--accent85 {
+  border-bottom: 1px solid var(--accent85);
+}
+
 /* 
 * Navigation Bar
 */
@@ -426,12 +462,6 @@ header {
   gap: 2.5rem;
 }
 
-.home-project-title-underline {
-  height: 1px;
-  width: 100%;
-  background: var(--gradient-secondary-primary);
-}
-
 /*
 * Tags
 */
@@ -468,12 +498,6 @@ header {
   align-items: start;
   padding: 6.25rem 10rem;
   gap: 2.5rem;
-}
-
-.home-showcase-title-underline {
-  height: 1px;
-  width: 100%;
-  background: var(--gradient-secondary-accent);
 }
 
 .home-showcase-container {
@@ -582,11 +606,6 @@ header {
   padding: 1rem;
 }
 
-.home-showcase-panel-underline {
-  border-bottom: 1px solid var(--secondary);
-  padding-bottom: 0.25rem;
-}
-
 .home-showcase-button-container {
   align-self: flex-end;
   padding: 0 2.5rem;
@@ -619,13 +638,6 @@ header {
   align-items: start;
   padding: 6.25rem 10rem;
   gap: 2.5rem;
-}
-
-.home-about-title-underline {
-  margin: 0;
-  border: 0;
-  height: 1px;
-  background-image: var(--gradient-accent-primary);
 }
 
 .home-about-container {
@@ -689,13 +701,6 @@ header {
   align-items: start;
   padding: 6.25rem 10rem 10rem;
   gap: 2.5rem;
-}
-
-.home-contact-title-underline {
-  margin: 0;
-  border: 0;
-  height: 1px;
-  background-image: var(--gradient-accent-secondary);
 }
 
 .home-contact-container {
@@ -771,7 +776,6 @@ footer {
 
 .footer-top-link {
   padding: 0 0.25rem;
-  border-bottom: 1px solid var(--accent65);
 }
 
 .footer-top-link:hover {
@@ -825,11 +829,6 @@ footer {
 .footer-resume-link {
   font-weight: var(--semi-bold);
   padding: 0 0.25rem 0.125rem;
-  border-bottom: 1px solid var(--accent65);
-}
-
-.footer-resume-link:hover {
-  transform: scale(1.05);
 }
 
 /*
@@ -869,7 +868,7 @@ footer {
 .blog-title-bar {
   display: flex;
   flex-direction: column;
-  padding: 1.75rem 2.5rem 1rem;
+  padding: 1.75rem 0rem 1rem;
 }
 
 .blog-title {
@@ -887,16 +886,10 @@ footer {
   margin: 0;
 }
 
-.blog-title-underline {
-  margin: 0 2.5rem;
-  height: 1px;
-  background-image: var(--gradient-accent-secondary);
-}
-
 .blog-updated-caption {
   font-family: var(--rubik);
   font-size: 0.813rem;
-  padding: 0.75rem 2.5rem;
+  padding: 0.75rem 0rem;
 }
 
 /*
@@ -909,7 +902,7 @@ footer {
 }
 
 .blog-article-content {
-  padding-left: 2.5rem;
+  padding-left: 1.25rem;
   display: flex;
   flex-direction: column;
 }
@@ -953,17 +946,12 @@ footer {
 }
 
 .blog-table-of-contents-title {
+  padding-right: 0.25rem;
   margin: 0;
   font-family: var(--rubik);
   font-weight: var(--semi-bold);
   font-size: 1.2rem;
   white-space: nowrap;
-}
-
-.blog-info-underline {
-  height: 1px;
-  background-color: var(--accent);
-  margin-right: -0.25rem;
 }
 
 .blog-table-of-contents-chapters {
@@ -998,6 +986,7 @@ footer {
 }
 
 .blog-more-info-title {
+  padding-right: 0.25rem;
   margin: 0;
   font-family: var(--rubik);
   font-weight: var(--semi-bold);
@@ -1198,7 +1187,6 @@ footer {
   font-size: 1.44rem;
   margin: 0;
   padding: 0 0.25rem 0.25rem;
-  border-bottom: 1px solid var(--accent85);
   width: fit-content;
 }
 
@@ -1340,7 +1328,6 @@ footer {
   font-size: 1.44rem;
   margin: 0;
   padding: 0 0.25rem 0.25rem;
-  border-bottom: 1px solid var(--secondary85);
   width: fit-content;
 }
 
