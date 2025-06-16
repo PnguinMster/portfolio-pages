@@ -337,6 +337,14 @@ a {
   border-bottom: 1px solid var(--accent85);
 }
 
+.secondary-page-hero {
+  display: flex;
+  flex-direction: column;
+  padding: 6.25rem 12.5rem;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
 /* 
 * Navigation Bar
 */
@@ -835,14 +843,6 @@ footer {
 * Projects Hero
 */
 
-.projects-hero {
-  display: flex;
-  flex-direction: column;
-  padding: 6.25rem 12.5rem;
-  align-items: flex-start;
-  gap: 0.5rem;
-}
-
 /*
 * Projects Projects
 */
@@ -1017,14 +1017,6 @@ footer {
 /*
 * About Me Hero
 */
-
-.about-hero {
-  display: flex;
-  flex-direction: column;
-  padding: 6.25rem 12.5rem;
-  align-items: flex-start;
-  gap: 0.5rem;
-}
 
 /*
 * About Me Bio
@@ -1207,7 +1199,6 @@ footer {
 .about-skills-skill-bar--border {
   background-color: var(--primary16);
   border-radius: 4px;
-  /*width: 500px;*/
   height: 1.75rem;
 }
 
@@ -1254,14 +1245,6 @@ footer {
 /*
 * Contact Me Hero
 */
-
-.contact-hero {
-  display: flex;
-  flex-direction: column;
-  padding: 6.25rem 12.5rem;
-  align-items: flex-start;
-  gap: 0.5rem;
-}
 
 /*
 * Contact
