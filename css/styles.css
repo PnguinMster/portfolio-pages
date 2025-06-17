@@ -33,8 +33,8 @@
   );
   --medium: 500;
   --semi-bold: 600;
-  --poppins: "Poppins", "Helvetica Neue", sans-serif;
-  --rubik: "Rubik", Roboto, sans-serif;
+  --poppins: Poppins, Helvetica Neue, sans-serif;
+  --rubik: Rubik, Roboto, sans-serif;
 }
 
 html {
@@ -389,23 +389,9 @@ a {
   background-color: var(--secondary5);
 }
 
-/* Button */
-
-.home-about-download-button {
-  background-color: var(--primary);
-  color: var(--bg);
-}
-
-.home-about-download-button:hover {
-  background-color: var(--primary85);
-}
-
-.home-about-read-button {
-  background-color: var(--primary45);
-}
-
-.home-about-read-button:hover {
-  background-color: var(--primary30);
+.home-showcase-button-container {
+  align-self: flex-end;
+  padding: 0 2.5rem;
 }
 
 .home-about-buttons-container {
@@ -414,18 +400,8 @@ a {
   gap: 1rem;
 }
 
-.home-showcase-button-container {
-  align-self: flex-end;
-  padding: 0 2.5rem;
-}
-
 .home-contact-button-container {
   align-self: flex-end;
-  gap: 1rem;
-}
-
-.about-bio-button-container {
-  align-self: flex-start;
 }
 
 .button-link {
@@ -435,82 +411,33 @@ a {
   border-radius: 8px;
   font-family: var(--poppins);
   font-size: 1rem;
-  color: var(--bg);
   cursor: pointer;
 }
 
-.button-link--primary {
+.button-color--primary {
   background-color: var(--primary);
+  color: var(--bg);
 }
 
-.button-link--primary:hover {
+.button-color--primary:hover {
   background-color: var(--primary85);
 }
 
-.button-link--secondary {
+.button-color--primary45 {
+  background-color: var(--primary45);
+}
+
+.button-color--primary45:hover {
+  background-color: var(--primary30);
+}
+
+.button-color--secondary {
   background-color: var(--secondary);
-}
-
-.button-link--secondary:hover {
-  background-color: var(--secondary85);
-}
-
-.home-about-button-link {
-  display: inline-block;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 8px;
-  font-family: var(--poppins);
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.home-showcase-button {
-  display: inline-block;
-  background-color: var(--secondary);
-  padding: 0.5rem;
-  border: none;
-  border-radius: 8px;
-  font-family: var(--poppins);
-  font-size: 1rem;
   color: var(--bg);
-  cursor: pointer;
 }
 
-.home-showcase-button:hover {
+.button-color--secondary:hover {
   background-color: var(--secondary85);
-}
-
-.home-contact-button {
-  display: inline-block;
-  background-color: var(--secondary);
-  padding: 0.5rem;
-  border: none;
-  border-radius: 8px;
-  font-family: var(--poppins);
-  font-size: 1rem;
-  color: var(--bg);
-  cursor: pointer;
-}
-
-.home-contact-button:hover {
-  background-color: var(--secondary85);
-}
-
-.about-bio-resume-button {
-  display: inline-block;
-  background-color: var(--primary);
-  padding: 0.5rem;
-  border: none;
-  border-radius: 8px;
-  font-family: var(--poppins);
-  font-size: 1rem;
-  color: var(--bg);
-  cursor: pointer;
-}
-
-.about-bio-resume-button:hover {
-  background-color: var(--primary85);
 }
 
 /* 
