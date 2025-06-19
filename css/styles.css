@@ -68,6 +68,11 @@ a {
   margin: 0;
 }
 
+.small-text {
+  font-family: var(--poppins);
+  font-size: 0.813rem;
+}
+
 .hero-text-main {
   background: var(--gradient-primary-secondary);
   background-clip: text;
@@ -565,9 +570,6 @@ header {
 
 .tag-content {
   width: fit-content;
-  font-family: var(--poppins);
-  font-weight: normal;
-  font-size: 0.813rem;
   border-radius: 8px;
   padding: 0.25rem 0.75rem;
 }
@@ -679,12 +681,6 @@ footer {
   align-items: center;
   padding: 6.25rem 8rem;
   gap: 1rem;
-}
-
-.footer-content small,
-.footer-content a {
-  font-family: var(--poppins);
-  font-size: 0.813rem;
 }
 
 .footer-row-top,
@@ -863,12 +859,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-}
-
-.blog-table-of-contents-chapter {
-  font-family: var(--poppins);
-  font-weight: normal;
-  font-size: 0.813rem;
 }
 
 .blog-table-of-contents-chapter:hover {
@@ -1056,12 +1046,6 @@ footer {
   font-weight: var(--medium);
   font-size: 1.2rem;
   margin: 0;
-}
-
-.about-skills-caption {
-  font-family: var(--poppins);
-  font-weight: normal;
-  font-size: 0.813rem;
 }
 
 /*
