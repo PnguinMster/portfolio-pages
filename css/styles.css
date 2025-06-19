@@ -847,15 +847,10 @@ footer {
   gap: 0.5rem;
 }
 
-.blog-table-of-contents-title-bar {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  width: fit-content;
-}
-
 .blog-table-of-contents-title {
+  width: fit-content;
   padding-right: 0.25rem;
+  padding-bottom: 0.25rem;
   margin: 0;
   font-family: var(--rubik);
   font-weight: var(--semi-bold);
@@ -887,15 +882,10 @@ footer {
   gap: 1rem;
 }
 
-.blog-more-info-title-bar {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  width: fit-content;
-}
-
 .blog-more-info-title {
+  width: fit-content;
   padding-right: 0.25rem;
+  padding-bottom: 0.25rem;
   margin: 0;
   font-family: var(--rubik);
   font-weight: var(--semi-bold);
@@ -922,10 +912,6 @@ footer {
 .blog-more-info-img {
   height: 3.75rem;
 }
-
-/*
-* About Me Hero
-*/
 
 /*
 * About Me Bio
