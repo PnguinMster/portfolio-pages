@@ -952,19 +952,14 @@ footer {
   padding: 3.75rem 2.5rem;
 }
 
-.about-stats-started-container {
+.about-stats-edge-container {
   background-color: var(--secondary);
   flex: 1;
 }
 
-.about-stats-progress-container {
+.about-stats-middle-container {
   background-color: var(--primary);
   flex: 2;
-}
-
-.about-stats-finished-container {
-  background-color: var(--secondary);
-  flex: 1;
 }
 
 .about-stats-texts {
