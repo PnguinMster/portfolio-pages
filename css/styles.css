@@ -31,8 +31,10 @@
     hsla(160.11, 75.73%, 53.14%, 2%),
     hsla(160.11, 75.73%, 53.14%, 6%)
   );
+  --normal: 400;
   --medium: 500;
   --semi-bold: 600;
+  --bold: 700;
   --poppins: Poppins, Helvetica Neue, sans-serif;
   --rubik: Rubik, Roboto, sans-serif;
 }
@@ -63,7 +65,7 @@ a {
 
 .body-text {
   font-family: var(--poppins);
-  font-weight: normal;
+  font-weight: var(--normal);
   font-size: 1rem;
   margin: 0;
 }
@@ -84,12 +86,12 @@ a {
 
 .home-hero-text--font {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: var(--bold);
 }
 
 .other-hero-text--font {
   font-size: 2.063rem;
-  font-weight: normal;
+  font-weight: var(--normal);
 }
 
 .hero-text-secondary {
@@ -104,12 +106,12 @@ a {
   margin: 0;
   font-size: 1.44rem;
   font-family: var(--poppins);
-  font-weight: normal;
+  font-weight: var(--normal);
 }
 
 .home-title {
   font-family: var(--rubik);
-  font-weight: bold;
+  font-weight: var(--bold);
   font-size: 2.063rem;
   margin: 0;
 }
@@ -487,7 +489,7 @@ header {
   align-items: center;
   font-size: 1.44rem;
   font-family: var(--rubik);
-  font-weight: bold;
+  font-weight: var(--bold);
 }
 
 .header-logo:hover {
@@ -712,7 +714,7 @@ footer {
 .footer-nav-item {
   display: flex;
   align-items: center;
-  font-weight: bold;
+  font-weight: var(--bold);
 }
 
 .footer-nav-item:not(:last-child)::after {
@@ -782,7 +784,7 @@ footer {
 .blog-title {
   font-size: 2.063rem;
   font-family: var(--rubik);
-  font-weight: normal;
+  font-weight: var(--normal);
   color: var(--accent);
   margin: 0;
 }
@@ -790,7 +792,7 @@ footer {
 .blog-subheading {
   font-size: 1.2rem;
   font-family: var(--rubik);
-  font-weight: normal;
+  font-weight: var(--normal);
   margin: 0;
 }
 
@@ -817,7 +819,7 @@ footer {
 
 .blog-article-content p {
   font-family: var(--poppins);
-  font-weight: normal;
+  font-weight: var(--normal);
   font-size: 1rem;
 }
 
@@ -989,7 +991,7 @@ footer {
 
 .about-skills-title {
   font-family: var(--rubik);
-  font-weight: bold;
+  font-weight: var(--bold);
   font-size: 1.44rem;
   margin: 0;
   padding: 0 0.25rem 0.25rem;
@@ -1059,7 +1061,7 @@ footer {
 
 .contact-info-title {
   font-family: var(--rubik);
-  font-weight: bold;
+  font-weight: var(--bold);
   font-size: 1.44rem;
   margin: 0;
   padding: 0 0.25rem 0.25rem;
@@ -1113,7 +1115,7 @@ footer {
 
 .contact-info-link-name {
   font-family: var(--rubik);
-  font-weight: normal;
+  font-weight: var(--normal);
   font-size: 1rem;
   margin: 0;
 }
