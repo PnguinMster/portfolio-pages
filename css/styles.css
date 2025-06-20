@@ -394,6 +394,17 @@ a {
 .button-color--primary {
   background-color: var(--primary);
   color: var(--bg);
+  transition: background-color 0.2s;
+}
+
+.button-color--secondary {
+  background-color: var(--secondary);
+  color: var(--bg);
+  transition: background-color 0.2s;
+}
+
+.button-color--secondary:hover {
+  background-color: var(--secondary85);
 }
 
 .button-color--primary:hover {
@@ -402,19 +413,11 @@ a {
 
 .button-color--primary45 {
   background-color: var(--primary45);
+  transition: background-color 0.2s;
 }
 
 .button-color--primary45:hover {
   background-color: var(--primary30);
-}
-
-.button-color--secondary {
-  background-color: var(--secondary);
-  color: var(--bg);
-}
-
-.button-color--secondary:hover {
-  background-color: var(--secondary85);
 }
 
 .panel-img-link-icon {
