@@ -471,10 +471,6 @@ a {
   pointer-events: none;
 }
 
-/* 
-* Navigation Bar
-*/
-
 header {
   display: flex;
   align-items: center;
@@ -531,10 +527,6 @@ header {
   border-bottom: 1px solid var(--primary85);
 }
 
-/*
-* Home Hero
-*/
-
 .home-hero {
   display: flex;
   justify-content: space-around;
@@ -550,10 +542,6 @@ header {
   padding: 1.75rem 2.5rem;
 }
 
-/*
-* Home Behind the Scenes
-*/
-
 .home-project {
   display: flex;
   justify-content: space-between;
@@ -562,10 +550,6 @@ header {
   padding: 15rem 10rem 6.25rem;
   gap: 2.5rem;
 }
-
-/*
-* Tags
-*/
 
 .tag-container {
   display: flex;
@@ -585,10 +569,6 @@ header {
 .tag-color-css {
   background-color: var(--css-tag);
 }
-
-/*
-* Projects Home
-*/
 
 .home-showcase {
   display: flex;
@@ -611,10 +591,6 @@ header {
   gap: 1rem;
   padding: 1rem;
 }
-
-/*
-* About Home
-*/
 
 .home-about {
   display: flex;
@@ -641,10 +617,6 @@ header {
   margin: 0;
 }
 
-/*
-* Contact Me Home
-*/
-
 .home-contact {
   display: flex;
   justify-content: space-between;
@@ -669,10 +641,6 @@ header {
   border-radius: 26px;
   margin: 0;
 }
-
-/*
-*  Footer 
-*/
 
 footer {
   background-color: var(--bg-secondary);
@@ -753,20 +721,12 @@ footer {
   padding: 0 0.25rem 0.125rem;
 }
 
-/*
-* Projects Projects
-*/
-
 .projects-panels {
   display: flex;
   flex-direction: column;
   padding: 10rem 12.5rem;
   gap: 6.25rem;
 }
-
-/*
-* Project Blog
-*/
 
 .blog-title-container {
   display: flex;
@@ -801,10 +761,6 @@ footer {
   font-size: 0.813rem;
   padding: 0.75rem 0rem;
 }
-
-/*
-* Project Blog Article
-*/
 
 .blog-article {
   display: flex;
@@ -889,10 +845,6 @@ footer {
   height: 3.75rem;
 }
 
-/*
-* About Me Bio
-*/
-
 .about-bio-container {
   display: flex;
   flex-direction: row;
@@ -924,10 +876,6 @@ footer {
   margin: 0;
   border-radius: 8px;
 }
-
-/*
-* About Me Stats
-*/
 
 .about-stats {
   display: flex;
@@ -971,10 +919,6 @@ footer {
 .about-stats-text {
   font-size: 1.44rem;
 }
-
-/*
-* About Me Skills
-*/
 
 .about-skills {
   display: flex;
@@ -1037,20 +981,12 @@ footer {
   width: 30%;
 }
 
-/*
-* Contact
-*/
-
 .contact-container {
   display: flex;
   padding: 6.25rem 12.75rem;
   gap: 3.75rem;
   justify-content: space-around;
 }
-
-/*
-* Contact Info
-*/
 
 .contact-info-container {
   display: flex;
