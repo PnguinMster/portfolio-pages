@@ -323,11 +323,11 @@ a {
   gap: 0.5rem;
 }
 
-#hero-play-toggle:checked + label .hero-static {
+.hero-play-toggle:checked + label .hero-static {
   display: none;
 }
 
-#hero-play-toggle:checked + label .hero-animation {
+.hero-play-toggle:checked + label .hero-animation {
   display: inline-block;
 }
 
