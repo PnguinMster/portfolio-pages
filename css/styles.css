@@ -232,11 +232,15 @@ a {
   gap: 0.75rem;
 }
 
-.project-panel-subheading {
+.subheading--medium-rubik {
   font-family: var(--rubik);
   font-weight: var(--medium);
   font-size: 1.2rem;
   margin: 0;
+}
+
+.about-skills-skill-percent {
+  color: var(--accent);
 }
 
 .hr-seperator {
@@ -382,8 +386,6 @@ a {
   padding: 0.5rem;
   border: none;
   border-radius: 8px;
-  font-family: var(--poppins);
-  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -1001,13 +1003,6 @@ footer {
   align-items: center;
 }
 
-.about-skills-skill-name {
-  font-family: var(--rubik);
-  font-weight: var(--medium);
-  font-size: 1.2rem;
-  margin: 0;
-}
-
 .about-skills-skill-bar--border {
   background-color: var(--primary16);
   border-radius: 4px;
@@ -1038,14 +1033,6 @@ footer {
 
 .about-skills-skill-bar--30 {
   width: 30%;
-}
-
-.about-skills-skill-percent {
-  color: var(--accent);
-  font-family: var(--rubik);
-  font-weight: var(--medium);
-  font-size: 1.2rem;
-  margin: 0;
 }
 
 /*
@@ -1122,13 +1109,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-}
-
-.contact-info-link-title {
-  font-family: var(--rubik);
-  font-weight: var(--semi-bold);
-  font-size: 1.2rem;
-  margin: 0;
 }
 
 .contact-info-link-name {
