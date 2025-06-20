@@ -341,7 +341,7 @@ a {
 }
 
 .hero-img {
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px 8px 0 0;
   vertical-align: top;
   object-fit: contain;
   width: auto;
@@ -352,7 +352,7 @@ a {
 
 .hero-img-border--primary {
   border: 1px solid var(--primary);
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 
 .hero-img-border--primary:hover {
