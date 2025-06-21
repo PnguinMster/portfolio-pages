@@ -7,6 +7,8 @@
   --accent: #ff8c42;
   --html-tag: #e34c26;
   --css-tag: #663399;
+  --primary-rgb: rgb(79, 193, 255);
+  --secondary-rgb: rgb(45, 226, 166);
   --primary5: hsla(201.14, 100%, 65.49%, 5%);
   --primary16: hsla(201.14, 100%, 65.49%, 16%);
   --primary30: hsla(201.14, 100%, 65.49%, 30%);
@@ -348,24 +350,20 @@ a {
   height: auto;
   max-height: 100%;
   max-width: 100%;
-}
 
-.hero-img-border--primary {
-  border: 1px solid var(--primary);
+  border: 1px solid;
   border-bottom: 0;
+  border-color: var(--primary);
 }
 
-.hero-img-border--primary:hover {
-  background-color: var(--primary5);
+.hero-img:hover {
+  background-color: rgba(from var(--hero-hover-color, var(--primary)) r g b / 0.05);
 }
 
 .hero-img-border--secondary {
-  border: 1px solid var(--secondary);
-  border-bottom-width: 2px;
-}
-
-.hero-img-border--secondary:hover {
-  background-color: var(--secondary5);
+  border-bottom: 2px solid var(--secondary);
+  border-color: var(--secondary);
+  --hero-hover-color: var(--secondary);
 }
 
 .home-showcase-button-container {
