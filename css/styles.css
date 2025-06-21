@@ -1044,6 +1044,10 @@ footer {
   height: 3.75rem;
 }
 
+.contact-info-link-title {
+  font-weight: var(--semi-bold);
+}
+
 .contact-info-link-texts {
   display: flex;
   flex-direction: column;
