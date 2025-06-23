@@ -357,13 +357,13 @@ a {
 }
 
 .hero-img:hover {
-  background-color: rgba(from var(--hero-hover-color, var(--primary)) r g b / 0.05);
+  background-color: var(--hero-hover-color, var(--primary5));
 }
 
 .hero-img-border--secondary {
   border-bottom: 2px solid var(--secondary);
   border-color: var(--secondary);
-  --hero-hover-color: var(--secondary);
+  --hero-hover-color: var(--secondary5);
 }
 
 .home-showcase-button-container {
@@ -387,35 +387,25 @@ a {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-}
 
-.button-color--primary {
-  background-color: var(--primary);
-  color: var(--bg);
+  background-color: var(--button-color, var(--primary));
+  color: var(--button-text-color, var(--bg));
   transition: background-color 0.2s;
 }
 
-.button-color--secondary {
-  background-color: var(--secondary);
-  color: var(--bg);
-  transition: background-color 0.2s;
+.button-link:hover {
+  background-color: var(--button-hover-color, var(--primary85));
 }
 
-.button-color--secondary:hover {
-  background-color: var(--secondary85);
+.button-link--secondary {
+  --button-color: var(--secondary);
+  --button-hover-color: var(--secondary85);
 }
 
-.button-color--primary:hover {
-  background-color: var(--primary85);
-}
-
-.button-color--primary45 {
-  background-color: var(--primary45);
-  transition: background-color 0.2s;
-}
-
-.button-color--primary45:hover {
-  background-color: var(--primary30);
+.button-link--primary45 {
+  --button-color: var(--primary45);
+  --button-hover-color: var(--primary30);
+  --button-text-color: var(--text);
 }
 
 .panel-img-link-icon {
