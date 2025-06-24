@@ -476,7 +476,7 @@ header {
   font-weight: var(--bold);
 }
 
-.header-logo:hover {
+.hover-scale1_05:hover {
   transform: scale(1.05);
 }
 
@@ -656,10 +656,6 @@ footer {
   padding: 0 0.25rem;
 }
 
-.footer-top-link:hover {
-  transform: scale(1.05);
-}
-
 .footer-nav {
   display: flex;
   list-style: none;
@@ -680,10 +676,6 @@ footer {
   color: var(--accent85);
 }
 
-.footer-nav-link:hover {
-  transform: scale(1.05);
-}
-
 .footer-connect-links {
   display: flex;
   margin: 0;
@@ -693,10 +685,6 @@ footer {
 .footer-connect-item {
   display: inline-block;
   text-decoration: none;
-}
-
-.footer-connect-item:hover {
-  transform: scale(1.05);
 }
 
 .footer-connect-img {
