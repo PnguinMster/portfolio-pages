@@ -361,14 +361,14 @@ a {
   border-color: var(--primary);
 }
 
-.hero-img:hover {
-  background-color: var(--hero-hover-color, var(--primary5));
+.background-hover-color:hover {
+  background-color: var(--hover-color, var(--primary5));
 }
 
 .hero-img-border--secondary {
   border-bottom: 2px solid var(--secondary);
   border-color: var(--secondary);
-  --hero-hover-color: var(--secondary5);
+  --hover-color: var(--secondary5);
 }
 
 .home-showcase-button-container {
@@ -398,13 +398,13 @@ a {
   transition: background-color 0.2s;
 }
 
-.button-link:hover {
-  background-color: var(--button-hover-color, var(--primary85));
+.button-link--primary {
+  --hover-color: var(--primary85);
 }
 
 .button-link--secondary {
   background-color: var(--secondary);
-  --button-hover-color: var(--secondary85);
+  --hover-color: var(--secondary85);
 }
 
 .button-link--primary45 {
