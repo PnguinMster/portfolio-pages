@@ -388,8 +388,8 @@ a {
   border-radius: 8px;
   cursor: pointer;
 
-  background-color: var(--button-color, var(--primary));
-  color: var(--button-text-color, var(--bg));
+  background-color: var(--primary);
+  color: var(--bg);
   transition: background-color 0.2s;
 }
 
@@ -398,14 +398,14 @@ a {
 }
 
 .button-link--secondary {
-  --button-color: var(--secondary);
+  background-color: var(--secondary);
   --button-hover-color: var(--secondary85);
 }
 
 .button-link--primary45 {
-  --button-color: var(--primary45);
+  background-color: var(--primary45);
+  color: var(--text);
   --button-hover-color: var(--primary30);
-  --button-text-color: var(--text);
 }
 
 .panel-img-link-icon {
