@@ -179,6 +179,7 @@ a {
   bottom: -1px;
   z-index: -1;
   border-radius: inherit;
+  background: var(--panel-border--before, var(--gradient-primary-accent));
 }
 
 .project-panel-border::after {
@@ -190,35 +191,19 @@ a {
   bottom: 0;
   border-radius: inherit;
   pointer-events: none;
+  background: var(--panel-border--after, var(--primary5));
 }
 
-.project-panel-border--small {
+.project-panel-color--vertical {
   margin: 0;
   flex-direction: column;
+  --panel-border--before: var(--gradient-accent-secondary-vertical);
+  --panel-border--after: var(--secondary5);
 }
 
-.project-panel-border--small::before {
-  background: var(--gradient-accent-secondary-vertical);
-}
-
-.project-panel-border--small::after {
-  background: var(--secondary5);
-}
-
-.panel-border-color--primary::before {
-  background: var(--gradient-primary-accent);
-}
-
-.panel-border-color--primary::after {
-  background: var(--primary5);
-}
-
-.panel-border-color--secondary::before {
-  background: var(--gradient-accent-secondary);
-}
-
-.panel-border-color--secondary::after {
-  background: var(--secondary4);
+.project-panel-color--secondary {
+  --panel-border--before: var(--gradient-accent-secondary);
+  --panel-border--after: var(--secondary5);
 }
 
 .project-panel-texts {
