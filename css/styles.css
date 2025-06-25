@@ -652,6 +652,7 @@ footer {
   list-style: none;
   align-items: center;
   margin: 0;
+  gap: 0.75rem;
 }
 
 .footer-nav-item {
@@ -660,10 +661,7 @@ footer {
   font-weight: var(--bold);
 }
 
-.footer-nav-item:not(:last-child)::after {
-  content: "•";
-  margin-left: 1rem;
-  padding-right: 1rem;
+.footer-nav-seperator {
   color: var(--accent85);
 }
 
