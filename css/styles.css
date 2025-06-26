@@ -139,6 +139,7 @@ a {
   font-size: 1.44rem;
   margin: 0;
   padding-bottom: 0.5rem;
+  border-bottom: 1px solid;
 }
 
 .project-panel-img {
@@ -286,28 +287,32 @@ a {
   background-image: var(--gradient-accent-secondary);
 }
 
+.border-underline {
+  border-bottom: 1px solid;
+}
+
 .border-underline--primary {
-  border-bottom: 1px solid var(--primary);
+  border-color: var(--primary);
 }
 
 .border-underline--secondary {
-  border-bottom: 1px solid var(--secondary);
+  border-color: var(--secondary);
 }
 
 .border-underline--secondary85 {
-  border-bottom: 1px solid var(--secondary85);
+  border-color: var(--secondary85);
 }
 
 .border-underline--accent {
-  border-bottom: 1px solid var(--accent);
+  border-color: var(--accent);
 }
 
 .border-underline--accent65 {
-  border-bottom: 1px solid var(--accent65);
+  border-color: var(--accent65);
 }
 
 .border-underline--accent85 {
-  border-bottom: 1px solid var(--accent85);
+  border-color: var(--accent85);
 }
 
 .secondary-page-hero {
