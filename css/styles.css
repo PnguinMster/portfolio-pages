@@ -44,6 +44,12 @@
   --primary-height-px: 1px;
   --border-radius-px4: 4px;
   --border-radius-px8: 8px;
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.063rem;
+  --font-size-h3: 1.44rem;
+  --font-size-h4: 1.2rem;
+  --font-size-body: 1rem;
+  --font-size-caption: 0.813rem;
 }
 
 html {
@@ -72,13 +78,13 @@ a {
 .body-text {
   font-family: var(--poppins);
   font-weight: var(--normal);
-  font-size: 1rem;
+  font-size: var(--font-size-body);
   margin: 0;
 }
 
 .small-text {
   font-family: var(--poppins);
-  font-size: 0.813rem;
+  font-size: var(--font-size-caption);
 }
 
 .hero-text-main {
@@ -91,26 +97,26 @@ a {
 }
 
 .home-hero-text--font {
-  font-size: 3rem;
+  font-size: var(--font-size-h1);
   font-weight: var(--bold);
 }
 
 .other-hero-text--font {
-  font-size: 2.063rem;
+  font-size: var(--font-size-h2);
   font-weight: var(--normal);
 }
 
 .hero-text-secondary {
   color: var(--text);
   margin: 0;
-  font-size: 3rem;
+  font-size: var(--font-size-h1);
   font-family: var(--rubik);
   font-weight: var(--semi-bold);
 }
 
 .home-hero-text-secondary {
   margin: 0;
-  font-size: 1.44rem;
+  font-size: var(--font-size-h3);
   font-family: var(--poppins);
   font-weight: var(--normal);
 }
@@ -118,7 +124,7 @@ a {
 .home-title {
   font-family: var(--rubik);
   font-weight: var(--bold);
-  font-size: 2.063rem;
+  font-size: var(--font-size-h2);
   margin: 0;
 }
 
@@ -137,7 +143,7 @@ a {
 .project-panel-title {
   font-family: var(--rubik);
   font-weight: var(--medium);
-  font-size: 1.44rem;
+  font-size: var(--font-size-h3);
   margin: 0;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid;
@@ -221,7 +227,7 @@ a {
 .subheading--medium-rubik {
   font-family: var(--rubik);
   font-weight: var(--medium);
-  font-size: 1.2rem;
+  font-size: var(--font-size-h4);
   margin: 0;
 }
 
@@ -449,7 +455,7 @@ header {
   padding: 0.75rem;
   gap: 0.5rem;
   align-items: center;
-  font-size: 1.44rem;
+  font-size: var(--font-size-h3);
   font-family: var(--rubik);
   font-weight: var(--bold);
 }
@@ -474,7 +480,7 @@ header {
   display: inline-block;
   text-decoration: none;
   font-family: var(--rubik);
-  font-size: 1.2rem;
+  font-size: var(--font-size-h4);
 }
 
 .header-link {
@@ -700,7 +706,7 @@ footer {
 }
 
 .blog-title {
-  font-size: 2.063rem;
+  font-size: var(--font-size-h2);
   font-family: var(--rubik);
   font-weight: var(--normal);
   color: var(--accent);
@@ -708,7 +714,7 @@ footer {
 }
 
 .blog-subheading {
-  font-size: 1.2rem;
+  font-size: var(--font-size-h4);
   font-family: var(--rubik);
   font-weight: var(--normal);
   margin: 0;
@@ -716,7 +722,7 @@ footer {
 
 .blog-updated-caption {
   font-family: var(--rubik);
-  font-size: 0.813rem;
+  font-size: var(--font-size-caption);
   padding: 0.75rem 0rem;
 }
 
@@ -734,7 +740,7 @@ footer {
 .blog-article-content p {
   font-family: var(--poppins);
   font-weight: var(--normal);
-  font-size: 1rem;
+  font-size: var(--font-size-body);
 }
 
 .blog-article-content img {
@@ -769,7 +775,7 @@ footer {
   margin: 0;
   font-family: var(--rubik);
   font-weight: var(--semi-bold);
-  font-size: 1.2rem;
+  font-size: var(--font-size-h4);
   white-space: nowrap;
 }
 
@@ -817,7 +823,7 @@ footer {
 .about-bio-subheading {
   font-family: var(--rubik);
   font-weight: var(--semi-bold);
-  font-size: 1.44rem;
+  font-size: var(--font-size-h3);
   margin: 0;
 }
 
@@ -871,11 +877,11 @@ footer {
 }
 
 .about-stats-number {
-  font-size: 2.063rem;
+  font-size: var(--font-size-h2);
 }
 
 .about-stats-text {
-  font-size: 1.44rem;
+  font-size: var(--font-size-h3);
 }
 
 .about-skills {
@@ -894,7 +900,7 @@ footer {
 .about-skills-title {
   font-family: var(--rubik);
   font-weight: var(--bold);
-  font-size: 1.44rem;
+  font-size: var(--font-size-h3);
   margin: 0;
   padding: 0 0.25rem 0.25rem;
   width: fit-content;
@@ -956,7 +962,7 @@ footer {
 .contact-info-title {
   font-family: var(--rubik);
   font-weight: var(--bold);
-  font-size: 1.44rem;
+  font-size: var(--font-size-h3);
   margin: 0;
   padding: 0 0.25rem 0.25rem;
   width: fit-content;
@@ -1015,6 +1021,6 @@ footer {
 .contact-info-link-name {
   font-family: var(--rubik);
   font-weight: var(--normal);
-  font-size: 1rem;
+  font-size: var(--font-size-body);
   margin: 0;
 }
