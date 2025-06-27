@@ -408,18 +408,18 @@ a {
   opacity: 0.8;
 }
 
-.panel-img--shadow-small {
-  transform: translateY(0);
-  aspect-ratio: 4/3;
-  border-radius: 12px 12px 4px 4px;
-  --panel-img-transform: translateY(-16px);
-}
-
 .panel-img--shadow:hover {
   border-radius: 4px;
   opacity: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   transform: var(--panel-img-transform, scale(1.01));
+}
+
+.panel-img--shadow-small {
+  transform: translateY(0);
+  aspect-ratio: 4/3;
+  border-radius: 12px 12px 4px 4px;
+  --panel-img-transform: translateY(-16px);
 }
 
 .panel-img--shadow:hover::after {
