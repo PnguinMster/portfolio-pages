@@ -130,7 +130,12 @@ a {
   display: var(--primary-display);
   flex-direction: column;
   width: var(--primary-width);
-  gap: 1rem;
+
+  padding-bottom: 1rem;
+  border-bottom: 1px solid transparent;
+  background:
+    linear-gradient(var(--bg), var(--bg)) padding-box,
+    var(--title-bar-gradient, var(--gradient-secondary-primary)) border-box;
 }
 
 .project-panel-title {
@@ -254,24 +259,16 @@ a {
   background-color: var(--accent);
 }
 
-.underline--gradient-secondary-primary {
-  height: var(--primary-height-px);
-  background: var(--gradient-secondary-primary);
+.underline--secondary-accent {
+  --title-bar-gradient: var(--gradient-secondary-accent);
 }
 
-.underline--gradient-secondary-accent {
-  height: var(--primary-height-px);
-  background: var(--gradient-secondary-accent);
+.underline--accent-primary {
+  --title-bar-gradient: var(--gradient-accent-primary);
 }
 
-.underline--gradient-accent-primary {
-  height: var(--primary-height-px);
-  background-image: var(--gradient-accent-primary);
-}
-
-.underline--gradient-accent-secondary {
-  height: var(--primary-height-px);
-  background-image: var(--gradient-accent-secondary);
+.underline--accent-secondary {
+  --title-bar-gradient: var(--gradient-accent-secondary);
 }
 
 .border-underline {
@@ -698,6 +695,12 @@ footer {
   display: var(--primary-display);
   flex-direction: column;
   padding: 1.75rem 0rem 1rem;
+
+  /* padding-bottom: 1rem; */
+  border-bottom: 1px solid transparent;
+  background:
+    linear-gradient(var(--bg), var(--bg)) padding-box,
+    var(--title-bar-gradient, var(--gradient-secondary-primary)) border-box;
 }
 
 .blog-title {
