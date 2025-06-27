@@ -24,7 +24,6 @@
   --gradient-accent-secondary: linear-gradient(to right, var(--accent), var(--secondary));
   --gradient-secondary-accent: linear-gradient(to right, var(--secondary), var(--accent));
   --gradient-primary-accent: linear-gradient(to right, var(--primary), var(--accent));
-  --gradient-accent-secondary: linear-gradient(to right, --accent, --secondary);
   --gradient-accent-secondary-vertical: linear-gradient(var(--accent), var(--secondary));
   --gradient-secondary-opacity: linear-gradient(
     to right,
