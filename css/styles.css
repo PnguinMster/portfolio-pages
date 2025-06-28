@@ -152,6 +152,7 @@ a {
   display: block;
   object-fit: cover;
   object-position: left;
+  align-items: center;
   width: var(--primary-width);
   height: var(--primary-height);
   transform: scale(1.1);
