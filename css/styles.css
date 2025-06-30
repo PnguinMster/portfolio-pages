@@ -132,7 +132,7 @@ a {
 }
 
 .home-title-bar {
-  width: (--primary-width);
+  width: var(--primary-width);
 
   padding-bottom: 1rem;
   border-bottom: 1px solid transparent;
