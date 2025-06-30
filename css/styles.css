@@ -53,6 +53,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: var(--primary-height);
   margin: 0;
 }
 
