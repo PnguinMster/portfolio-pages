@@ -74,6 +74,10 @@ a {
   color: var(--text);
 }
 
+.flex {
+  display: flex;
+}
+
 .body-text {
   font-family: var(--poppins);
   font-weight: var(--normal);
@@ -128,7 +132,6 @@ a {
 }
 
 .home-title-bar {
-  display: var(--primary-display);
   flex-direction: column;
   width: var(--primary-width);
 
