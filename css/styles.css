@@ -62,8 +62,6 @@ body {
   color: var(--text);
   margin: 0;
   height: var(--primary-height);
-  display: var(--primary-display);
-  flex-direction: column;
 }
 
 main {
@@ -77,6 +75,11 @@ a {
 
 .flex {
   display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .body-text {
@@ -175,7 +178,6 @@ a {
 }
 
 .project-panel-border {
-  display: var(--primary-display);
   background-color: var(--panel-border--color, var(--primary5));
   gap: 1rem;
   border-radius: inherit;
