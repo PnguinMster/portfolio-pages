@@ -15,12 +15,12 @@
 
   <body class="flex-column">
     <!-- Nav Bar -->
-    <header>
-      <a class="header-logo hover-scale1_05" href="../index.html">
+    <header class="flex">
+      <a class="flex header-logo hover-scale1_05" href="../index.html">
         <img class="header-logo-img" src="../images/Logos/pages_logo.svg" alt="logo" />Marco</a
       >
       <nav>
-        <ul class="header-links">
+        <ul class="flex header-links">
           <li class="header-item"><a class="header-link" href="../index.html">Home</a></li>
           <li class="header-item"><a class="header-link header-link-active" href="projects.html">Projects</a></li>
           <li class="header-item"><a class="header-link" href="about.html">About</a></li>
@@ -31,7 +31,7 @@
 
     <main>
       <!-- Project Hero -->
-      <section class="secondary-page-hero">
+      <section aria-label="Projects Hero" class="flex-column secondary-page-hero">
         <h2 class="hero-text-main other-hero-text--font">Projects</h2>
         <h1 class="hero-text-secondary">Explore my creations</h1>
       </section>
@@ -39,14 +39,14 @@
       <hr class="hr-seperator hr--gradient-secondary" />
 
       <!-- Projects -->
-      <section class="projects-panels">
+      <section aria-label="Projects Panels" class="projects-panels">
         <!-- Project 1 -->
-        <div class="project-panel-border-wrapper">
+        <div class="projects-panel--margin project-panel-border-wrapper">
           <div class="flex project-panel-border">
-            <div class="project-panel-content">
-              <div class="project-panel-texts">
+            <div class="flex-column project-panel-content">
+              <div class="flex-column project-panel-texts">
                 <h3 class="project-panel-title border-underline border-underline--primary">Portfolio Website</h3>
-                <div class="project-panel-bio-container">
+                <div class="flex-column project-panel-bio-container">
                   <h4 class="subheading--medium-rubik">
                     Take a look behind the curtains. At the creation of this website
                   </h4>
@@ -77,7 +77,7 @@
         </div>
 
         <!-- Project 2 -->
-        <div class="project-panel-border-wrapper project-panel-color--secondary">
+        <div class="projects-panel--margin project-panel-border-wrapper project-panel-color--secondary">
           <div class="flex project-panel-border">
             <a
               class="panel-img--shadow project-panel-img--border--secondary"
@@ -90,10 +90,10 @@
               />
               <img class="panel-img-link-icon" src="../images/Logos/link_arrow.svg" alt="" aria-hidden="true" />
             </a>
-            <div class="project-panel-content">
-              <div class="project-panel-texts">
+            <div class="flex-column project-panel-content">
+              <div class="flex-column project-panel-texts">
                 <h3 class="project-panel-title border-underline border-underline--secondary">Portfolio Website</h3>
-                <div class="project-panel-bio-container">
+                <div class="flex-column project-panel-bio-container">
                   <h4 class="subheading--medium-rubik">
                     Take a look behind the curtains. At the creation of this website
                   </h4>
@@ -115,10 +115,10 @@
         <!-- Project 3 -->
         <div class="project-panel-border-wrapper">
           <div class="flex project-panel-border">
-            <div class="project-panel-content">
-              <div class="project-panel-texts">
+            <div class="flex-column project-panel-content">
+              <div class="flex-column project-panel-texts">
                 <h3 class="project-panel-title border-underline border-underline--primary">Coming Soon...</h3>
-                <div class="project-panel-bio-container">
+                <div class="flex-column project-panel-bio-container">
                   <h4 class="subheading--medium-rubik">
                     The project blog has not yet been created so please be patient, or don't.
                   </h4>
@@ -156,11 +156,11 @@
       <hr class="hr-seperator hr--secondary" />
 
       <div class="footer-content">
-        <div class="footer-row-top">
+        <div class="flex footer-row-top">
           <a class="footer-top-link border-underline border-underline--accent65 small-text hover-scale1_05" href="#top"
             >Back to top</a
           >
-          <ul class="footer-nav">
+          <ul class="flex footer-nav">
             <li class="footer-nav-item">
               <a class="footer-nav-link small-text hover-scale1_05" href="../index.html">Home</a>
             </li>
@@ -178,7 +178,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-row-middle">
+        <div class="flex footer-row-middle">
           <small class="small-text">Created by marco0ga7@gmail.com</small>
           <ul class="footer-connect-links">
             <li class="footer-connect-item hover-scale1_05">
@@ -198,7 +198,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-row-bottom">
+        <div class="flex footer-row-bottom">
           <small class="small-text">&copy; 2025 Marco Gambo. All rights reserved.</small>
           <a
             class="footer-resume-link border-underline border-underline--accent65 small-text"

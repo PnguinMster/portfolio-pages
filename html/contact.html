@@ -15,12 +15,12 @@
 
   <body class="flex-column">
     <!-- Nav Bar -->
-    <header>
-      <a class="header-logo hover-scale1_05" href="../index.html">
+    <header class="flex">
+      <a class="flex header-logo hover-scale1_05" href="../index.html">
         <img class="header-logo-img" src="../images/Logos/pages_logo.svg" alt="logo" />Marco</a
       >
       <nav>
-        <ul class="header-links">
+        <ul class="flex header-links">
           <li class="header-item"><a class="header-link" href="../index.html">Home</a></li>
           <li class="header-item"><a class="header-link" href="projects.html">Projects</a></li>
           <li class="header-item"><a class="header-link" href="about.html">About</a></li>
@@ -31,14 +31,14 @@
 
     <main>
       <!-- Contact Hero -->
-      <section class="secondary-page-hero">
+      <section aria-label="Contact Hero" class="flex-column secondary-page-hero">
         <h2 class="hero-text-main other-hero-text--font">Contact</h2>
         <h1 class="hero-text-secondary">Talk to me personally</h1>
       </section>
 
       <hr class="hr-seperator hr--gradient-secondary" />
 
-      <div class="contact-container">
+      <div class="flex contact-container">
         <!-- Contact Info -->
         <div class="contact-info-container">
           <h3 class="contact-info-title border-underline border-underline--secondary85">Contact Me</h3>
@@ -48,45 +48,48 @@
             </p>
             <div class="contact-info-links">
               <!-- Contact Info Github -->
-              <a class="contact-info-link-panel" href="https://github.com/PnguinMster">
+              <a class="flex contact-info-link-panel" href="https://github.com/PnguinMster">
                 <img class="contact-info-link-img" src="../images/Logos/github-mark-white.svg" alt="Github Logo" />
-                <div class="contact-info-link-texts">
+                <div>
                   <h4 class="subheading--medium-rubik contact-info-link-title">Github:</h4>
                   <p class="contact-info-link-name">@PnguinMster</p>
                 </div>
               </a>
               <!-- Contact Info Itch.io -->
-              <a class="contact-info-link-panel" href="https://pnguinmster.itch.io/">
+              <a class="flex contact-info-link-panel" href="https://pnguinmster.itch.io/">
                 <img
                   class="contact-info-link-img"
                   src="../images/Logos/itchio-logo-textless-white.svg"
                   alt="Itch.io Logo"
                 />
-                <div class="contact-info-link-texts">
+                <div>
                   <h4 class="subheading--medium-rubik contact-info-link-title">Itch.io:</h4>
                   <p class="contact-info-link-name">@PnguinMster</p>
                 </div>
               </a>
               <!-- Contact Info Mail -->
-              <a class="contact-info-link-panel" href="mailto:marco0ga7@gmail.com?subject=Mail from Portfolio Website">
+              <a
+                class="flex contact-info-link-panel"
+                href="mailto:marco0ga7@gmail.com?subject=Mail from Portfolio Website"
+              >
                 <img class="contact-info-link-img" src="../images/Logos/mail-forward.svg" alt="Mail Logo" />
-                <div class="contact-info-link-texts">
+                <div>
                   <h4 class="subheading--medium-rubik contact-info-link-title">Mail:</h4>
                   <p class="contact-info-link-name">marco0ga7@gmail.com</p>
                 </div>
               </a>
               <!-- Contact Info LinkedIn -->
-              <a class="contact-info-link-panel" href="https://www.linkedin.com/in/marco-gamboa-09666120b/">
+              <a class="flex contact-info-link-panel" href="https://www.linkedin.com/in/marco-gamboa-09666120b/">
                 <img class="contact-info-link-img" src="../images/Logos/InBug-White.png" alt="LinkedIn Logo" />
-                <div class="contact-info-link-texts">
+                <div>
                   <h4 class="subheading--medium-rubik contact-info-link-title">LinkedIn:</h4>
                   <p class="contact-info-link-name">Marco Gamboa</p>
                 </div>
               </a>
               <!-- Contact Info Download Resume -->
-              <a class="contact-info-link-panel" href="../images/MarcoGamboa_Resume.pdf" download>
+              <a class="flex contact-info-link-panel" href="../images/MarcoGamboa_Resume.pdf" download>
                 <img class="contact-info-link-img" src="../images/Logos/file_docs.svg" alt="Github Logo" />
-                <div class="contact-info-link-texts">
+                <div>
                   <h4 class="subheading--medium-rubik contact-info-link-title">Download Resume:</h4>
                   <p class="contact-info-link-name">Resume</p>
                 </div>
@@ -119,9 +122,11 @@
       <hr class="hr-seperator hr--secondary" />
 
       <div class="footer-content">
-        <div class="footer-row-top">
-          <a class="footer-top-link border-underline border-underline--accent65 small-text hover-scale1_05" href="#top">Back to top</a>
-          <ul class="footer-nav">
+        <div class="flex footer-row-top">
+          <a class="footer-top-link border-underline border-underline--accent65 small-text hover-scale1_05" href="#top"
+            >Back to top</a
+          >
+          <ul class="flex footer-nav">
             <li class="footer-nav-item">
               <a class="footer-nav-link small-text hover-scale1_05" href="../index.html">Home</a>
             </li>
@@ -139,7 +144,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-row-middle">
+        <div class="flex footer-row-middle">
           <small class="small-text">Created by marco0ga7@gmail.com</small>
           <ul class="footer-connect-links">
             <li class="footer-connect-item hover-scale1_05">
@@ -159,7 +164,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-row-bottom">
+        <div class="flex footer-row-bottom">
           <small class="small-text">&copy; 2025 Marco Gambo. All rights reserved.</small>
           <a
             class="footer-resume-link border-underline border-underline--accent65 small-text"

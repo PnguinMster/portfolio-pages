@@ -15,12 +15,12 @@
 
   <body class="flex-column">
     <!-- Nav Bar -->
-    <header>
-      <a class="header-logo hover-scale1_05" href="index.html">
+    <header class="flex">
+      <a class="flex header-logo hover-scale1_05" href="index.html">
         <img class="header-logo-img" src="images/Logos/pages_logo.svg" alt="logo" />Marco</a
       >
       <nav>
-        <ul class="header-links">
+        <ul class="flex header-links">
           <li class="header-item"><a class="header-link header-link-active" href="index.html">Home</a></li>
           <li class="header-item"><a class="header-link" href="html/projects.html">Projects</a></li>
           <li class="header-item"><a class="header-link" href="html/about.html">About</a></li>
@@ -31,8 +31,8 @@
 
     <main>
       <!-- Hero Home -->
-      <section class="home-hero">
-        <div class="home-hero-texts">
+      <section aria-label="Home Hero" class="flex home-hero">
+        <div class="flex-column home-hero-texts">
           <h1 class="hero-text-main home-hero-text--font">Junior Programmer</h1>
           <h4 class="home-hero-text-secondary">Because imposter syndrome exists</h4>
         </div>
@@ -56,15 +56,15 @@
       <hr class="hr-seperator hr--gradient-primary" />
 
       <!-- Behind the Scenes Project -->
-      <section class="home-project">
+      <section aria-label="Behind The Scenes Project Homepage" class="flex-column home-project">
         <h2 class="home-title-bar home-title">Behind The Scenes</h2>
 
         <div class="project-panel-border-wrapper">
           <div class="flex project-panel-border">
-            <div class="project-panel-content">
-              <div class="project-panel-texts">
+            <div class="flex-column project-panel-content">
+              <div class="flex-column project-panel-texts">
                 <h3 class="project-panel-title border-underline border-underline--primary">Portfolio Website</h3>
-                <div class="project-panel-bio-container">
+                <div class="flex-column project-panel-bio-container">
                   <h4 class="subheading--medium-rubik">
                     Take a look behind the curtains. At the creation of this website
                   </h4>
@@ -96,12 +96,12 @@
       </section>
 
       <!-- Hero Showcase -->
-      <section class="home-showcase">
+      <section aria-label="Project Showcase Homepage" class="flex-column home-showcase">
         <h2 class="home-title-bar underline--secondary-accent home-title">Projects</h2>
 
-        <div class="home-showcase-container">
+        <div class="flex home-showcase-container">
           <!-- Project 1 -->
-          <div class="project-panel-border-wrapper project-panel-color--vertical">
+          <div class="flex project-panel-border-wrapper project-panel-color--vertical">
             <div class="flex project-panel-border project-panel--vertical">
               <a
                 class="panel-img--shadow panel-img--shadow-small"
@@ -114,7 +114,7 @@
                 />
                 <img class="panel-img-link-icon" src="images/Logos/link_arrow.svg" alt="" aria-hidden="true" />
               </a>
-              <div class="home-showcase-panel-content">
+              <div class="flex-column home-showcase-panel-content">
                 <h3 class="project-panel-title border-underline border-underline--secondary">Portfolio Website</h3>
                 <div class="tag-container">
                   <small class="tag-content tag-color-html small-text">HTML</small>
@@ -125,7 +125,7 @@
           </div>
 
           <!-- Project 2 -->
-          <div class="project-panel-border-wrapper project-panel-color--vertical">
+          <div class="flex project-panel-border-wrapper project-panel-color--vertical">
             <div class="flex project-panel-border project-panel--vertical">
               <a
                 class="panel-img--shadow panel-img--shadow-small"
@@ -138,7 +138,7 @@
                 />
                 <img class="panel-img-link-icon" src="images/Logos/link_arrow.svg" alt="" aria-hidden="true" />
               </a>
-              <div class="home-showcase-panel-content">
+              <div class="flex-column home-showcase-panel-content">
                 <h3 class="project-panel-title border-underline border-underline--secondary">Coming Soon...</h3>
                 <div class="tag-container"></div>
               </div>
@@ -146,7 +146,7 @@
           </div>
 
           <!-- Project 3 -->
-          <div class="project-panel-border-wrapper project-panel-color--vertical">
+          <div class="flex project-panel-border-wrapper project-panel-color--vertical">
             <div class="flex project-panel-border project-panel--vertical">
               <a
                 class="panel-img--shadow panel-img--shadow-small"
@@ -159,7 +159,7 @@
                 />
                 <img class="panel-img-link-icon" src="images/Logos/link_arrow.svg" alt="" aria-hidden="true" />
               </a>
-              <div class="home-showcase-panel-content">
+              <div class="flex-column home-showcase-panel-content">
                 <h3 class="project-panel-title border-underline border-underline--secondary">Coming Soon...</h3>
                 <div class="tag-container"></div>
               </div>
@@ -175,7 +175,7 @@
       </section>
 
       <!-- About -->
-      <section class="home-about">
+      <section aria-label="About Homepage" class="home-about">
         <h2 class="home-title-bar underline--accent-primary home-title">About Me</h2>
 
         <div class="home-about-container">
@@ -190,7 +190,7 @@
             experiencing new things. This is shown in my music playlist which is filled with various genres and the
             various shows I have seen. I am always interested in learning new things.
           </p>
-          <div class="home-about-buttons-container">
+          <div class="flex home-about-buttons-container">
             <a
               class="button-link button-link--primary body-text background-hover-color"
               href="images/MarcoGamboa_Resume.pdf"
@@ -205,7 +205,7 @@
       </section>
 
       <!-- Contact Me -->
-      <section class="home-contact">
+      <section aria-label="Contact Me" class="home-contact">
         <h2 class="home-title-bar underline--accent-secondary home-title">Contact Me</h2>
 
         <div class="home-contact-container">
@@ -213,7 +213,7 @@
             If for some reason you would like to know more about me or have a question. Feel free to contact me and ask.
             I am happy to answer it here: <b>marco0ga7@gmail.com</b>
           </p>
-          <div class="home-contact-button-container">
+          <div class="flex home-contact-button-container">
             <a class="button-link button-link--secondary body-text background-hover-color" href="html/contact.html"
               >More Info</a
             >
@@ -227,11 +227,11 @@
       <hr class="hr-seperator hr--primary" />
 
       <div class="footer-content">
-        <div class="footer-row-top">
+        <div class="flex footer-row-top">
           <a class="footer-top-link border-underline border-underline--accent65 small-text hover-scale1_05" href="#top"
             >Back to top</a
           >
-          <ul class="footer-nav">
+          <ul class="flex footer-nav">
             <li class="footer-nav-item">
               <a class="footer-nav-link small-text hover-scale1_05" href="index.html">Home</a>
             </li>
@@ -249,7 +249,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-row-middle">
+        <div class="flex footer-row-middle">
           <small class="small-text">Created by marco0ga7@gmail.com</small>
           <ul class="footer-connect-links">
             <li class="footer-connect-item hover-scale1_05">
@@ -269,7 +269,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-row-bottom">
+        <div class="flex footer-row-bottom">
           <small class="small-text">&copy; 2025 Marco Gambo. All rights reserved.</small>
           <a
             class="footer-resume-link border-underline border-underline--accent65 small-text"

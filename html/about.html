@@ -15,12 +15,12 @@
 
   <body class="flex-column">
     <!-- Nav Bar -->
-    <header>
-      <a class="header-logo hover-scale1_05" href="../index.html">
+    <header class="flex">
+      <a class="flex header-logo hover-scale1_05" href="../index.html">
         <img class="header-logo-img" src="../images/Logos/pages_logo.svg" alt="logo" />Marco</a
       >
       <nav>
-        <ul class="header-links">
+        <ul class="flex header-links">
           <li class="header-item"><a class="header-link" href="../index.html">Home</a></li>
           <li class="header-item"><a class="header-link" href="projects.html">Projects</a></li>
           <li class="header-item"><a class="header-link header-link-active" href="about.html">About</a></li>
@@ -31,7 +31,7 @@
 
     <main>
       <!-- About Hero -->
-      <section class="secondary-page-hero">
+      <section aria-label="About Hero" class="flex-column secondary-page-hero">
         <h2 class="hero-text-main other-hero-text--font">About</h2>
         <h1 class="hero-text-secondary">Learn more about me, myself, and I</h1>
       </section>
@@ -39,7 +39,7 @@
       <hr class="hr-seperator hr--gradient-secondary" />
 
       <!-- About Information -->
-      <section class="about-bio-container">
+      <section aria-label="About Information" class="flex about-bio-container">
         <div class="about-bio-content">
           <h3 class="about-bio-subheading">So you want to learn more about me? Well you came to the right place.</h3>
           <p class="about-bio-text body-text">
@@ -85,7 +85,7 @@
       </section>
 
       <!-- About Stats -->
-      <section class="about-stats">
+      <section aria-label="About Stats" class="flex about-stats">
         <div class="about-stats-edge-container about-stats-container">
           <h2 class="about-stats-number about-stats-texts">76</h2>
           <h3 class="about-stats-text about-stats-texts">Project Started</h3>
@@ -101,7 +101,7 @@
       </section>
 
       <!-- About Skills -->
-      <section class="about-skills">
+      <section aria-label="About Skills" class="about-skills">
         <div class="about-skills-container">
           <h3 class="about-skills-title border-underline border-underline--accent85">Skills</h3>
           <div class="about-skills-grid">
@@ -155,9 +155,11 @@
       <hr class="hr-seperator hr--secondary" />
 
       <div class="footer-content">
-        <div class="footer-row-top">
-          <a class="footer-top-link border-underline border-underline--accent65 small-text hover-scale1_05" href="#top">Back to top</a>
-          <ul class="footer-nav">
+        <div class="flex footer-row-top">
+          <a class="footer-top-link border-underline border-underline--accent65 small-text hover-scale1_05" href="#top"
+            >Back to top</a
+          >
+          <ul class="flex footer-nav">
             <li class="footer-nav-item">
               <a class="footer-nav-link small-text hover-scale1_05" href="../index.html">Home</a>
             </li>
@@ -175,7 +177,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-row-middle">
+        <div class="flex footer-row-middle">
           <small class="small-text">Created by marco0ga7@gmail.com</small>
           <ul class="footer-connect-links">
             <li class="footer-connect-item hover-scale1_05">
@@ -195,7 +197,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-row-bottom">
+        <div class="flex footer-row-bottom">
           <small class="small-text">&copy; 2025 Marco Gambo. All rights reserved.</small>
           <a
             class="footer-resume-link border-underline border-underline--accent65 small-text"

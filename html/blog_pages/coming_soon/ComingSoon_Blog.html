@@ -15,12 +15,12 @@
 
   <body class="flex-column">
     <!-- Nav Bar -->
-    <header>
-      <a class="header-logo hover-scale1_05" href="../../../index.html">
+    <header class="flex">
+      <a class="flex header-logo hover-scale1_05" href="../../../index.html">
         <img class="header-logo-img" src="../../../images/Logos/pages_logo.svg" alt="logo" />Marco</a
       >
       <nav>
-        <ul class="header-links">
+        <ul class="flex header-links">
           <li class="header-item"><a class="header-link" href="../../../index.html">Home</a></li>
           <li class="header-item"><a class="header-link" href="../../projects.html">Projects</a></li>
           <li class="header-item"><a class="header-link" href="../../about.html">About</a></li>
@@ -31,7 +31,7 @@
 
     <main>
       <!-- Blog Hero -->
-      <section class="blog-title-container">
+      <section aria-label="Coming Soon Hero" class="flex-column blog-title-container">
         <div class="blog-title-bar underline--accent-secondary">
           <h2 class="blog-title">Coming Soon...</h2>
           <h4 class="blog-subheading">This information is to become, soon. Check in on another time</h4>
@@ -40,7 +40,7 @@
       </section>
 
       <!-- Blog Article -->
-      <section class="blog-article">
+      <section aria-label="Coming Soon Article" class="flex blog-article">
         <!-- Blog Article Content -->
         <div class="blog-article-content">
           <p>
@@ -57,19 +57,16 @@
             <!-- Uncomment this div to add back the table of contents
             <!---->
             <!--<h4 class="blog-side-info-title border-underline border-underline--accent">Table of Contents</h4>-->
-            <!--<div class="blog-table-of-contents-chapters">-->
-            <!---->
             <!-- Add link for section of the text-->
             <!---->
             <!--  <a class="blog-table-of-contents-chapter small-text">Intro</a>-->
-            <!--</div>-->
           </div>
           <div class="blog-side-contents">
             <!---->
             <!-- Uncomment this div to add back the more info
             <!---->
             <!--<h4 class="blog-side-info-title border-underline border-underline--accent">More Info</h4>-->
-            <div class="blog-more-info-contents">
+            <div class="flex-column blog-more-info-contents">
               <!---->
               <!-- This is for adding the link to the resources-->
               <!---->
@@ -91,11 +88,11 @@
       <hr class="hr-seperator hr--accent" />
 
       <div class="footer-content">
-        <div class="footer-row-top">
+        <div class="flex footer-row-top">
           <a class="footer-top-link border-underline border-underline--accent65 small-text hover-scale1_05" href="#top"
             >Back to top</a
           >
-          <ul class="footer-nav">
+          <ul class="flex footer-nav">
             <li class="footer-nav-item">
               <a class="footer-nav-link small-text hover-scale1_05" href="../../../index.html">Home</a>
             </li>
@@ -113,7 +110,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-row-middle">
+        <div class="flex footer-row-middle">
           <small class="small-text">Created by marco0ga7@gmail.com</small>
           <ul class="footer-connect-links">
             <li class="footer-connect-item hover-scale1_05">
@@ -136,7 +133,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-row-bottom">
+        <div class="flex footer-row-bottom">
           <small class="small-text">&copy; 2025 Marco Gambo. All rights reserved.</small>
           <a
             class="footer-resume-link border-underline border-underline--accent65 small-text"
