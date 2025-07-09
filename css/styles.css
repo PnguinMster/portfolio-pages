@@ -797,11 +797,13 @@ footer {
 .about-stats-edge-container {
   background-color: var(--secondary);
   flex: 1;
+  flex-direction: column-reverse;
 }
 
 .about-stats-middle-container {
   background-color: var(--primary);
   flex: 2;
+  flex-direction: column-reverse;
 }
 
 .about-stats-texts {
