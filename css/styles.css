@@ -1,11 +1,11 @@
 :root {
-  --text: #e0e0e0;
+  --text: #ededed;
   --bg: #161b22;
   --bg-secondary: #1e252f;
   --primary: #4fc1ff;
   --secondary: #2de2a6;
   --accent: #ff8c42;
-  --html-tag: #e34c26;
+  --html-tag: #c0392b;
   --css-tag: #663399;
   --primary5: hsla(201.14, 100%, 65.49%, 5%);
   --primary16: hsla(201.14, 100%, 65.49%, 16%);
@@ -303,6 +303,13 @@ a {
   padding: 6.25rem 12.5rem;
   align-items: flex-start;
   gap: 0.5rem;
+}
+
+.hero-play-toggle {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  pointer-events: none;
 }
 
 .hero-play-toggle:checked + label .hero-static {
