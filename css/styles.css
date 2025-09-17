@@ -43,7 +43,7 @@
   --primary-height-px: 1px;
   --border-radius-px4: 4px;
   --border-radius-px8: 8px;
-  --font-size-h1: 3rem;
+  --font-size-h1: clamp(1.5rem, 5vw + 1rem, 3rem);
   --font-size-h2: 2.063rem;
   --font-size-h3: 1.44rem;
   --font-size-h4: 1.2rem;
@@ -499,7 +499,7 @@ header {
 }
 
 .home-hero {
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0 8rem;
 }
@@ -508,6 +508,17 @@ header {
   align-items: flex-end;
   gap: 0.75rem;
   padding: 1.75rem 2.5rem;
+}
+
+@media (max-width: 62rem) {
+  .home-hero {
+    flex-direction: column;
+  }
+
+  .home-hero-texts {
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
 
 .home-project {
