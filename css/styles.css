@@ -475,6 +475,7 @@ header {
   list-style: none;
   padding: 0.75rem 0.75rem 1.25rem;
   gap: 3rem;
+  align-items: center;
 }
 
 .header-item {
@@ -496,6 +497,27 @@ header {
 .header-link-active {
   color: var(--primary85);
   border-bottom: 1px solid var(--primary85);
+}
+
+@media (max-width: 66rem) {
+  header {
+    padding: 0 6rem;
+  }
+
+  .header-links {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 54rem) {
+  header {
+    flex-direction: column;
+  }
+
+  .header-links {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
 }
 
 .home-hero {
