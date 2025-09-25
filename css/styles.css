@@ -235,7 +235,7 @@ a {
   color: var(--accent);
 }
 
-.hr-seperator {
+.hr-separator {
   margin: 0;
   border: 0;
   height: var(--primary-height-px);
@@ -632,7 +632,7 @@ footer {
   font-weight: var(--bold);
 }
 
-.footer-nav-seperator {
+.footer-nav-separator {
   color: var(--accent85);
 }
 
