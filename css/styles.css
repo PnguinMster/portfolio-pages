@@ -252,6 +252,7 @@ a {
 }
 
 .project-panel-content {
+  flex: 1;
   gap: 0.5rem;
   padding: 1.75rem;
 }
@@ -448,6 +449,7 @@ a {
 }
 
 .panel-img--shadow {
+  flex:1;
   position: relative;
   overflow: hidden;
   width: var(--primary-width);
@@ -560,6 +562,7 @@ header {
 }
 
 .tag-container {
+  min-height: 25px;
   gap: 0.75rem;
 }
 
@@ -690,11 +693,8 @@ footer {
 }
 
 .projects-panels {
-  padding: 10rem 12.5rem;
-}
-
-.projects-panel--margin {
-  margin-bottom: 6.25rem;
+  padding: 6rem 12.5rem ;
+  gap: 6.25rem;
 }
 
 .blog-title-container {
