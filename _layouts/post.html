@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<!-- Blog Hero -->
+<section aria-label="Blog Hero" class="flex-column blog-title-container">
+  <div class="blog-title-bar underline--accent-secondary">
+    <h1 class="blog-title">{{ page.title }}</h1>
+    <p class="blog-subheading">{{ page.subheading | default: page.excerpt }}</p>
+  </div>
+  <small class="blog-updated-caption">Last Updated {{ page.date | date: "%B %d, %Y" }}</small>
+</section>
+
+<!-- Blog Article -->
+<section aria-label="Blog Article" class="flex blog-article">
+  <!-- Blog Article Content -->
+  <div class="blog-article-content">
+    {{ content }}
+  </div>
+
+  <!-- Blog Sidebar -->
+  <div class="blog-article-info">
+    <div class="blog-side-contents">
+      {% if page.toc %}
+      <h4 class="blog-side-info-title border-underline border-underline--accent">Table of Contents</h4>
+      {% for item in page.toc %}
+      <a class="blog-table-of-contents-chapter small-text" href="#{{ item.id }}">{{ item.title }}</a>
+      {% endfor %}
+      {% endif %}
+    </div>
+    <div class="blog-side-contents">
+      {% if page.tags %}
+      <h4 class="blog-side-info-title border-underline border-underline--accent">Tags</h4>
+      <div class="flex-column blog-more-info-contents">
+        {% for tag in page.tags %}
+        <small class="tag-content tag-color-{{ tag.color | default: 'html' }} small-text">{{ tag.name }}</small>
+        {% endfor %}
+      </div>
+      {% endif %}
+      
+      {% if page.links %}
+      <h4 class="blog-side-info-title border-underline border-underline--accent">More Info</h4>
+      <div class="flex-column blog-more-info-contents">
+        {% for link in page.links %}
+        <a class="blog-more-info-link" href="{{ link.url }}">
+          <img class="blog-more-info-img" src="{{ link.icon | relative_url }}" alt="{{ link.name }}" />
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    <meta name="author" content="{{ site.author }}" />
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}" />
+  </head>
+
+  <body class="flex-column">
+    <!-- Nav Bar -->
+    <header class="flex">
+      <a class="flex header-logo hover-scale1_05" href="{{ '/' | relative_url }}">
+        <img class="header-logo-img" src="{{ '/images/Logos/pages_logo.svg' | relative_url }}" alt="logo" />Marco</a
+      >
+      <nav>
+        <ul class="flex header-links">
+          <li class="header-item"><a class="header-link" href="{{ '/' | relative_url }}">Home</a></li>
+          <li class="header-item"><a class="header-link" href="{{ '/html/projects.html' | relative_url }}">Projects</a></li>
+          <li class="header-item"><a class="header-link" href="{{ '/html/about.html' | relative_url }}">About</a></li>
+          <li class="header-item"><a class="header-link" href="{{ '/html/contact.html' | relative_url }}">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <hr class="hr-separator hr--accent" />
+
+      <div class="footer-content">
+        <div class="flex footer-row-top">
+          <a class="footer-top-link border-underline border-underline--accent65 small-text hover-scale1_05" href="#top"
+            >Back to top</a
+          >
+          <ul class="flex footer-nav">
+            <li class="footer-nav-item">
+              <a class="footer-nav-link small-text hover-scale1_05" href="{{ '/' | relative_url }}">Home</a>
+            </li>
+            <li class="footer-nav-separator" role="separator">•</li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link small-text hover-scale1_05" href="{{ '/html/projects.html' | relative_url }}">Projects</a>
+            </li>
+            <li class="footer-nav-separator" role="separator">•</li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link small-text hover-scale1_05" href="{{ '/html/about.html' | relative_url }}">About</a>
+            </li>
+            <li class="footer-nav-separator" role="separator">•</li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link small-text hover-scale1_05" href="{{ '/html/contact.html' | relative_url }}">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex footer-row-middle">
+          <small class="small-text">Created by marco0ga7@gmail.com</small>
+          <ul class="flex footer-connect-links">
+            <li class="footer-connect-item hover-scale1_05">
+              <a href="https://github.com/PnguinMster"
+                ><img class="footer-connect-img" src="{{ '/images/Logos/github-mark-white.svg' | relative_url }}" alt="Github"
+              /></a>
+            </li>
+            <li class="footer-connect-item hover-scale1_05">
+              <a href="https://www.linkedin.com/in/marco-gamboa-09666120b/"
+                ><img class="footer-connect-img" src="{{ '/images/Logos/InBug-White.png' | relative_url }}" alt="LinkedIn"
+              /></a>
+            </li>
+            <li class="footer-connect-item hover-scale1_05">
+              <a href="https://pnguinmster.itch.io/"
+                ><img
+                  class="footer-connect-img"
+                  src="{{ '/images/Logos/itchio-logo-textless-white.svg' | relative_url }}"
+                  alt="Itch.io"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex footer-row-bottom">
+          <small class="small-text">&copy; 2025 Marco Gamboa. All rights reserved.</small>
+          <a
+            class="footer-resume-link border-underline border-underline--accent65 small-text"
+            href="{{ '/images/MarcoGamboa_Resume.pdf' | relative_url }}"
+            download
+            >Download Resume</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
