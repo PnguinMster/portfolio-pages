@@ -1,0 +1,14 @@
+<!-- Nav Bar -->
+<header class="flex">
+  <a class="flex header-logo hover-scale1_05" href="../index.html">
+    <img class="header-logo-img" src="../images/Logos/pages_logo.svg" alt="logo" />Marco</a
+  >
+  <nav>
+    <ul class="flex header-links">
+      <li class="header-item"><a class="header-link{% if page.url == '/' or page.url == '/index.html' %} header-link-active{% endif %}" href="/index.html">Home</a></li>
+      <li class="header-item"><a class="header-link{% if page.url contains '/projects' %} header-link-active{% endif %}" href="/html/projects.html">Projects</a></li>
+      <li class="header-item"><a class="header-link{% if page.url contains '/about' %} header-link-active{% endif %}" href="/html/about.html">About</a></li>
+      <li class="header-item"><a class="header-link{% if page.url contains '/contact' %} header-link-active{% endif %}" href="/html/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>

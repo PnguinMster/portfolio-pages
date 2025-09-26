@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <!doctype html>
 <html lang="en" id="top">
   <head>
@@ -10,20 +14,7 @@
   </head>
 
   <body class="flex-column">
-    <!-- Nav Bar -->
-    <header class="flex">
-      <a class="flex header-logo hover-scale1_05" href="index.html">
-        <img class="header-logo-img" src="images/Logos/pages_logo.svg" alt="logo" />Marco</a
-      >
-      <nav>
-        <ul class="flex header-links">
-          <li class="header-item"><a class="header-link header-link-active" href="index.html">Home</a></li>
-          <li class="header-item"><a class="header-link" href="html/projects.html">Projects</a></li>
-          <li class="header-item"><a class="header-link" href="html/about.html">About</a></li>
-          <li class="header-item"><a class="header-link" href="html/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    {% include header.html %}
 
     <main>
       <!-- Hero Home -->
@@ -218,63 +209,6 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <hr class="hr-separator hr--primary" />
-
-      <div class="footer-content">
-        <div class="flex footer-row-top">
-          <a class="footer-top-link border-underline border-underline--accent65 small-text hover-scale1_05" href="#top"
-            >Back to top</a
-          >
-          <ul class="flex footer-nav">
-            <li class="footer-nav-item">
-              <a class="footer-nav-link small-text hover-scale1_05" href="index.html">Home</a>
-            </li>
-            <li class="footer-nav-separator" role="separator">•</li>
-            <li class="footer-nav-item">
-              <a class="footer-nav-link small-text hover-scale1_05" href="html/projects.html">Projects</a>
-            </li>
-            <li class="footer-nav-separator" role="separator">•</li>
-            <li class="footer-nav-item">
-              <a class="footer-nav-link small-text hover-scale1_05" href="html/about.html">About</a>
-            </li>
-            <li class="footer-nav-separator" role="separator">•</li>
-            <li class="footer-nav-item">
-              <a class="footer-nav-link small-text hover-scale1_05" href="html/contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex footer-row-middle">
-          <small class="small-text">Created by marco0ga7@gmail.com</small>
-          <ul class="flex footer-connect-links">
-            <li class="footer-connect-item hover-scale1_05">
-              <a href="https://github.com/PnguinMster"
-                ><img class="footer-connect-img" src="images/Logos/github-mark-white.svg" alt="Github"
-              /></a>
-            </li>
-            <li class="footer-connect-item hover-scale1_05">
-              <a href="https://www.linkedin.com/in/marco-gamboa-09666120b/"
-                ><img class="footer-connect-img" src="images/Logos/InBug-White.png" alt="LinkedIn"
-              /></a>
-            </li>
-            <li class="footer-connect-item hover-scale1_05">
-              <a href="https://pnguinmster.itch.io/"
-                ><img class="footer-connect-img" src="images/Logos/itchio-logo-textless-white.svg" alt="Itch.io"
-              /></a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex footer-row-bottom">
-          <small class="small-text">&copy; 2025 Marco Gamboa. All rights reserved.</small>
-          <a
-            class="footer-resume-link border-underline border-underline--accent65 small-text"
-            href="images/MarcoGamboa_Resume.pdf"
-            download
-            >Download Resume</a
-          >
-        </div>
-      </div>
-    </footer>
+    {% include footer.html %}
   </body>
 </html>
