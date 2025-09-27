@@ -1,0 +1,51 @@
+---
+layout: default
+title: "Blog"
+---
+
+<!-- Blog Hero -->
+<section aria-label="Blog Hero" class="flex-column blog-title-container">
+  <div class="blog-title-bar underline--accent-secondary">
+    <h1 class="blog-title">{{ page.article }}</h1>
+
+    <p class="blog-subheading">{{ page.subheading }}</p>
+  </div>
+  <small class="blog-updated-caption">Last Updated {{ page.last_updated }}</small>
+</section>
+
+<!-- Blog Article -->
+<section aria-label="Portfolio Website Article" class="flex blog-article">
+  <!-- Blog Article Content -->
+  <div class="blog-article-content">{{ content }}</div>
+
+  <!-- Blog Sidebar -->
+  <div class="blog-article-info">
+    <!-- Blog Table of Contents -->
+    {% if page.toc %}
+    <div class="blog-side-contents">
+      <h2 class="blog-side-info-title border-underline border-underline--accent">Table of Contents</h2>
+      {% for item in page.toc %}
+      <a class="blog-table-of-contents-chapter small-text" href="#{{ item.id }}">{{ item.title }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Info -->
+    {% if page.links or page.tags %}
+    <div class="blog-side-contents">
+      <h2 class="blog-side-info-title border-underline border-underline--accent">Info</h2>
+      <div class="flex-column blog-more-info-contents">
+        {% for info in page.more_info %} {% if info.type == "link" %}
+        <a class="blog-more-info-link" href="{{ info.href }}">
+          <img class="blog-more-info-img" src=" {{ info.img }}" alt="Link" />
+        </a>
+        {% elsif info.type == "text" %}
+        <a class="blog-more-info-link" href="{{ info.href }}">{{ info.label }}</a>
+        {% endif %} {% endfor %} {% for tag in page.tags %}
+        <small class="tag-content tag-color-{{ tag | downcase }} small-text">{{ tag }}</small>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>

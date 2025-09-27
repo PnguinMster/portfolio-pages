@@ -5,3 +5,4 @@ markdown: kramdown
 highlighter: rouge
 baseurl: ""
 url: ""
+permalink: /blog_pages/:article/
