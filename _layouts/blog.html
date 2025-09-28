@@ -43,7 +43,7 @@ title: "Blog"
         <a class="blog-more-info-link" href="{{ info.href }}">{{ info.label }}</a>
         {% endif %} {% endfor %} {% for tag in page.tags %}
         <small class="tag-content tag-color-{{ tag | downcase }} small-text">{{ tag }}</small>
-        {% endif %}
+        {% endfor %}
       </div>
     </div>
     {% endif %}
