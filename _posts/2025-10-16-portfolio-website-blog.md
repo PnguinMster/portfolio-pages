@@ -6,6 +6,16 @@ last_updated: "Oct 16, 2025"
 toc:
   - id: intro
     title: "Introduction"
+  - id: start
+    title: "Start"
+  - id: design
+    title: "Design"
+  - id: code
+    title: "Code"
+  - id: final
+    title: "Final"
+  - id: conclusion
+    title: "Conclusion"
 info:
   - type: image
     href: "https://github.com/PnguinMster/portfolio-pages"
