@@ -3,8 +3,8 @@ description:  Marco G. Portfolio
 author: Marco G.
 markdown: kramdown
 highlighter: rouge
-baseurl: ""
-url: ""
+baseurl: "https://pnguinmster.github.io"
+url: "/portfolio-pages"
 defaults: 
   - scope:
       path: ""
