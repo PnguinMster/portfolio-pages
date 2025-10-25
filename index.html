@@ -13,12 +13,12 @@ layout: default
     <label for="hero-toggle" class="hero-animation-wrapper">
       <img
         class="hero-img hero-static background-hover-color"
-        src="images/Animations/HeroStatic_HelloWorld.webp"
+        src="{{ '/images/Animations/HeroStatic_HelloWorld.webp' | relative_url }}"
         alt="Home Hero Static"
       />
       <img
         class="hero-img hero-animation background-hover-color"
-        src="images/Animations/HeroAnimation_Helloworld.webp"
+        src="{{ '/images/Animations/HeroAnimation_Helloworld.webp' | relative_url }}"
         alt="Home Hero Animation"
       />
     </label>
@@ -52,14 +52,19 @@ layout: default
       </div>
       <a
         class="panel-img--shadow project-panel-img--border--primary"
-        href="blog_pages/portfolio-website-blog.html"
+        href="{{ '/blog_pages/portfolio-website-blog.html' | relative_url }}"
       >
         <img
           class="project-panel-img"
-          src="images/Blogs/portfolio_website/PortfolioWebsite_main.png"
+          src="{{ '/images/Blogs/portfolio_website/PortfolioWebsite_main.png' | relative_url }}"
           alt="Portfolio Website Image"
         />
-        <img class="panel-img-link-icon" src="images/Logos/link_arrow.svg" alt="" aria-hidden="true" />
+        <img
+          class="panel-img-link-icon"
+          src="{{ '/images/Logos/link_arrow.svg' | relative_url }}"
+          alt=""
+          aria-hidden="true"
+        />
       </a>
     </div>
   </div>
@@ -73,13 +78,21 @@ layout: default
     <!-- Project 1 -->
     <div class="flex project-panel-border-wrapper project-panel-color--vertical">
       <div class="flex project-panel-border project-panel--vertical">
-        <a class="panel-img--shadow panel-img--shadow-small" href="blog_pages/portfolio-website-blog.html">
+        <a
+          class="panel-img--shadow panel-img--shadow-small"
+          href="{{ '/blog_pages/portfolio-website-blog.html' | relative_url }}"
+        >
           <img
             class="project-panel-img"
-            src="images/Blogs/portfolio_website/PortfolioWebsite_main.png"
+            src="{{ '/images/Blogs/portfolio_website/PortfolioWebsite_main.png' | relative_url }}"
             alt="Portfolio Website Image"
           />
-          <img class="panel-img-link-icon" src="images/Logos/link_arrow.svg" alt="" aria-hidden="true" />
+          <img
+            class="panel-img-link-icon"
+            src="{{ '/images/Logos/link_arrow.svg' | relative_url }}"
+            alt=""
+            aria-hidden="true"
+          />
         </a>
         <div class="flex-column home-showcase-panel-content">
           <h3 class="project-panel-title border-underline border-underline--secondary">Portfolio Website</h3>
@@ -94,13 +107,21 @@ layout: default
     <!-- Project 2 -->
     <div class="flex project-panel-border-wrapper project-panel-color--vertical">
       <div class="flex project-panel-border project-panel--vertical">
-        <a class="panel-img--shadow panel-img--shadow-small" href="blog_pages/coming-soon-blog.html">
+        <a
+          class="panel-img--shadow panel-img--shadow-small"
+          href="{{ '/blog_pages/coming-soon-blog.html' | relative_url }}"
+        >
           <img
             class="project-panel-img"
-            src="images/Blogs/coming_soon_blog.png"
+            src="{{ '/images/Blogs/coming_soon_blog.png' | relative_url }}"
             alt="Portfolio Website Image"
           />
-          <img class="panel-img-link-icon" src="images/Logos/link_arrow.svg" alt="" aria-hidden="true" />
+          <img
+            class="panel-img-link-icon"
+            src="{{ '/images/Logos/link_arrow.svg' | relative_url }}"
+            alt=""
+            aria-hidden="true"
+          />
         </a>
         <div class="flex-column home-showcase-panel-content">
           <h3 class="project-panel-title border-underline border-underline--secondary">Coming Soon...</h3>
@@ -112,13 +133,21 @@ layout: default
     <!-- Project 3 -->
     <div class="flex project-panel-border-wrapper project-panel-color--vertical">
       <div class="flex project-panel-border project-panel--vertical">
-        <a class="panel-img--shadow panel-img--shadow-small" href="blog_pages/coming-soon-blog.html">
+        <a
+          class="panel-img--shadow panel-img--shadow-small"
+          href="{{ '/blog_pages/coming-soon-blog.html' | relative_url }}"
+        >
           <img
             class="project-panel-img"
-            src="images/Blogs/coming_soon_blog.png"
+            src="{{ '/images/Blogs/coming_soon_blog.png' | relative_url }}"
             alt="Portfolio Website Image"
           />
-          <img class="panel-img-link-icon" src="images/Logos/link_arrow.svg" alt="" aria-hidden="true" />
+          <img
+            class="panel-img-link-icon"
+            src="{{ '/images/Logos/link_arrow.svg' | relative_url }}"
+            alt=""
+            aria-hidden="true"
+          />
         </a>
         <div class="flex-column home-showcase-panel-content">
           <h3 class="project-panel-title border-underline border-underline--secondary">Coming Soon...</h3>
@@ -129,7 +158,9 @@ layout: default
   </div>
 
   <div class="home-showcase-button-container">
-    <a class="button-link button-link--secondary body-text background-hover-color" href="html/projects.html"
+    <a
+      class="button-link button-link--secondary body-text background-hover-color"
+      href="{{ '/html/projects.html' | relative_url }}"
       >More Projects</a
     >
   </div>
@@ -154,11 +185,13 @@ layout: default
     <div class="flex home-about-buttons-container">
       <a
         class="button-link button-link--primary body-text background-hover-color"
-        href="images/MarcoGamboa_Resume.pdf"
+        href="{{ '/images/MarcoGamboa_Resume.pdf' | relative_url }}"
         download
         >Download Resume</a
       >
-      <a class="button-link button-link--primary45 body-text background-hover-color" href="html/about.html"
+      <a
+        class="button-link button-link--primary45 body-text background-hover-color"
+        href="{{ '/html/about.html' | relative_url }}"
         >Read More</a
       >
     </div>
@@ -175,7 +208,9 @@ layout: default
       happy to answer it here: <b>marco0ga7@gmail.com</b>
     </p>
     <div class="flex home-contact-button-container">
-      <a class="button-link button-link--secondary body-text background-hover-color" href="html/contact.html"
+      <a
+        class="button-link button-link--secondary body-text background-hover-color"
+        href="{{ '/html/contact.html' | relative_url }}"
         >More Info</a
       >
     </div>

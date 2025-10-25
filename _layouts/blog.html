@@ -38,11 +38,11 @@ title: "Blog"
           <div class="flex-column blog-more-info-contents">
           {% for link in page.info %}
             {% if link.type == "image" %}
-              <a class="blog-more-info-link" href="{{ link.href }}">
+              <a class="blog-more-info-link" href="{{ link.href | relative_url }}">
                 <img class="blog-more-info-img" src="{{ link.img }}" alt="{{ link.alt }}" />
               </a>
             {% elsif link.type == "text" %}
-              <a class="blog-more-info-link" href="{{ link.href }}">{{ link.label }}</a>
+              <a class="blog-more-info-link" href="{{ link.href | relative_url }}">{{ link.label }}</a>
             {% endif %}
           {% endfor %}
           </div>

@@ -1,8 +1,7 @@
 <!-- Nav Bar -->
 <header class="flex">
-  <a class="flex header-logo hover-scale1_05" href="/index.html">
-    <img class="header-logo-img" src="/images/Logos/pages_logo.svg" alt="logo" />Marco</a
-  >
+  <a class="flex header-logo hover-scale1_05" href="{{ '/' | relative_url }}">
+    <img class="header-logo-img" src="{{ '/images/Logos/pages_logo.svg' | relative_url }}" alt="logo" />Marco</a>
   <nav>
     <ul class="flex header-links">
       <li class="header-item"><a class="header-link{% if page.url == '/' or page.url == '/index.html' %} header-link-active{% endif %}" href="{{ '/' | relative_url }}">Home</a></li>
