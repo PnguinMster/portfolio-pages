@@ -6,7 +6,7 @@
     <meta name="description" content="The portfolio website for Marco G. See info and projects" />
     <meta name="author" content="Marco G." />
     <title>{% if page.article and page.title %} {{ page.article }} &#124 {{ page.title }} &#124 {{ site.title }} {% elsif page.title %} {{ page.title }} &#124 {{ site.title }} {% else %} {{ site.title }} {% endif %}</title>
-    <link rel="stylesheet" href="{{ '/css/styles.css' | site.baseurl }}"/>
+    <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}"/>
   </head>
 
   <body class="flex-column">
