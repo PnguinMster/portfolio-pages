@@ -5,10 +5,10 @@
   >
   <nav>
     <ul class="flex header-links">
-      <li class="header-item"><a class="header-link{% if page.url == '/' or page.url == '/index.html' %} header-link-active{% endif %}" href="/index.html">Home</a></li>
-      <li class="header-item"><a class="header-link{% if page.url contains '/projects' %} header-link-active{% endif %}" href="/html/projects.html">Projects</a></li>
-      <li class="header-item"><a class="header-link{% if page.url contains '/about' %} header-link-active{% endif %}" href="/html/about.html">About</a></li>
-      <li class="header-item"><a class="header-link{% if page.url contains '/contact' %} header-link-active{% endif %}" href="/html/contact.html">Contact</a></li>
+      <li class="header-item"><a class="header-link{% if page.url == '/' or page.url == '/index.html' %} header-link-active{% endif %}" href="{{ '/' | relative_url }}">Home</a></li>
+      <li class="header-item"><a class="header-link{% if page.url contains '/projects' %} header-link-active{% endif %}" href="{{ '/html/projects.html' | relative_url }}">Projects</a></li>
+      <li class="header-item"><a class="header-link{% if page.url contains '/about' %} header-link-active{% endif %}" href="{{ '/html/about.html' | relative_url }}">About</a></li>
+      <li class="header-item"><a class="header-link{% if page.url contains '/contact' %} header-link-active{% endif %}" href="{{ '/html/contact.html' | relative_url }}">Contact</a></li>
     </ul>
   </nav>
 </header>
