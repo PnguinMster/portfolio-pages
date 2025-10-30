@@ -1,7 +1,5 @@
 ---
 layout: blog
-title: "test"
-article: "Portfolio Website"
 subheading: "Take a more informative look at my thoughts and process."
 last_updated: "Sep 27, 2025"
 toc:

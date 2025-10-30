@@ -1,7 +1,5 @@
 ---
 layout: blog
-title: "test"
-article: "Coming Soon..."
 subheading: "This information is to become, soon. Check in on another time"
 last_updated: "October 03, 2025"
 ---
