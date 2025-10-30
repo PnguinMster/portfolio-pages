@@ -23,7 +23,7 @@ info:
     alt: "Github"
   - type: image
     href: "https://www.figma.com/design/kLWD9lSlAYHygVZhUK42a3/Portfolio-Pages-Design?node-id=0-1&t=zwkNC2RIuAEl5mTd-1"
-    img: "/images/Logos/figma-logo-color.svg"
+    img: "/images/Logos/figma-logo-white.svg"
     alt: "Figma"
 tags: ["HTML", "CSS"]
 ---
