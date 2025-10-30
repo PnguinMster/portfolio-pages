@@ -798,7 +798,8 @@ h4 {
 }
 
 .blog-side-info-title {
-  width: fit-content;
+  /* width: fit-content; */
+  /* width: 100%; */
   padding: 0 0.25rem 0.25rem 0;
   margin: 0 0 0.5rem;
   font-family: var(--rubik);
