@@ -1,4 +1,4 @@
 <picture>
-  <source srcset="{{ include.src | replace: '.jpg', '.webp' }}" type="image/webp" />
+  <source srcset="{{ include.src | replace: '.jpg', '.webp' | relative_url }}" type="image/webp" />
   <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}" loading="lazy" />
 </picture>
