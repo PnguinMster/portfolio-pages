@@ -773,9 +773,16 @@ h4 {
 }
 
 .blog-article-content img {
-  margin-right: 2.5rem;
   border-radius: var(--border-radius-px8);
-  width: var(--primary-width);
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.blog-article-picture {
+  aspect-ratio: 16/9;
+  margin-right: 2.5rem;
+  overflow: hidden;
 }
 
 .blog-article-info {
