@@ -1117,6 +1117,14 @@ h4 {
   .blog-wrapper {
     padding: 0rem 1.25rem;
   }
+
+  .blog-article {
+    flex-direction: column-reverse;
+  }
+
+  .blog-article-info {
+    position: relative;
+  }
 }
 
 @media (max-width: 54rem) {
