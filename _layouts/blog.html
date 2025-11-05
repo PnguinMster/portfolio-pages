@@ -3,8 +3,9 @@ layout: default
 title: "Blog"
 ---
 
+<section class="flex-column blog-wrapper">
 <!-- Blog Hero -->
-<section aria-label="Blog Hero" class="flex-column blog-title-container">
+<section aria-label="Blog Hero" class="flex-column">
   <div class="blog-title-bar underline--accent-secondary">
     <h1 class="blog-title">{{ page.article }}</h1>
     {% if page.subheading %}
@@ -58,4 +59,5 @@ title: "Blog"
         {% endif %}
       </div>
   </aside>
+</section>
 </section>

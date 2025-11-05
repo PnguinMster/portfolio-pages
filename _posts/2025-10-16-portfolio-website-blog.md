@@ -40,7 +40,7 @@ I have found it is best to have the design ready first for any project. This is 
 
 ## Designing the Website {#design}
 
-Obviously, I researched the best tools to design a website. There were some specifically designed for website designers, and some just used photo editors. Eventually, I landed on Figma. It was easy enough to use and had the tools needed to design it. It is a versatile tool that I still use to design UI.
+I researched the best tools to design a website. There were some specifically designed for website designers, and some just used photo editors. Eventually, I landed on Figma. It was easy enough to use and had the tools needed to design it. It is a versatile tool that I still use to design UI.
 
 ### Design flow
 
