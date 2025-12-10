@@ -7,18 +7,30 @@ toc:
   - id: intro
     title: "Introduction"
   - id: start
-    title: "Start"
+    title: "Start Off"
   - id: design
-    title: "Design"
+    title: "Design the Website"
     subheading:
       - id: design-flow
         title: "Design Flow"
+      - id: styling-the-website
+        title: "Styling the Website"
+      - id: finally-the-design
+        title: "Finally, the Design"
   - id: code
-    title: "Code"
+    title: "Starting Code"
+    subheading:
+      - id: implementing-design
+        title: "Implementing Design"
+      - id: why-design-like-this
+        title: "Why, oh why?"
   - id: final
-    title: "Final"
+    title: "Final %"
+    subheading:
+      - id: discovery-of-the-tool
+        title: "Discovery of the Tool"
   - id: conclusion
-    title: "Conclusion"
+    title: "Conclusion?"
 info:
   - type: image
     href: "https://github.com/PnguinMster/portfolio-pages"
@@ -55,7 +67,7 @@ I know I work better with guidelines, and this is especially true when working o
 
 {% include image_md.html src="/images/Blogs/portfolio_website/first_base_homepage_outline.jpg" alt="First homepage outline image" fig="The first outline created for the homepage in Inkscape" %}
 
-### Styling the website
+### Styling the website {#styling-the-website}
 
 There are more processes to design than I thought. As I said, I like to have guidelines or references to make things easier. So next, I continued to research and found tips on how to design websites and the next steps to take. This meant I had to create a style guide, and I would need to find the color palette of the website, the font styles and sizes, as well as the spacing. I did not realize how useful it would be until later on. Creating this style guide is important since it allows the design to be more consistent rather than feeling like it is all over the place.
 
@@ -65,7 +77,7 @@ The next part was choosing the Font. This part took me way longer than it needed
 
 Through my research, I also found that it was recommended to already have the size of the font set for different header sizes and body. It was also recommended to convert them to rem since that is what I would be using when styling in CSS. I also found a spacing guide so that the spacing would align with each other and be consistent. This is especially useful for nested elements since if I use arbitrary values, nested elements would not align with each other.
 
-### Finally making the design
+### Finally, the design {#finally-the-design}
 
 After all that, I was finally able to start on the design and how it would actually look. In the end, all that setup did help make it easier to design and create the website. This allowed me to simply focus on the creative side of things, rather than focusing on the layout or messing with the color shade to see if it is the same as I used elsewhere.
 
@@ -81,13 +93,13 @@ After all that design preparation, it was finally time to start scripting. Hopin
 
 I also wanted to have a better working environment on GitHub and to get an idea of how to better use git. This meant using git in the terminal and actually using the built-in issues in GitHub to keep track of stuff. This also gave me a chance to try out the GitHub projects to separate the things I needed to do. Luckily, GitHub also provides a place to host a static website, which I also used and researched. I also learned about creating templates for the issues and how to set them up. I also experimented with possibly rebasing and merging from the dev branch to the main one to make it simpler, but I felt that, for an individual or small team, it is best to simply merge.
 
-### Implementation of the design
+### Implementing Design {#implementing-design}
 
 I had the basic layout done in HTML, and the next part was to work on the CSS part of the project. This was the part of the project that took the longest. It started simple, like adding the colors for the different panels and background. As well as adding fonts for the different texts. Then came the more difficult part, which I struggled with.
 
 It started with the homepage. Some issues could have been solved using JavaScript, but I wanted the challenge of not using it, which made things a bit more difficult. Anyways, the first simple roadblock was the gradient. More specifically, the gradient text on the header. Compared to the next issues, this did not take too long since it is fairly simple to do and just required some research on my part to make it happen.
 
-### Why, oh why did I have to design it like this?
+### Why, oh why did I have to design it like this? {#why-design-like-this}
 
 I think I now understand the whole battle between engineers and designers. The worst part about this is that I was the designer in this. The next part to implement is the hero animation. I wanted something simple, which was to play the animation when pressed. Turns out this was more difficult than I thought. Especially since I was not using JavaScript, which would have made it far simpler. After much research and a little help from AI, I got the solution I wanted. Which was to create a toggle and hide it from the user. This would toggle for the play and static animation. Meaning this required a still image that would be the default, and the actual animation that it would swap to once it received a mouse click on it. This required me to also create still images for the static animation frame.
 
@@ -107,7 +119,7 @@ This was around the same time I discovered that there were also variables in CSS
 
 Since the design was mostly visual, I also did not account for animations, which I also added around this time. Like hovering over panels and adding some visual cues for the user.
 
-### The discovery of the tool
+### Discovery of the tool {#discovery-of-the-tool}
 
 I continued to learn more about GitHub Pages. This is when I discovered Jekyll. When starting this project, I knew GitHub Pages used it, but I did not put much thought into it and thought, “hey, it is probably some tool to reduce the load on their servers.”. As a programmer, I enjoy making my life easier by making it harder. I discovered I could use Jekyll to make things easier but albeit taking a large amount of time to rewrite and refactor the scripts.
 
