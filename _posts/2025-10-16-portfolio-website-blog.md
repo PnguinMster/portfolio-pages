@@ -10,6 +10,9 @@ toc:
     title: "Start"
   - id: design
     title: "Design"
+    subheading:
+      - id: design-flow
+        title: "Design Flow"
   - id: code
     title: "Code"
   - id: final
@@ -42,7 +45,7 @@ I have found it is best to have the design ready first for any project. This is 
 
 I researched the best tools to design a website. There were some specifically designed for website designers, and some just used photo editors. Eventually, I landed on Figma. It was easy enough to use and had the tools needed to design it. It is a versatile tool that I still use to design UI.
 
-### Design flow
+### Design flow {#design-flow}
 
 Honestly, when I start a project, I always miscalculate the amount of time the design process will take. Especially with everything to keep in mind, like the UI layout, color theory, and usability. Alright, enough blabbering. Now for the nitty-gritty. Before really creating the visuals, it was time to design the user flow of the website. What is the user able to access from each page? This meant creating a simple flow chart to show what can be done on each page and how they connect to each other.
 

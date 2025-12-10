@@ -28,6 +28,9 @@ title: "Blog"
         <h2 class="blog-side-info-title border-underline border-underline--accent">Table of Contents</h2>
         {% for item in page.toc %}
           <a class="blog-table-of-contents-chapter small-text" href="#{{ item.id }}">{{ item.title }}</a>
+          {% for child in item.subheading %}
+            <a class="blog-chapter-subheading blog-table-of-contents-chapter small-text" href="#{{ child.id }}">{{ child.title }}</a>
+          {% endfor %}
         {% endfor %}
       </div>
       {% endif %}
