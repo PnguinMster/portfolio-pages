@@ -2,7 +2,7 @@
 layout: blog
 article: "Portfolio Website"
 subheading: "Take a more informative look at my thoughts and process."
-last_updated: "Oct 16, 2025"
+last_updated: "Dec 11, 2025"
 toc:
   - id: intro
     title: "Introduction"
