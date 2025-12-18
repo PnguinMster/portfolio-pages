@@ -2,7 +2,9 @@ title: Marco G. Portfolio
 description:  Marco G. Portfolio
 author: Marco G.
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 url: "https://pnguinmster.github.io"
 baseurl: "/portfolio-pages"
 defaults: 

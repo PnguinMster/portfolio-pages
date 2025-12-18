@@ -101,7 +101,7 @@ The final design still looks different from my original. Actually, using the web
 
 ## Starting the Coding {#code}
 
-After all that design preparation, it was finally time to start coding. Hoping I remembered what I’d learned in a class years ago, I started with a simple index.html file. Using the design as a reference, I created a basic HTML layout for each page. This included the boilerplate HTML, like title, description, author, and other metadata. I built a basic layout with ‘<div>’, headers, and paragraph elements. Writing the text for each page and giving it the rough layout. This part didn’t take too long. During this process, I also gathered placeholder images and downloaded any logos I may need for links. I structured the files into folders like HTML, images, and CSS. This is around the same time I created the GitHub project for version control.
+After all that design preparation, it was finally time to start coding. Hoping I remembered what I’d learned in a class years ago, I started with a simple index.html file. Using the design as a reference, I created a basic HTML layout for each page. This included the boilerplate HTML, like title, description, author, and other metadata. I built a basic layout with `<div>`, headers, and paragraph elements. Writing the text for each page and giving it the rough layout. This part didn’t take too long. During this process, I also gathered placeholder images and downloaded any logos I may need for links. I structured the files into folders like HTML, images, and CSS. This is around the same time I created the GitHub project for version control.
 
 I also wanted to improve my GitHub workflow and learn to better use git. This meant using git in the terminal and utilizing GitHub’s built-in issues to keep track of tasks. I also tried out the GitHub projects to organize what I needed to do. Luckily, GitHub provides free hosting for static websites. I learned about setting up and using task issues. I experimented with possibly rebasing and merging from the dev branch to the main branch, but I felt that, for an individual or small team, it is best to simply merge without rebasing.
 
@@ -118,9 +118,7 @@ It started with the homepage. Some issues could have been resolved using JavaScr
 I think I now understand the age-old battle between engineers and designers. The worst part about this is that I was both. The next part to implement was the hero animation. I wanted something simple, which was to play the animation when clicked. This turns out to be more difficult than I thought, especially without JavaScript, which would have made it far simpler. After much research and a little help from LLMs, I found a solution. It was to create a hidden toggle that switches between the static and animation state. This meant I required a still image as the default, and the actual animation that it would swap in once the user clicked it. This required me to also create still frames for the static animation state.
 
 <!-- Static animation states code snippet -->
-
-'''
-
+```html
   <div class="animation-container">
     <input class="hero-play-toggle" type="checkbox" id="hero-toggle"" />
     <label for="hero-toggle" class="animation-wrapper">
@@ -128,20 +126,19 @@ I think I now understand the age-old battle between engineers and designers. The
       <img class="hero-animation" src="" />
     </label>
   </div>
+```
 
-'''
-
-Surprisingly, that wasn’t the one that gave me the most trouble, but we’re not there yet. I worked on the horizontal lines that separated the hero and the rest of the page. Luckily, CSS has the tools for that, the ‘<hr>’ element. Adding the gradient was also simple too. I just applied a background gradient color to it. I found other methods, like using an image or border, but this was the best choice for what I needed. In the end, I did end use the border method for the underline gradient on the title, since it didn’t span the full width of the screen. I didn’t use the border method for the ‘<hr>’ line because it did not work well with padding or margins on the hero section.
+Surprisingly, that wasn’t the one that gave me the most trouble, but we’re not there yet. I worked on the horizontal lines that separated the hero and the rest of the page. Luckily, CSS has the tools for that, the `<hr>` element. Adding the gradient was also simple too. I just applied a background gradient color to it. I found other methods, like using an image or border, but this was the best choice for what I needed. In the end, I did end use the border method for the underline gradient on the title, since it didn’t span the full width of the screen. I didn’t use the border method for the `<hr>` line because it did not work well with padding or margins on the hero section.
 
 <!-- Code snippet for hr -->
 
-'''
+```css
 hr {
 margin: 0;
 border: 0;
 height: 1px;
 }
-'''
+```
 
 Now for the issue that gave me the most trouble. The panel was meant to display and separate each project's information. It turns out that having a gradient border with a transparent background is more difficult than I thought. In hindsight, I see it’s fairly complex when you break it down. To create a gradient border, I needed to create a background gradient, then overlay another solid color that was slightly smaller, so the gradient background would peek out along the border. This creates the effect of having a gradient border with a solid background color. But this approach doesn’t allow for a transparent background color. It would just show the gradient color underneath rather than the background color.
 
@@ -151,7 +148,7 @@ After what felt like days, I finally found a solution using ‘::after’ and �
 
 <!-- Code snippet for gradient panel -->
 
-'''
+```css
 .project-panel-border {
 background-color: black;
 border-radius: inherit;
@@ -169,7 +166,7 @@ flex: 1;
 gap: 0.5rem;
 padding: 1.75rem;
 }
-'''
+```
 
 Luckily, I could reuse the same logic throughout the website. The panels, gradient lines, and gradient texts could all be reused. I just needed to tweak the colors. This meant creating the rest of the pages was fairly straightforward.
 
@@ -179,7 +176,7 @@ I said straightforward, not easy. Despite making progress, it seemed the finish 
 
 <!-- Code snippet for modular css -->
 
-'''
+```css
 .body-text {
 font-family: Poppins;
 font-weight: normal;
@@ -194,13 +191,13 @@ font-size: 0.833rem;
 .hero-text {
 font-family: Rubik;
 }
-'''
+```
 
 Around this time, I discovered CSS variables, which allowed me to change the colors for different attributes depending on whether I added another class or not. Eventually, I got it looking how I wanted and optimized it to a reasonable level, making sure to reduce the file size and remove redundant lines.
 
 <!-- Code snippet for css variables -->
 
-'''
+```css
 .hr--primary {
 background-color: var(--primary);
 }
@@ -212,7 +209,7 @@ background-color: var(--secondary);
 .hr--accent {
 background-color: var(--accent);
 }
-'''
+```
 
 Since I’d focused mainly on the visuals, I hadn’t accounted for the animations, which I also added around this time, things like hover effects on buttons and panels, image transitions, and other visual cues for the users.
 
@@ -224,8 +221,7 @@ Why did I decide to do this? It turns out Jekyll allows for templates that can b
 
 <!-- Code snippets for templates -->
 
-'''
-
+```html
 <!doctype html>
 <html>
   <head>
@@ -241,7 +237,7 @@ Why did I decide to do this? It turns out Jekyll allows for templates that can b
     {% include footer.html %}
   </body>
 </html>
-'''
+```
 
 But I didn’t want to keep pushing it to GitHub for every small change I wanted to test. So, get ready for another side tangent. One of many in most of my projects. I always heard of Docker, but it never seemed useful for the projects I work on. But it turns out that using Docker was the best way to test out the changes locally. So, I learned just enough to get a server running with Jekyll. It took me a couple of days, but it works well enough for my needs.
 
@@ -249,9 +245,11 @@ Now I could finally work on the blog page template. I created a simple template 
 
 <!-- Code snippets for layouts blog -->
 
-'''
+```html
+---
 layout: default
 title: "Blog"
+---
 
 <h1>{{ page.article }}</h1>
 <p>{{ page.subheading }}</p>
@@ -284,7 +282,7 @@ title: "Blog"
         {% endfor %}
       </div>
 </aside>
-'''
+```
 
 Then, finally, I could work on the blog post for the creation of the portfolio website. Which is this one, the one I’m typing right now.
 
