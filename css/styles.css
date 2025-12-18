@@ -33,6 +33,27 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
 
 :root {
   --text: #ededed;
@@ -73,6 +94,7 @@
   --bold: 700;
   --poppins: Poppins, Helvetica Neue, sans-serif;
   --rubik: Rubik, Roboto, sans-serif;
+  --ibm-plex-mono: IBMPlexMono, monospace;
   --primary-display: flex;
   --primary-width: 100%;
   --primary-height: 100%;
@@ -770,6 +792,11 @@ h4 {
   font-family: var(--poppins);
   font-weight: var(--normal);
   font-size: var(--font-size-body);
+}
+
+.blog-article-content pre,
+code {
+  font-family: var(--ibm-plex-mono);
 }
 
 .blog-article-img {
