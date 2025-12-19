@@ -96,6 +96,7 @@
   --rubik: Rubik, Roboto, sans-serif;
   --ibm-plex-mono: IBMPlexMono, monospace;
   --primary-display: flex;
+  --block-display: block;
   --primary-width: 100%;
   --primary-height: 100%;
   --primary-height-px: 1px;
@@ -213,7 +214,7 @@ a {
 }
 
 .project-panel-img {
-  display: block;
+  display: var(--block-display);
   object-fit: cover;
   object-position: left;
   align-content: center;
@@ -796,14 +797,16 @@ h4 {
 
 .blog-article-content pre,
 code {
+  display: var(--block-display);
   font-family: var(--ibm-plex-mono);
+  white-space: pre;
 }
 
 .blog-article-img {
   border-radius: var(--border-radius-px8);
   max-width: 100%;
   width: auto;
-  display: block;
+  display: var(--block-display);
   /* object-position: center; */
   margin: 0.5rem auto;
 }
@@ -842,7 +845,7 @@ code {
 }
 
 .blog-table-of-contents-chapter {
-  display: block;
+  display: var(--block-display);
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
 }
