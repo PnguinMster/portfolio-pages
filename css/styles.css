@@ -796,18 +796,12 @@ h4 {
 }
 
 .blog-article-content pre {
-  display: var(--block-display);
-  max-width: 100%;
-  overflow-x: auto;
   white-space: pre-wrap;
-  word-break: normal;
 }
 
 .blog-article-content code {
-  display: var(--block-display);
   font-family: var(--ibm-plex-mono);
   font-size: var(--font-size-caption);
-  white-space: inherit;
 }
 
 .blog-article-img {
@@ -815,7 +809,6 @@ h4 {
   max-width: 100%;
   width: auto;
   display: var(--block-display);
-  /* object-position: center; */
   margin: 0.5rem auto;
 }
 
