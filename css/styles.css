@@ -795,11 +795,19 @@ h4 {
   font-size: var(--font-size-body);
 }
 
-.blog-article-content pre,
-code {
+.blog-article-content pre {
+  display: var(--block-display);
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: normal;
+}
+
+.blog-article-content code {
   display: var(--block-display);
   font-family: var(--ibm-plex-mono);
-  white-space: pre;
+  font-size: var(--font-size-caption);
+  white-space: inherit;
 }
 
 .blog-article-img {
