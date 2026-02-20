@@ -743,6 +743,7 @@ footer {
   font-family: var(--rubik);
   font-weight: var(--normal);
   color: var(--accent);
+  padding: 0.25rem 0;
   margin: 0;
 }
 
