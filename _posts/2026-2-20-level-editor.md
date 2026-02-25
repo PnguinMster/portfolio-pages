@@ -1,0 +1,18 @@
+---
+layout: blog
+article: "Level Editor"
+subheading: "This information is to become, soon. Check in, on another time"
+last_updated: "February 25, 2026"
+info:
+  - type: image
+    href: "https://github.com/PnguinMster/Unity-Level-Editor"
+    img: "/images/Logos/github-mark-white.svg"
+    alt: "Github"
+  - type: text
+    href: "https://www.behance.net/gallery/172446529/Game-Level-Editor"
+    label: "Behance"
+---
+
+{% include image_md.html src="/images/Blogs/coming_soon_blog.jpg" alt="Coming Soon Image" fig="Coming soon..." %}
+
+Here is where information should be. But it seems to have not arrived. Maybe it is coming soon or maybe the creator is just busy with other stuff. Hopefully thy creator can come and bless us with this information that is greatly needed.
