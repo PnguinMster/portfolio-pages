@@ -66,6 +66,11 @@
   --accent: #ff8c42;
   --html-tag: #c0392b;
   --css-tag: #663399;
+  --csharp-tag: #178600;
+  --cpp-tag: #f34b7d;
+  --lua-tag: #000080;
+  --unity-tag: #222c37;
+  --unreal-tag: #a54c4d;
   --primary5: hsla(201.14, 100%, 65.49%, 5%);
   --primary16: hsla(201.14, 100%, 65.49%, 16%);
   --primary30: hsla(201.14, 100%, 65.49%, 30%);
@@ -605,6 +610,21 @@ header {
 
 .tag-color-css {
   background-color: var(--css-tag);
+}
+.tag-color-csharp {
+  background-color: var(--csharp-tag);
+}
+.tag-color-cpp {
+  background-color: var(--cpp-tag);
+}
+.tag-color-lua {
+  background-color: var(--lua-tag);
+}
+.tag-color-unity {
+  background-color: var(--unity-tag);
+}
+.tag-color-unreal {
+  background-color: var(--unreal-tag);
 }
 
 .home-showcase {
