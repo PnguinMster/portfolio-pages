@@ -897,6 +897,9 @@ h4 {
 
 .blog-more-info-link {
   opacity: 0.9;
+}
+
+.blog-more-info-link a {
   font-family: var(--poppins);
   font-weight: var(--medium);
   font-size: var(--font-size-h4);
