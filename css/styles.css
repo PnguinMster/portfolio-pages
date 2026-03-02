@@ -860,11 +860,6 @@ h4 {
   gap: 1.75rem;
 }
 
-.blog-article-info a {
-  font-family: var(--poppins);
-  font-size: var(--font-size-caption);
-}
-
 .blog-side-contents {
   padding: 0.5rem 0.5rem;
 }
@@ -902,6 +897,9 @@ h4 {
 
 .blog-more-info-link {
   opacity: 0.9;
+  font-family: var(--poppins);
+  font-weight: var(--medium);
+  font-size: var(--font-size-h4);
 }
 
 .blog-more-info-link:hover {
