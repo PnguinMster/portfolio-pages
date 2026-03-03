@@ -899,7 +899,7 @@ h4 {
   opacity: 0.9;
 }
 
-.blog-more-info-text{
+.blog-more-info-text {
   font-family: var(--poppins);
   font-weight: var(--medium);
   font-size: var(--font-size-h4);
@@ -911,7 +911,7 @@ h4 {
 }
 
 .blog-more-info-img {
-  height: 3.75rem;
+  height: 2.5rem;
 }
 
 .about-bio-container {
