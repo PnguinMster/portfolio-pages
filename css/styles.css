@@ -600,7 +600,7 @@ header {
 .tag-content {
   width: fit-content;
   border-radius: var(--border-radius-px8);
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 0.5rem;
   margin-right: 0.5rem;
 }
 
