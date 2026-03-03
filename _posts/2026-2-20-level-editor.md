@@ -8,9 +8,10 @@ info:
     href: "https://github.com/PnguinMster/Unity-Level-Editor"
     img: "/images/Logos/github-mark-white.svg"
     alt: "Github"
-  - type: text
+  - type: image
     href: "https://www.behance.net/gallery/172446529/Game-Level-Editor"
-    label: "Behance"
+    img: "/images/Logos/behance-seek-logo.svg"
+    alt: "Behance"
 ---
 
 {% include image_md.html src="/images/Blogs/coming_soon_blog.jpg" alt="Coming Soon Image" fig="Coming soon..." %}

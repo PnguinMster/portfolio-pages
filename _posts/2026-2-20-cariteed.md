@@ -8,9 +8,10 @@ info:
     href: "https://pnguinmster.itch.io/cariteed"
     img: "/images/Logos/itchio-logo-textless-white.svg"
     alt: "Itch.io"
-  - type: text
+  - type: image
     href: "https://www.behance.net/gallery/173051947/Cariteed-Card-Game"
-    label: "Behance"
+    img: "/images/Logos/behance-seek-logo.svg"
+    alt: "Behance"
 ---
 
 {% include image_md.html src="/images/Blogs/coming_soon_blog.jpg" alt="Coming Soon Image" fig="Coming soon..." %}
