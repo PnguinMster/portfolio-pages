@@ -13,6 +13,56 @@ title: "Projects"
 
 <!-- Projects -->
 <section aria-label="Projects Panels" class="flex-column projects-panels">
+  <!-- Project ? -->
+    {% assign posts = site.posts | where_exp: "post", "post.hidden != true" %} {% for post in posts %}
+  <div class="projects-panel--margin project-panel-border-wrapper">
+    <div class="flex project-panel-border">
+      <div class="flex-column project-panel-content">
+        <div class="flex-column project-panel-texts">
+          <h2
+            class="project-panel-title border-underline {% cycle 'border-underline--primary', 'border-underline--secondary' %}" >
+            {{ post.article }}
+          </h2>
+          <div class="flex-column project-panel-bio-container">
+            <p class="subheading--medium-rubik">{{ post.subheading }}</p>
+            <p class="body-text">
+              If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there
+              is a specific project you want to find out more about. Other than that, well it will be coming soon to a
+              website near you... This website. The website near you is this website. Just.. Just in case you know, It
+              was not clear. Well... now i am just babbling on.
+            </p>
+          </div>
+        </div>
+        <!-- Tags -->
+        {% if post.tags %} {% for tag in post.tags %}
+        <div class="tag-container">
+          <small class="tag-content tag-color-{{ tag | downcase }} small-text">{{ tag }}</small>
+        </div>
+        {% endfor %} {% endif %}
+      </div>
+      <a class="panel-img--shadow project-panel-img--border" href="{{ post.url | relative_url }}">
+        <picture>
+          <source srcset="{{ post.panel_image | relative_url }}.webp" type="image/webp" />
+          <img
+            class="project-panel-img"
+            src="{{ post.panel_image | relative_url }}.png"
+            alt="Coming Soon Image"
+            loading="lazy"
+          />
+        </picture>
+        <img
+          class="panel-img-link-icon"
+          src="{{ '/images/Logos/link_arrow.svg' | relative_url }}"
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+        />
+      </a>
+    </div>
+  </div>
+{% endfor %}
+
+
   <!-- Project 1 -->
   <div class="projects-panel--margin project-panel-border-wrapper">
     <div class="flex project-panel-border">
@@ -152,331 +202,331 @@ title: "Projects"
     </div>
   </div>
 
-  <!-- Project 4 -->
-  <div class="projects-panel--margin project-panel-border-wrapper project-panel-color--secondary">
-    <div class="flex project-panel-border">
-      <a
-        class="panel-img--shadow project-panel-img--border--secondary"
-        href="{{ 'blog_pages/hovestrl-line.html' | relative_url }}"
-      >
-        <picture>
-          <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" />
-          <img
-            class="project-panel-img"
-            src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}"
-            alt="Coming Soon Image"
-            loading="lazy"
-          />
-        </picture>
-        <img
-          class="panel-img-link-icon"
-          src="{{ '/images/Logos/link_arrow.svg' | relative_url }}"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-        />
-      </a>
-      <div class="flex-column project-panel-content">
-        <div class="flex-column project-panel-texts">
-          <h2 class="project-panel-title border-underline border-underline--secondary">Broxy Path</h2>
-          <div class="flex-column project-panel-bio-container">
-            <p class="subheading--medium-rubik">
-              The project blog has not yet been created so please be patient, or don't.
-            </p>
-            <p class="body-text">
-              If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there
-              is a specific project you want to find out more about. Other than that, well it will be coming soon to a
-              website near you... This website. The website near you is this website. Just.. Just in case you know, It
-              was not clear. Well... now i am just babbling on.
-            </p>
-          </div>
-        </div>
-        <div class="tag-container">
-          <small class="tag-content tag-color-csharp small-text">C#</small>
-          <small class="tag-content tag-color-unity small-text">Unity</small>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 5 -->
-  <div class="projects-panel--margin project-panel-border-wrapper">
-    <div class="flex project-panel-border">
-      <div class="flex-column project-panel-content">
-        <div class="flex-column project-panel-texts">
-          <h2 class="project-panel-title border-underline border-underline--primary">Cariteed</h2>
-          <div class="flex-column project-panel-bio-container">
-            <p class="subheading--medium-rubik">
-              The project blog has not yet been created so please be patient, or don't.
-            </p>
-            <p class="body-text">
-              If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there
-              is a specific project you want to find out more about. Other than that, well it will be coming soon to a
-              website near you... This website. The website near you is this website. Just.. Just in case you know, It
-              was not clear. Well... now i am just babbling on.
-            </p>
-          </div>
-        </div>
-        <div class="tag-container">
-          <small class="tag-content tag-color-csharp small-text">C#</small>
-          <small class="tag-content tag-color-unity small-text">Unity</small>
-        </div>
-      </div>
-      <a
-        class="panel-img--shadow project-panel-img--border--primary"
-        href="{{ 'blog_pages/hurley-ball.html' | relative_url }}"
-      >
-        <picture>
-          <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" />
-          <img
-            class="project-panel-img"
-            src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}"
-            alt="Coming Soon Image"
-            loading="lazy"
-          />
-        </picture>
-        <img
-          class="panel-img-link-icon"
-          src="{{ '/images/Logos/link_arrow.svg' | relative_url }}"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-        />
-      </a>
-    </div>
-  </div>
-
-  <!-- Project 6 -->
-  <div class="projects-panel--margin project-panel-border-wrapper project-panel-color--secondary">
-    <div class="flex project-panel-border">
-      <a
-        class="panel-img--shadow project-panel-img--border--secondary"
-        href="{{ 'blog_pages/level-editor.html' | relative_url }}"
-      >
-        <picture>
-          <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" />
-          <img
-            class="project-panel-img"
-            src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}"
-            alt="Coming Soon Image"
-            loading="lazy"
-          />
-        </picture>
-        <img
-          class="panel-img-link-icon"
-          src="{{ '/images/Logos/link_arrow.svg' | relative_url }}"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-        />
-      </a>
-      <div class="flex-column project-panel-content">
-        <div class="flex-column project-panel-texts">
-          <h2 class="project-panel-title border-underline border-underline--secondary">Broxy Path</h2>
-          <div class="flex-column project-panel-bio-container">
-            <p class="subheading--medium-rubik">
-              The project blog has not yet been created so please be patient, or don't.
-            </p>
-            <p class="body-text">
-              If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there
-              is a specific project you want to find out more about. Other than that, well it will be coming soon to a
-              website near you... This website. The website near you is this website. Just.. Just in case you know, It
-              was not clear. Well... now i am just babbling on.
-            </p>
-          </div>
-        </div>
-        <div class="tag-container">
-          <small class="tag-content tag-color-csharp small-text">C#</small>
-          <small class="tag-content tag-color-unity small-text">Unity</small>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 7 -->
-  <div class="projects-panel--margin project-panel-border-wrapper">
-    <div class="flex project-panel-border">
-      <div class="flex-column project-panel-content">
-        <div class="flex-column project-panel-texts">
-          <h2 class="project-panel-title border-underline border-underline--primary">Cariteed</h2>
-          <div class="flex-column project-panel-bio-container">
-            <p class="subheading--medium-rubik">
-              The project blog has not yet been created so please be patient, or don't.
-            </p>
-            <p class="body-text">
-              If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there
-              is a specific project you want to find out more about. Other than that, well it will be coming soon to a
-              website near you... This website. The website near you is this website. Just.. Just in case you know, It
-              was not clear. Well... now i am just babbling on.
-            </p>
-          </div>
-        </div>
-        <div class="tag-container">
-          <small class="tag-content tag-color-lua small-text">Lua</small>
-        </div>
-      </div>
-      <a
-        class="panel-img--shadow project-panel-img--border--primary"
-        href="{{ 'blog_pages/neovim.html' | relative_url }}"
-      >
-        <picture>
-          <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" />
-          <img
-            class="project-panel-img"
-            src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}"
-            alt="Coming Soon Image"
-            loading="lazy"
-          />
-        </picture>
-        <img
-          class="panel-img-link-icon"
-          src="{{ '/images/Logos/link_arrow.svg' | relative_url }}"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-        />
-      </a>
-    </div>
-  </div>
-
-  <!-- Project 8 -->
-  <div class="projects-panel--margin project-panel-border-wrapper project-panel-color--secondary">
-    <div class="flex project-panel-border">
-      <a
-        class="panel-img--shadow project-panel-img--border--secondary"
-        href="{{ 'blog_pages/procedural-terrain.html' | relative_url }}"
-      >
-        <picture>
-          <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" />
-          <img
-            class="project-panel-img"
-            src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}"
-            alt="Coming Soon Image"
-            loading="lazy"
-          />
-        </picture>
-        <img
-          class="panel-img-link-icon"
-          src="{{ '/images/Logos/link_arrow.svg' | relative_url }}"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-        />
-      </a>
-      <div class="flex-column project-panel-content">
-        <div class="flex-column project-panel-texts">
-          <h2 class="project-panel-title border-underline border-underline--secondary">Broxy Path</h2>
-          <div class="flex-column project-panel-bio-container">
-            <p class="subheading--medium-rubik">
-              The project blog has not yet been created so please be patient, or don't.
-            </p>
-            <p class="body-text">
-              If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there
-              is a specific project you want to find out more about. Other than that, well it will be coming soon to a
-              website near you... This website. The website near you is this website. Just.. Just in case you know, It
-              was not clear. Well... now i am just babbling on.
-            </p>
-          </div>
-        </div>
-        <div class="tag-container">
-          <small class="tag-content tag-color-csharp small-text">C#</small>
-          <small class="tag-content tag-color-unity small-text">Unity</small>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 9 -->
-  <div class="projects-panel--margin project-panel-border-wrapper">
-    <div class="flex project-panel-border">
-      <div class="flex-column project-panel-content">
-        <div class="flex-column project-panel-texts">
-          <h2 class="project-panel-title border-underline border-underline--primary">Cariteed</h2>
-          <div class="flex-column project-panel-bio-container">
-            <p class="subheading--medium-rubik">
-              The project blog has not yet been created so please be patient, or don't.
-            </p>
-            <p class="body-text">
-              If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there
-              is a specific project you want to find out more about. Other than that, well it will be coming soon to a
-              website near you... This website. The website near you is this website. Just.. Just in case you know, It
-              was not clear. Well... now i am just babbling on.
-            </p>
-          </div>
-        </div>
-        <div class="tag-container">
-          <small class="tag-content tag-color-csharp small-text">C#</small>
-          <small class="tag-content tag-color-unity small-text">Unity</small>
-        </div>
-      </div>
-      <a
-        class="panel-img--shadow project-panel-img--border--primary"
-        href="{{ 'blog_pages/recoup-oneself.html' | relative_url }}"
-      >
-        <picture>
-          <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" />
-          <img
-            class="project-panel-img"
-            src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}"
-            alt="Coming Soon Image"
-            loading="lazy"
-          />
-        </picture>
-        <img
-          class="panel-img-link-icon"
-          src="{{ '/images/Logos/link_arrow.svg' | relative_url }}"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-        />
-      </a>
-    </div>
-  </div>
-
-  <!-- Project 10 -->
-  <div class="projects-panel--margin project-panel-border-wrapper project-panel-color--secondary">
-    <div class="flex project-panel-border">
-      <a
-        class="panel-img--shadow project-panel-img--border--secondary"
-        href="{{ 'blog_pages/sungen-proc.html' | relative_url }}"
-      >
-        <picture>
-          <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" />
-          <img
-            class="project-panel-img"
-            src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}"
-            alt="Coming Soon Image"
-            loading="lazy"
-          />
-        </picture>
-        <img
-          class="panel-img-link-icon"
-          src="{{ '/images/Logos/link_arrow.svg' | relative_url }}"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-        />
-      </a>
-      <div class="flex-column project-panel-content">
-        <div class="flex-column project-panel-texts">
-          <h2 class="project-panel-title border-underline border-underline--secondary">Broxy Path</h2>
-          <div class="flex-column project-panel-bio-container">
-            <p class="subheading--medium-rubik">
-              The project blog has not yet been created so please be patient, or don't.
-            </p>
-            <p class="body-text">
-              If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there
-              is a specific project you want to find out more about. Other than that, well it will be coming soon to a
-              website near you... This website. The website near you is this website. Just.. Just in case you know, It
-              was not clear. Well... now i am just babbling on.
-            </p>
-          </div>
-        </div>
-        <div class="tag-container">
-          <small class="tag-content tag-color-unreal small-text">Unreal Engine</small>
-          <small class="tag-content tag-color-cpp small-text">C++</small>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- <!-- Project 4 --> -->
+  <!-- <div class="projects-panel--margin project-panel-border-wrapper project-panel-color--secondary"> -->
+  <!--   <div class="flex project-panel-border"> -->
+  <!--     <a -->
+  <!--       class="panel-img--shadow project-panel-img--border--secondary" -->
+  <!--       href="{{ 'blog_pages/hovestrl-line.html' | relative_url }}" -->
+  <!--     > -->
+  <!--       <picture> -->
+  <!--         <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" /> -->
+  <!--         <img -->
+  <!--           class="project-panel-img" -->
+  <!--           src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}" -->
+  <!--           alt="Coming Soon Image" -->
+  <!--           loading="lazy" -->
+  <!--         /> -->
+  <!--       </picture> -->
+  <!--       <img -->
+  <!--         class="panel-img-link-icon" -->
+  <!--         src="{{ '/images/Logos/link_arrow.svg' | relative_url }}" -->
+  <!--         alt="" -->
+  <!--         aria-hidden="true" -->
+  <!--         loading="lazy" -->
+  <!--       /> -->
+  <!--     </a> -->
+  <!--     <div class="flex-column project-panel-content"> -->
+  <!--       <div class="flex-column project-panel-texts"> -->
+  <!--         <h2 class="project-panel-title border-underline border-underline--secondary">Broxy Path</h2> -->
+  <!--         <div class="flex-column project-panel-bio-container"> -->
+  <!--           <p class="subheading--medium-rubik"> -->
+  <!--             The project blog has not yet been created so please be patient, or don't. -->
+  <!--           </p> -->
+  <!--           <p class="body-text"> -->
+  <!--             If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there -->
+  <!--             is a specific project you want to find out more about. Other than that, well it will be coming soon to a -->
+  <!--             website near you... This website. The website near you is this website. Just.. Just in case you know, It -->
+  <!--             was not clear. Well... now i am just babbling on. -->
+  <!--           </p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--       <div class="tag-container"> -->
+  <!--         <small class="tag-content tag-color-csharp small-text">C#</small> -->
+  <!--         <small class="tag-content tag-color-unity small-text">Unity</small> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!-- </div> -->
+  <!---->
+  <!-- <!-- Project 5 --> -->
+  <!-- <div class="projects-panel--margin project-panel-border-wrapper"> -->
+  <!--   <div class="flex project-panel-border"> -->
+  <!--     <div class="flex-column project-panel-content"> -->
+  <!--       <div class="flex-column project-panel-texts"> -->
+  <!--         <h2 class="project-panel-title border-underline border-underline--primary">Cariteed</h2> -->
+  <!--         <div class="flex-column project-panel-bio-container"> -->
+  <!--           <p class="subheading--medium-rubik"> -->
+  <!--             The project blog has not yet been created so please be patient, or don't. -->
+  <!--           </p> -->
+  <!--           <p class="body-text"> -->
+  <!--             If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there -->
+  <!--             is a specific project you want to find out more about. Other than that, well it will be coming soon to a -->
+  <!--             website near you... This website. The website near you is this website. Just.. Just in case you know, It -->
+  <!--             was not clear. Well... now i am just babbling on. -->
+  <!--           </p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--       <div class="tag-container"> -->
+  <!--         <small class="tag-content tag-color-csharp small-text">C#</small> -->
+  <!--         <small class="tag-content tag-color-unity small-text">Unity</small> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--     <a -->
+  <!--       class="panel-img--shadow project-panel-img--border--primary" -->
+  <!--       href="{{ 'blog_pages/hurley-ball.html' | relative_url }}" -->
+  <!--     > -->
+  <!--       <picture> -->
+  <!--         <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" /> -->
+  <!--         <img -->
+  <!--           class="project-panel-img" -->
+  <!--           src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}" -->
+  <!--           alt="Coming Soon Image" -->
+  <!--           loading="lazy" -->
+  <!--         /> -->
+  <!--       </picture> -->
+  <!--       <img -->
+  <!--         class="panel-img-link-icon" -->
+  <!--         src="{{ '/images/Logos/link_arrow.svg' | relative_url }}" -->
+  <!--         alt="" -->
+  <!--         aria-hidden="true" -->
+  <!--         loading="lazy" -->
+  <!--       /> -->
+  <!--     </a> -->
+  <!--   </div> -->
+  <!-- </div> -->
+  <!---->
+  <!-- <!-- Project 6 --> -->
+  <!-- <div class="projects-panel--margin project-panel-border-wrapper project-panel-color--secondary"> -->
+  <!--   <div class="flex project-panel-border"> -->
+  <!--     <a -->
+  <!--       class="panel-img--shadow project-panel-img--border--secondary" -->
+  <!--       href="{{ 'blog_pages/level-editor.html' | relative_url }}" -->
+  <!--     > -->
+  <!--       <picture> -->
+  <!--         <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" /> -->
+  <!--         <img -->
+  <!--           class="project-panel-img" -->
+  <!--           src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}" -->
+  <!--           alt="Coming Soon Image" -->
+  <!--           loading="lazy" -->
+  <!--         /> -->
+  <!--       </picture> -->
+  <!--       <img -->
+  <!--         class="panel-img-link-icon" -->
+  <!--         src="{{ '/images/Logos/link_arrow.svg' | relative_url }}" -->
+  <!--         alt="" -->
+  <!--         aria-hidden="true" -->
+  <!--         loading="lazy" -->
+  <!--       /> -->
+  <!--     </a> -->
+  <!--     <div class="flex-column project-panel-content"> -->
+  <!--       <div class="flex-column project-panel-texts"> -->
+  <!--         <h2 class="project-panel-title border-underline border-underline--secondary">Broxy Path</h2> -->
+  <!--         <div class="flex-column project-panel-bio-container"> -->
+  <!--           <p class="subheading--medium-rubik"> -->
+  <!--             The project blog has not yet been created so please be patient, or don't. -->
+  <!--           </p> -->
+  <!--           <p class="body-text"> -->
+  <!--             If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there -->
+  <!--             is a specific project you want to find out more about. Other than that, well it will be coming soon to a -->
+  <!--             website near you... This website. The website near you is this website. Just.. Just in case you know, It -->
+  <!--             was not clear. Well... now i am just babbling on. -->
+  <!--           </p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--       <div class="tag-container"> -->
+  <!--         <small class="tag-content tag-color-csharp small-text">C#</small> -->
+  <!--         <small class="tag-content tag-color-unity small-text">Unity</small> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!-- </div> -->
+  <!---->
+  <!-- <!-- Project 7 --> -->
+  <!-- <div class="projects-panel--margin project-panel-border-wrapper"> -->
+  <!--   <div class="flex project-panel-border"> -->
+  <!--     <div class="flex-column project-panel-content"> -->
+  <!--       <div class="flex-column project-panel-texts"> -->
+  <!--         <h2 class="project-panel-title border-underline border-underline--primary">Cariteed</h2> -->
+  <!--         <div class="flex-column project-panel-bio-container"> -->
+  <!--           <p class="subheading--medium-rubik"> -->
+  <!--             The project blog has not yet been created so please be patient, or don't. -->
+  <!--           </p> -->
+  <!--           <p class="body-text"> -->
+  <!--             If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there -->
+  <!--             is a specific project you want to find out more about. Other than that, well it will be coming soon to a -->
+  <!--             website near you... This website. The website near you is this website. Just.. Just in case you know, It -->
+  <!--             was not clear. Well... now i am just babbling on. -->
+  <!--           </p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--       <div class="tag-container"> -->
+  <!--         <small class="tag-content tag-color-lua small-text">Lua</small> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--     <a -->
+  <!--       class="panel-img--shadow project-panel-img--border--primary" -->
+  <!--       href="{{ 'blog_pages/neovim.html' | relative_url }}" -->
+  <!--     > -->
+  <!--       <picture> -->
+  <!--         <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" /> -->
+  <!--         <img -->
+  <!--           class="project-panel-img" -->
+  <!--           src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}" -->
+  <!--           alt="Coming Soon Image" -->
+  <!--           loading="lazy" -->
+  <!--         /> -->
+  <!--       </picture> -->
+  <!--       <img -->
+  <!--         class="panel-img-link-icon" -->
+  <!--         src="{{ '/images/Logos/link_arrow.svg' | relative_url }}" -->
+  <!--         alt="" -->
+  <!--         aria-hidden="true" -->
+  <!--         loading="lazy" -->
+  <!--       /> -->
+  <!--     </a> -->
+  <!--   </div> -->
+  <!-- </div> -->
+  <!---->
+  <!-- <!-- Project 8 --> -->
+  <!-- <div class="projects-panel--margin project-panel-border-wrapper project-panel-color--secondary"> -->
+  <!--   <div class="flex project-panel-border"> -->
+  <!--     <a -->
+  <!--       class="panel-img--shadow project-panel-img--border--secondary" -->
+  <!--       href="{{ 'blog_pages/procedural-terrain.html' | relative_url }}" -->
+  <!--     > -->
+  <!--       <picture> -->
+  <!--         <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" /> -->
+  <!--         <img -->
+  <!--           class="project-panel-img" -->
+  <!--           src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}" -->
+  <!--           alt="Coming Soon Image" -->
+  <!--           loading="lazy" -->
+  <!--         /> -->
+  <!--       </picture> -->
+  <!--       <img -->
+  <!--         class="panel-img-link-icon" -->
+  <!--         src="{{ '/images/Logos/link_arrow.svg' | relative_url }}" -->
+  <!--         alt="" -->
+  <!--         aria-hidden="true" -->
+  <!--         loading="lazy" -->
+  <!--       /> -->
+  <!--     </a> -->
+  <!--     <div class="flex-column project-panel-content"> -->
+  <!--       <div class="flex-column project-panel-texts"> -->
+  <!--         <h2 class="project-panel-title border-underline border-underline--secondary">Broxy Path</h2> -->
+  <!--         <div class="flex-column project-panel-bio-container"> -->
+  <!--           <p class="subheading--medium-rubik"> -->
+  <!--             The project blog has not yet been created so please be patient, or don't. -->
+  <!--           </p> -->
+  <!--           <p class="body-text"> -->
+  <!--             If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there -->
+  <!--             is a specific project you want to find out more about. Other than that, well it will be coming soon to a -->
+  <!--             website near you... This website. The website near you is this website. Just.. Just in case you know, It -->
+  <!--             was not clear. Well... now i am just babbling on. -->
+  <!--           </p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--       <div class="tag-container"> -->
+  <!--         <small class="tag-content tag-color-csharp small-text">C#</small> -->
+  <!--         <small class="tag-content tag-color-unity small-text">Unity</small> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!-- </div> -->
+  <!---->
+  <!-- <!-- Project 9 --> -->
+  <!-- <div class="projects-panel--margin project-panel-border-wrapper"> -->
+  <!--   <div class="flex project-panel-border"> -->
+  <!--     <div class="flex-column project-panel-content"> -->
+  <!--       <div class="flex-column project-panel-texts"> -->
+  <!--         <h2 class="project-panel-title border-underline border-underline--primary">Cariteed</h2> -->
+  <!--         <div class="flex-column project-panel-bio-container"> -->
+  <!--           <p class="subheading--medium-rubik"> -->
+  <!--             The project blog has not yet been created so please be patient, or don't. -->
+  <!--           </p> -->
+  <!--           <p class="body-text"> -->
+  <!--             If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there -->
+  <!--             is a specific project you want to find out more about. Other than that, well it will be coming soon to a -->
+  <!--             website near you... This website. The website near you is this website. Just.. Just in case you know, It -->
+  <!--             was not clear. Well... now i am just babbling on. -->
+  <!--           </p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--       <div class="tag-container"> -->
+  <!--         <small class="tag-content tag-color-csharp small-text">C#</small> -->
+  <!--         <small class="tag-content tag-color-unity small-text">Unity</small> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--     <a -->
+  <!--       class="panel-img--shadow project-panel-img--border--primary" -->
+  <!--       href="{{ 'blog_pages/recoup-oneself.html' | relative_url }}" -->
+  <!--     > -->
+  <!--       <picture> -->
+  <!--         <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" /> -->
+  <!--         <img -->
+  <!--           class="project-panel-img" -->
+  <!--           src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}" -->
+  <!--           alt="Coming Soon Image" -->
+  <!--           loading="lazy" -->
+  <!--         /> -->
+  <!--       </picture> -->
+  <!--       <img -->
+  <!--         class="panel-img-link-icon" -->
+  <!--         src="{{ '/images/Logos/link_arrow.svg' | relative_url }}" -->
+  <!--         alt="" -->
+  <!--         aria-hidden="true" -->
+  <!--         loading="lazy" -->
+  <!--       /> -->
+  <!--     </a> -->
+  <!--   </div> -->
+  <!-- </div> -->
+  <!---->
+  <!-- <!-- Project 10 --> -->
+  <!-- <div class="projects-panel--margin project-panel-border-wrapper project-panel-color--secondary"> -->
+  <!--   <div class="flex project-panel-border"> -->
+  <!--     <a -->
+  <!--       class="panel-img--shadow project-panel-img--border--secondary" -->
+  <!--       href="{{ 'blog_pages/sungen-proc.html' | relative_url }}" -->
+  <!--     > -->
+  <!--       <picture> -->
+  <!--         <source srcset="{{ '/images/Blogs/coming_soon_showcase.webp' | relative_url }}" type="image/webp" /> -->
+  <!--         <img -->
+  <!--           class="project-panel-img" -->
+  <!--           src="{{ '/images/Blogs/coming_soon_showcase.png' | relative_url }}" -->
+  <!--           alt="Coming Soon Image" -->
+  <!--           loading="lazy" -->
+  <!--         /> -->
+  <!--       </picture> -->
+  <!--       <img -->
+  <!--         class="panel-img-link-icon" -->
+  <!--         src="{{ '/images/Logos/link_arrow.svg' | relative_url }}" -->
+  <!--         alt="" -->
+  <!--         aria-hidden="true" -->
+  <!--         loading="lazy" -->
+  <!--       /> -->
+  <!--     </a> -->
+  <!--     <div class="flex-column project-panel-content"> -->
+  <!--       <div class="flex-column project-panel-texts"> -->
+  <!--         <h2 class="project-panel-title border-underline border-underline--secondary">Broxy Path</h2> -->
+  <!--         <div class="flex-column project-panel-bio-container"> -->
+  <!--           <p class="subheading--medium-rubik"> -->
+  <!--             The project blog has not yet been created so please be patient, or don't. -->
+  <!--           </p> -->
+  <!--           <p class="body-text"> -->
+  <!--             If you truly can't wait. Send me an email so i know which project to prioritize. If for some reason there -->
+  <!--             is a specific project you want to find out more about. Other than that, well it will be coming soon to a -->
+  <!--             website near you... This website. The website near you is this website. Just.. Just in case you know, It -->
+  <!--             was not clear. Well... now i am just babbling on. -->
+  <!--           </p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--       <div class="tag-container"> -->
+  <!--         <small class="tag-content tag-color-unreal small-text">Unreal Engine</small> -->
+  <!--         <small class="tag-content tag-color-cpp small-text">C++</small> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!-- </div> -->
 </section>
