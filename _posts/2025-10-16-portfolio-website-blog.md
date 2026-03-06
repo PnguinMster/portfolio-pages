@@ -3,6 +3,8 @@ layout: blog
 article: "Portfolio Website"
 subheading: "Take a more informative look at my thoughts and process."
 last_updated: "Dec 17, 2025"
+panel_image: /images/Blogs/portfolio_website/portfolio_website_showcase
+panel_image_alt: "Portfolio Website Showcase Image"
 toc:
   - id: intro
     title: "Introduction"

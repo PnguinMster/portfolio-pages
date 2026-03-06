@@ -12,6 +12,7 @@ info:
     href: "https://pnguinmster.itch.io/broxy-path"
     img: "/images/Logos/itchio-logo-textless-white.svg"
     alt: "Itch.io"
+tags: ["Lua"]
 ---
 
 {% include image_md.html src="/images/Blogs/coming_soon_blog.jpg" alt="Coming Soon Image" fig="Coming soon..." %}

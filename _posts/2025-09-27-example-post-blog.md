@@ -1,7 +1,10 @@
 ---
+hidden: true
 layout: blog
 subheading: "Take a more informative look at my thoughts and process."
 last_updated: "Sep 27, 2025"
+panel_image: /images/Blogs/coming_soon_showcase
+panel_image_alt: "Coming Soon Image"
 toc:
   - id: intro
     title: "Introduction"

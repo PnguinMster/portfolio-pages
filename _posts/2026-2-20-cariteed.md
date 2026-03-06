@@ -2,7 +2,7 @@
 layout: blog
 article: "Cariteed"
 subheading: "This information is to become, soon. Check in, on another time"
-last_updated: "February 25, 2026"
+last_updated: "March 5, 2026"
 info:
   - type: image
     href: "https://pnguinmster.itch.io/cariteed"
@@ -12,6 +12,8 @@ info:
     href: "https://www.behance.net/gallery/173051947/Cariteed-Card-Game"
     img: "/images/Logos/behance-seek-logo.svg"
     alt: "Behance"
+tags: ["Unity", "C#"]
+featured: true
 ---
 
 {% include image_md.html src="/images/Blogs/coming_soon_blog.jpg" alt="Coming Soon Image" fig="Coming soon..." %}

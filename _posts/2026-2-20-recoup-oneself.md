@@ -2,7 +2,7 @@
 layout: blog
 article: "Recoup Oneself"
 subheading: "This information is to become, soon. Check in, on another time"
-last_updated: "February 25, 2026"
+last_updated: "March 5, 2026"
 info:
   - type: image
     href: "https://pnguinmster.itch.io/recoup-oneself"
@@ -12,6 +12,7 @@ info:
     href: "https://www.behance.net/gallery/170485387/Sungen-Proc"
     img: "/images/Logos/behance-seek-logo.svg"
     alt: "Behance"
+tags: ["Unity", "C#"]
 ---
 
 {% include image_md.html src="/images/Blogs/coming_soon_blog.jpg" alt="Coming Soon Image" fig="Coming soon..." %}
