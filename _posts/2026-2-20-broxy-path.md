@@ -2,7 +2,7 @@
 layout: blog
 article: "Broxy Path"
 subheading: "This information is to become, soon. Check in, on another time"
-last_updated: "February 25, 2026"
+last_updated: "March 5, 2026"
 info:
   - type: image
     href: "https://github.com/PnguinMster/broxy-path"
