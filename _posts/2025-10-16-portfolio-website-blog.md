@@ -45,6 +45,7 @@ info:
     img: "/images/Logos/figma-logo-white.svg"
     alt: "Figma"
 tags: ["HTML", "CSS"]
+abstract: "The creation of the website you are on. Take a behind the scenes look of the creation of this website. Look at the struggles and concepts that occurred during the creation. As well as in depth analysis of it’s creation."
 ---
 
 ## Introduction {#intro}
@@ -120,7 +121,9 @@ It started with the homepage. Some issues could have been resolved using JavaScr
 I think I now understand the age-old battle between engineers and designers. The worst part about this is that I was both. The next part to implement was the hero animation. I wanted something simple, which was to play the animation when clicked. This turns out to be more difficult than I thought, especially without JavaScript, which would have made it far simpler. After much research and a little help from LLMs, I found a solution. It was to create a hidden toggle that switches between the static and animation state. This meant I required a still image as the default, and the actual animation that it would swap in once the user clicked it. This required me to also create still frames for the static animation state.
 
 <!-- Static animation states code snippet -->
+
 {% raw %}
+
 ```liquid
   <div class="animation-container">
     <input class="hero-play-toggle" type="checkbox" id="hero-toggle"" />
@@ -130,6 +133,7 @@ I think I now understand the age-old battle between engineers and designers. The
     </label>
   </div>
 ```
+
 {% endraw %}
 
 Surprisingly, that wasn’t the one that gave me the most trouble, but we’re not there yet. I worked on the horizontal lines that separated the hero and the rest of the page. Luckily, CSS has the tools for that, the `<hr>` element. Adding the gradient was also simple too. I just applied a background gradient color to it. I found other methods, like using an image or border, but this was the best choice for what I needed. In the end, I did end use the border method for the underline gradient on the title, since it didn’t span the full width of the screen. I didn’t use the border method for the `<hr>` line because it did not work well with padding or margins on the hero section.
@@ -138,9 +142,9 @@ Surprisingly, that wasn’t the one that gave me the most trouble, but we’re n
 
 ```css
 hr {
-margin: 0;
-border: 0;
-height: 1px;
+  margin: 0;
+  border: 0;
+  height: 1px;
 }
 ```
 
@@ -154,21 +158,21 @@ After what felt like days, I finally found a solution using ‘::after’ and �
 
 ```css
 .project-panel-border {
-background-color: black;
-border-radius: inherit;
+  background-color: black;
+  border-radius: inherit;
 }
 
 .project-panel-border-wrapper {
-background: linear-gradient(blue,green);
-border: 1px solid transparent;
-border-radius: 12px;
-margin: 0 2.5rem;
+  background: linear-gradient(blue, green);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  margin: 0 2.5rem;
 }
 
 .project-panel-content {
-flex: 1;
-gap: 0.5rem;
-padding: 1.75rem;
+  flex: 1;
+  gap: 0.5rem;
+  padding: 1.75rem;
 }
 ```
 
@@ -182,18 +186,18 @@ I said straightforward, not easy. Despite making progress, it seemed the finish 
 
 ```css
 .body-text {
-font-family: Poppins;
-font-weight: normal;
-font-size: 1rem;
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 1rem;
 }
 
 .small-text {
-font-family: Poppins;
-font-size: 0.833rem;
+  font-family: Poppins;
+  font-size: 0.833rem;
 }
 
 .hero-text {
-font-family: Rubik;
+  font-family: Rubik;
 }
 ```
 
@@ -203,15 +207,15 @@ Around this time, I discovered CSS variables, which allowed me to change the col
 
 ```css
 .hr--primary {
-background-color: var(--primary);
+  background-color: var(--primary);
 }
 
 .hr--secondary {
-background-color: var(--secondary);
+  background-color: var(--secondary);
 }
 
 .hr--accent {
-background-color: var(--accent);
+  background-color: var(--accent);
 }
 ```
 
@@ -226,6 +230,7 @@ Why did I decide to do this? It turns out Jekyll allows for templates that can b
 <!-- Code snippets for templates -->
 
 {% raw %}
+
 ```liquid
 <!doctype html>
 <html>
@@ -243,6 +248,7 @@ Why did I decide to do this? It turns out Jekyll allows for templates that can b
   </body>
 </html>
 ```
+
 {% endraw %}
 
 But I didn’t want to keep pushing it to GitHub for every small change I wanted to test. So, get ready for another side tangent. One of many in most of my projects. I always heard of Docker, but it never seemed useful for the projects I work on. But it turns out that using Docker was the best way to test out the changes locally. So, I learned just enough to get a server running with Jekyll. It took me a couple of days, but it works well enough for my needs.
@@ -252,6 +258,7 @@ Now I could finally work on the blog page template. I created a simple template 
 <!-- Code snippets for layouts blog -->
 
 {% raw %}
+
 ```liquid
 ---
 layout: default
@@ -290,6 +297,7 @@ title: "Blog"
       </div>
 </aside>
 ```
+
 {% endraw %}
 
 Then, finally, I could work on the blog post for the creation of the portfolio website. Which is this one, the one I’m typing right now.

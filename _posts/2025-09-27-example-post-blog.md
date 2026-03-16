@@ -21,6 +21,7 @@ info:
     href: "https://example.com"
     label: "Visit Example"
 tags: ["HTML", "CSS"]
+abstract: "To summaraize stuff and things that will be shown in the project panel"
 ---
 
 ## Introduction {#intro}
