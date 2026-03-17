@@ -4,34 +4,35 @@ title: "Blog"
 ---
 
 <section class="flex-column blog-wrapper">
-<!-- Blog Hero -->
-<section aria-label="Blog Hero" class="flex-column">
-  <div class="blog-title-bar underline--accent-secondary">
-    <h1 class="blog-title">{{ page.article }}</h1>
-    {% if page.subheading %}
-    <p class="blog-subheading">{{ page.subheading }}</p>
-    {% endif %}
-  </div>
-  <small class="blog-updated-caption">Last Updated {{ page.last_updated }}</small>
-</section>
+  <!-- Blog Hero -->
+  <section aria-label="Blog Hero" class="flex-column">
+    <div class="blog-title-bar underline--accent-secondary">
+      <h1 class="blog-title">{{ page.article }}</h1>
+      {% if page.subheading %}
+      <p class="blog-subheading">{{ page.subheading }}</p>
+      {% endif %}
+    </div>
+    <small class="blog-updated-caption">Last Updated {{ page.last_updated }}</small>
+  </section>
 
-<!-- Blog Article -->
-<section aria-label="Portfolio Website Article" class="flex blog-article">
-  <!-- Blog Article Content -->
-  <div class="blog-article-content">{{ content }}</div>
+  <!-- Blog Article -->
+  <section aria-label="Portfolio Website Article" class="flex blog-article">
+    <!-- Blog Article Content -->
+    <div class="blog-article-content">{{ content }}</div>
 
-  <!-- Blog Sidebar -->
-  <aside class="blog-article-info">
+    <!-- Blog Sidebar -->
+    <aside class="blog-article-info">
       <!-- Table of Contents -->
       {% if page.toc %}
       <div class="blog-side-contents">
         <h2 class="blog-side-info-title border-underline border-underline--accent">Table of Contents</h2>
         {% for item in page.toc %}
-          <a class="blog-table-of-contents-chapter small-text" href="#{{ item.id }}">{{ item.title }}</a>
-          {% for child in item.subheading %}
-            <a class="blog-chapter-subheading blog-table-of-contents-chapter small-text" href="#{{ child.id }}">{{ child.title }}</a>
-          {% endfor %}
-        {% endfor %}
+        <a class="blog-table-of-contents-chapter small-text" href="#{{ item.id }}">{{ item.title }}</a>
+        {% for child in item.subheading %}
+        <a class="blog-chapter-subheading blog-table-of-contents-chapter small-text" href="#{{ child.id }}"
+          >{{ child.title }}</a
+        >
+        {% endfor %} {% endfor %}
       </div>
       {% endif %}
 
@@ -39,28 +40,29 @@ title: "Blog"
         <!-- More Info -->
         <h2 class="blog-side-info-title border-underline border-underline--accent">Info</h2>
         {% if page.info %}
-          <div class="flex-column blog-more-info-contents">
-          {% for link in page.info %}
-            {% if link.type == "image" %}
-              <a class="blog-more-info-link blog-more-info-text" href="{{ link.href | relative_url }}">
-                <img class="blog-more-info-img" src="{{ link.img | relative_url }}" alt="{{ link.alt }}" />
-              </a>
-            {% elsif link.type == "text" %}
-              <a class="blog-more-info-link blog-more-info-text" href="{{ link.href | relative_url }}">{{ link.label }}</a>
-            {% endif %}
-          {% endfor %}
-          </div>
+        <div class="flex-column blog-more-info-contents">
+          {% for link in page.info %} {% if link.type == "image" %}
+          <a class="blog-more-info-link blog-more-info-text" href="{{ link.href | relative_url }}">
+            <img class="blog-more-info-img" src="{{ link.img | relative_url }}" alt="{{ link.alt }}" />
+          </a>
+          {% elsif link.type == "text" %}
+          <a class="blog-more-info-link blog-more-info-text" href="{{ link.href | relative_url }}">{{ link.label }}</a>
+          {% endif %} {% endfor %}
+        </div>
         {% endif %}
 
         <!-- Tags -->
         {% if page.tags %}
         <div class="flex-column blog-more-info-contents">
           {% for tag in page.tags %}
-            <small class="tag-content tag-color-{{ tag | downcase }} small-text">{{ tag }}</small>
+          <small
+            class="tag-content tag-color-{{ tag | downcase | replace: '#', 'sharp' | replace: '+', 'p' | replace: ' ', '-' }} small-text"
+            >{{ tag }}</small
+          >
           {% endfor %}
         </div>
         {% endif %}
       </div>
-  </aside>
-</section>
+    </aside>
+  </section>
 </section>
