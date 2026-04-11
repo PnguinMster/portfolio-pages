@@ -16,7 +16,7 @@ toc:
       - id: the-change
         title: "The Change"
   - id: neovim
-    title: "NeoVim"
+    title: "Neovim"
   - id: plugins
     title: "Plugins"
     subheading:
@@ -78,7 +78,7 @@ Now it was time to fully switch. While researching how to set up Neovim, I disco
 {% include image_md.html src="/images/Blogs/neovim_editor/kickstart_window_base.jpg" alt="kickstart Neovim image" fig="Image of Kickstart Neovim and its starting configuration" %}
 {% include image_md.html src="/images/Blogs/neovim_editor/kickstart_window_file.jpg" alt="kickstart Neovim file image" fig="Image of Kickstart Neovim and its starting file" %}
 
-## NeoVim {#neovim}
+## Neovim {#neovim}
 
 From there, I had to learn how everything worked, plugin management with Lazy, configuring Neovim using Lua, and understanding how everything fit together. I went through the included plugins and decided which ones to keep and which ones to remove.
 
