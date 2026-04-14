@@ -53,7 +53,6 @@ There are plenty of code editors out there. The most popular one is Visual Studi
 Customizability was a big factor for me. I wanted something minimal, where I could add plugins and features as needed instead of being stuck with a lot of pre-installed tools. After narrowing it down, I ended up choosing between VSCode and Atom. In the end, I went with VSCode; it’s widely used for a reason and was better updated.
 
 {% include image_md.html src="/images/Blogs/neovim_editor/vscode_logo_img.jpg" alt="VSCode Logo image" fig="VSCode Logo" %}
-{% include image_md.html src="/images/Blogs/neovim_editor/atom_logo_img.jpg" alt="Atom Logo image" fig="Atom Logo" %}
 
 At first, I didn’t even consider Neovim. It seemed intimidating and complicated to set up. But over time, that perception started to change.
 
@@ -65,17 +64,14 @@ After settling on VSCode, I began customizing it, changing themes, adding plugin
 
 I decided to give it a try. Most people recommended this as a good way to get familiar with Vim motions, so I started learning them. That’s when things began to click.
 
-{% include image_md.html src="/images/Blogs/neovim_editor/bare_bones_neovim_start.jpg" alt="Bare Bone Neovim Image" fig="Bare bones NeoVim" %}
 {% include image_md.html src="/images/Blogs/neovim_editor/bare_bones_neovim_file.jpg" alt="Bare Bone Neovim file Image" fig="Bare bones file in NeoVim" %}
 
 I realized that one of the main benefits of Vim was reducing reliance on the mouse. As I got more comfortable with the motions, I noticed how much smoother my workflow felt. Simple actions like switching files or navigating code became faster and more natural. That was the turning point. I decided to try Neovim itself. I chose Neovim over Vim because it felt more modern and easier to extend. It also was better performance wise, using a minimal amount of memory.
 
-{% include image_md.html src="/images/Blogs/neovim_editor/lazyvim_window_base.jpg" alt="Lazy Neovim image" fig="Image of Lazy Neovim and its starting configuration" %}
 {% include image_md.html src="/images/Blogs/neovim_editor/lazyvim_window_file.jpg" alt="Lazy Neovim file image" fig="Image of Lazy Neovim and its starting file" %}
 
 Now it was time to fully switch. While researching how to set up Neovim, I discovered starter configurations like LazyVim and Kickstart. These come with useful preconfigured plugins, which are especially helpful since Neovim starts off very barebones. I decided to go with Kickstart and fork it to make it my own, since it felt more minimal than LazyVim. They also had useful guide on installing NeoVim and some dependencies I may need.
 
-{% include image_md.html src="/images/Blogs/neovim_editor/kickstart_window_base.jpg" alt="kickstart Neovim image" fig="Image of Kickstart Neovim and its starting configuration" %}
 {% include image_md.html src="/images/Blogs/neovim_editor/kickstart_window_file.jpg" alt="kickstart Neovim file image" fig="Image of Kickstart Neovim and its starting file" %}
 
 ## Neovim {#neovim}
@@ -85,7 +81,6 @@ From there, I had to learn how everything worked, plugin management with Lazy, c
 Since my goal was to keep things lightweight and fast, I started removing plugins I didn’t need.
 I removed autopairs, DAP (debugging), neo-tree (file explorer), indent lines, and gitsigns
 
-{% include image_md.html src="/images/Blogs/neovim_editor/kickstart_window_base.jpg" alt="kickstart Neovim image" fig="Image of Kickstart Neovim and its starting configuration" %}
 {% include image_md.html src="/images/Blogs/neovim_editor/kickstart_window_file.jpg" alt="kickstart Neovim file image" fig="Image of Kickstart Neovim and its starting configuration file" %}
 
 At first, this left me with very little, but that was intentional. I did keep essential tools like telescope (for file navigation), lspconfig, treesitter, mason, and conform.
@@ -98,7 +93,7 @@ Telescope, in particular, became the reason I removed NeoTree. I found I preferr
 
 Once I had a minimal setup, I started customizing. I chose a theme I liked and experimented with making the background transparent. This took some trial and error, especially getting floating windows to match, but eventually I found the right configuration.
 
-{% include image_md.html src="/images/Blogs/neovim_editor/terminal-windows_clean.jpg" alt="Terminal Image" fig="Terminal window" %}
+{% include image_md.html src="/images/Blogs/neovim_editor/terminal_windows_clean.jpg" alt="Terminal Image" fig="Terminal window" %}
 
 For Git integration, I initially used gitsigns and fugitive. Later, I switched to LazyGit, which I now prefer. I usually run it in a separate terminal tab, and it fits my workflow much better.
 
@@ -118,7 +113,6 @@ Finally, I added Undotree. This plugin enhances the undo system by visualizing h
 
 Over time, I also realized that some plugins were no longer necessary because Neovim had added similar features by default. The same goes for keybindings. For example, commenting code is now built-in, so I no longer need a plugin for it. I also added a few quality-of-life improvements: relative line numbers, system clipboard integration, keeping search results centered, and better delete behavior.
 
-{% include image_md.html src="/images/Blogs/neovim_editor/current_starter_window.jpg" alt="NeoVim Image" fig="Current NeoVim layout I use" %}
 {% include image_md.html src="/images/Blogs/neovim_editor/current_file_theme.jpg" alt="NeoVim file Image" fig="Current NeoVim layout file I use" %}
 
 ## Conclusion {#conclusion}
