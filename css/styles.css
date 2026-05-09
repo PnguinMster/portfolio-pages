@@ -869,7 +869,9 @@ h4 {
 }
 
 .blog-article-figure {
-  margin: 0;
+  width: fit-content;
+  margin: 0 auto;
+  align-self: center;
 }
 
 .blog-article-info {
