@@ -863,6 +863,11 @@ h4 {
   max-height: 120rem;
 }
 
+.blog-article-content iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 .blog-article-figure {
   margin: 0;
 }
