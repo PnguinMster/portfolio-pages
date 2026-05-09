@@ -3,8 +3,8 @@ layout: blog
 article: "Procedural Terrain"
 subheading: "This information is to become, soon. Check in, on another time"
 last_updated: "May 5, 2026"
-panel_image:
-panel_image_alt: ""
+panel_image: /images/Blogs/portfolio_website/procedural_terrain_showcase
+panel_image_alt: "Procedural Terrain Showcase Image"
 toc:
   - id: intro
     title: "Introduction"
@@ -48,14 +48,21 @@ I began by researching how procedural terrain generated. Most games use Perlin n
 The next step is using that noise to make a terrain-like object. Which meant learning how to create a mesh. I started with a simple plane mesh, which involves creating arrays for triangle indices, point vectors, and normals. Once I had that working, the rest came together fairly naturally. The next step was simply moving through the points of the mesh and determining their height, based on the Perlin noise. The process looked something like this: create the point, get the height value from the Perlin noise function, set the point's height with the value, and repeat that with the rest of the points as you create the mesh.
 This is the simplest way to do it, which uses 2D Perlin Noise. There are more complex methods that can give different results, like using 3D Perlin Noise combined with the Marching Cubes algorithm to create the mesh, but that is out of the scope of what I wanted for this project.
 
+{% include image_md.html src="/images/Blogs/procedural_terrain/perlin_noise_example.jpg" alt="2D Perlin Noise" fig="Visual representation of Perlin Noise" %}
+
 ## Learning {#learning}
 
 A great resource that helped me throughout this process was a tutorial series by Sebastian Lague. He does a great job at going through the process on how to create procedural terrain. His tutorial uses Unity rather than Unreal Engine, but many of the core concepts still apply. Using my prior experience with Unity, I was able to translate the concepts into Unreal Engine.
+
+<!-- embed tutorial youtuve video -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=BzGY2zRj5XJvaCva&amp;list=PLFt_AvWsXl0eBW2EiBtl_sxmDtSgZBxB3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Going Further {#going-further}
 
 I could have stopped here, but I wanted to know more. By pushing it further and creating a pseudo-infinite world. That meant building a chunk system.
 Rather than computing one massive terrain mesh, the world is broken up into smaller chunks. It meant creating a chunk manager. That tracks the player's position and determines which chunks it needs to create around the player. Translating that into coordinates for the Perlin noise map. Placing them in the correct world positions as the player moves, creating new chunks around the player.
+
+{% include image_md.html src="/images/Blogs/procedural_terrain/chunk_terrains.jpg" alt="Terrain chunks shown from top view" fig="Terrain chunks" %}
 
 ## Optimizations {#optimizations}
 
@@ -66,8 +73,12 @@ LODs do come with some visual challenges. The transition between different LOD c
 
 ## Visual Changes {#visual-changes}
 
+{% include image_md.html src="/images/Blogs/procedural_terrain/terrain_shader_applied.jpg" alt="Terrain with shader material applied" fig="Terrain with height material applied" %}
+
 With the system running well, I shifted my focus to improving the look of the terrain. Tweaking the noise values alone can make a big difference. I also added a simple material that changes color based on the height of the mesh vertex. This works perfectly for a simplistic look. Adding a grass, snow, rock, or even sand layer.
 Another great exercise I did at the end when creating this. Was recreating the Minecraft voxel look. Instead of smooth triangles, each point becomes a cube. Giving it that Minecraft terrain look, most people know. The skirt method works nicely here, too, for hiding LOD transitions, since the flat cube surfaces make the gaps easier to conceal. I also adjusted the material to use flat color transitions instead of a gradient to suit the voxel style better.
+
+{% include image_md.html src="/images/Blogs/procedural_terrain/voxel_terrain_visual" alt="Terrain generated as voxels" fig="Terrain voxel generation" %}
 
 ## Conclusion {#conclusion}
 

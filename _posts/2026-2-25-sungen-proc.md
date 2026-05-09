@@ -8,31 +8,9 @@ panel_image_alt: "Portfolio Website Showcase Image"
 toc:
   - id: intro
     title: "Introduction"
-  - id: start
-    title: "Start Off"
-  - id: design
-    title: "Design the Website"
     subheading:
       - id: design-flow
         title: "Design Flow"
-      - id: styling-the-website
-        title: "Styling the Website"
-      - id: finally-the-design
-        title: "Finally, the Design"
-  - id: code
-    title: "Starting Code"
-    subheading:
-      - id: implementing-design
-        title: "Implementing Design"
-      - id: why-design-like-this
-        title: "Why, oh why?"
-      - id: acceptance
-        title: "Acceptance"
-  - id: final
-    title: "Final %"
-    subheading:
-      - id: discovery-of-the-tool
-        title: "Discovery of the Tool"
   - id: conclusion
     title: "Conclusion?"
 info:
