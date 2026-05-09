@@ -78,7 +78,7 @@ LODs do come with some visual challenges. The transition between different LOD c
 With the system running well, I shifted my focus to improving the look of the terrain. Tweaking the noise values alone can make a big difference. I also added a simple material that changes color based on the height of the mesh vertex. This works perfectly for a simplistic look. Adding a grass, snow, rock, or even sand layer.
 Another great exercise I did at the end when creating this. Was recreating the Minecraft voxel look. Instead of smooth triangles, each point becomes a cube. Giving it that Minecraft terrain look, most people know. The skirt method works nicely here, too, for hiding LOD transitions, since the flat cube surfaces make the gaps easier to conceal. I also adjusted the material to use flat color transitions instead of a gradient to suit the voxel style better.
 
-{% include image_md.html src="/images/Blogs/procedural_terrain/voxel_terrain_visual" alt="Terrain generated as voxels" fig="Terrain voxel generation" %}
+{% include image_md.html src="/images/Blogs/procedural_terrain/voxel_terrain_visual.jpg" alt="Terrain generated as voxels" fig="Terrain voxel generation" %}
 
 ## Conclusion {#conclusion}
 
