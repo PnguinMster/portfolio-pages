@@ -3,7 +3,7 @@ layout: blog
 article: "Procedural Terrain"
 subheading: "This information is to become, soon. Check in, on another time"
 last_updated: "May 5, 2026"
-panel_image: /images/Blogs/portfolio_website/procedural_terrain_showcase
+panel_image: /images/Blogs/procedural_terrain/procedural_terrain_showcase
 panel_image_alt: "Procedural Terrain Showcase Image"
 toc:
   - id: intro
