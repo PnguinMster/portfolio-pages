@@ -2,7 +2,7 @@
 layout: blog
 article: "Cariteed"
 subheading: "This information is to become, soon. Check in, on another time"
-last_updated: "March 5, 2026"
+last_updated: "March 21, 2026"
 info:
   - type: image
     href: "https://pnguinmster.itch.io/cariteed"
