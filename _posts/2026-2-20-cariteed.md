@@ -3,6 +3,25 @@ layout: blog
 article: "Cariteed"
 subheading: "This information is to become, soon. Check in, on another time"
 last_updated: "March 21, 2026"
+panel_image: /images/Blogs/cariteed/main_menu_cariteed
+panel_image_alt: "Cariteed Game Image"
+toc:
+  - id: intro
+    title: "Introduction"
+  - id: concept
+    title: "Concept"
+  - id: project-creation
+    title: "Project Creation"
+  - id: card-creation
+    title: "Card Creation"
+  - id: gameplay-movement
+    title: "Gameplay Movement"
+  - id: opponent
+    title: "Opponent"
+  - id: visual-feedback
+    title: "Visual Feedback"
+  - id: conclusion
+    title: "Conclusion"
 info:
   - type: image
     href: "https://pnguinmster.itch.io/cariteed"
@@ -13,12 +32,15 @@ info:
     img: "/images/Logos/behance-seek-logo.svg"
     alt: "Behance"
 tags: ["Unity", "C#"]
+abstract: ""
 featured: true
 ---
 
 ## Introduction {#intro}
 
 Card games are simple and accessible since all you need is a deck of cards to play a variety of games. Over the years, many popular card games such as UNO, Poker, and Blackjack have been recreated as video games. I decided to recreate a card game that has been played frequently in my household.
+
+{% include image_md.html src="/images/Blogs/cariteed/cariteed_display.jpg" alt="Cariteed Display Image" fig="" %}
 
 The game is known by several names, including Spit, Speed, Slam, and Shredding. For this project I recreated the game in the Unity game engine. One of the biggest challenges during development was completing the project within a limited time frame.
 
@@ -38,10 +60,14 @@ Next, I created the assets for the cards. Since I wanted to get the visual asset
 
 Afterward, I focused on how the cards would be displayed in-game. I created a shader that could combine the textures I created, that would automatically apply the appropriate color to it. This would also allow me to create each card appearance dynamically when needed. 
 
+{% include image_md.html src="/images/Blogs/cariteed/card_shader.jpg" alt="shader for card" fig="Unity card shader" %}
+
 I then applied the shade to a cube object and scaled it to the size of a playing card. Using the dynamic shader also allowed me to visually represent card stacks by adjusting the height of the object without distorting the card texture. For example, when the player removes a card from the stack, I could simply change the height of the stack and only need to change one texture. As well as not having to store 52 different and store data on what card each one was.
 
 In addition to the card shader, I also created an outline shader used when cards were selected or hovered over. This shader included a shimmering effect to make interactions more visually noticeable to the player.
 To determine the cards data, I used a CSV file. Since Hearts and Diamonds are traditionally red while Clubs and Spades are black. The CSV made it easy to also assign colors automatically. While also allowing flexibility to experiment with alternative color combinations in the future
+
+{% include image_md.html src="/images/Blogs/cariteed/outline_shader.jpg" alt="shader for card outline" fig="Unity outline shader" %}
 
 ## Gameplay Movement {#gameplay-movement}
 
@@ -60,6 +86,8 @@ There are other ways it could be improved, a simple way was to make the decision
 After the gameplay systems were functioning, I focused on improving visual feedback. This included applying the outline shader to the selected cards, so both the player and opponent interactions were easier to follow.
 
 I also added movement animations using scripts rather than manually animated sequences, for some customizability and being able to tweak how it looks. Since I played to my strengths, having time restraints. My skill is more focused on programming rather than animating. 
+
+{% include image_md.html src="/images/Blogs/cariteed/cariteed_gameplay.jpg" alt="Cariteed gameplay Image" fig="Image of the Cariteed game gameplay" %}
 
 The cards would smoothly be interpolated from their current position to their target position. I also added another interpolation that would be vertical. This would be consistent for each time the animation played. This created the effect of physically picking up and placing down the cards onto the stack. 
 
