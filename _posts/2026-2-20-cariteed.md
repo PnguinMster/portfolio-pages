@@ -32,7 +32,7 @@ info:
     img: "/images/Logos/behance-seek-logo.svg"
     alt: "Behance"
 tags: ["Unity", "C#"]
-abstract: ""
+abstract: "A deck of cards is such a versatile way to have fun. Read about my process of transferring a card game into the virtual world, Using the Unity game engine."
 featured: true
 ---
 
