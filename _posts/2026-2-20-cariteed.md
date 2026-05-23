@@ -40,9 +40,9 @@ featured: true
 
 Card games are simple and accessible since all you need is a deck of cards to play a variety of games. Over the years, many popular card games such as UNO, Poker, and Blackjack have been recreated as video games. I decided to recreate a card game that has been played frequently in my household.
 
-{% include image_md.html src="/images/Blogs/cariteed/cariteed_display.jpg" alt="Cariteed Display Image" fig="" %}
-
 The game is known by several names, including Spit, Speed, Slam, and Shredding. For this project I recreated the game in the Unity game engine. One of the biggest challenges during development was completing the project within a limited time frame.
+
+{% include image_md.html src="/images/Blogs/cariteed/cariteed_display.jpg" alt="Cariteed Display Image" fig="" %}
 
 ## Concept {#concept}
 
