@@ -34,7 +34,7 @@ info:
     img: "/images/Logos/behance-seek-logo.svg"
     alt: "Behance"
 tags: ["Unreal Engine", "C++"]
-abstract: ""
+abstract: "An infinite world that gets generated before your very eyes. Take a look at my attempt to create a procedural world using Unreal Engine and widely used methods."
 featured: true
 ---
 
