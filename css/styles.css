@@ -652,8 +652,24 @@ header {
 }
 
 .home-showcase-container {
-  padding: 0 2.5rem;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.home-showcase-container > .project-panel-color--vertical {
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+}
+
+.home-showcase-container .project-panel--vertical {
+  width: 100%;
+  min-width: 0;
 }
 
 .home-showcase-panel-content {
