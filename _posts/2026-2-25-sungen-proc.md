@@ -14,6 +14,7 @@ toc:
   - id: conclusion
     title: "Conclusion?"
 info:
+  - type: image
     href: "https://www.behance.net/gallery/170485387/Sungen-Proc/modules/971177863"
     img: "/images/Logos/behance-seek-logo.svg"
     alt: "Behance"
