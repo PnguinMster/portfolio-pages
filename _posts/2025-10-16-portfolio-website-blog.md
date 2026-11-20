@@ -45,7 +45,7 @@ info:
     img: "/images/Logos/figma-logo-white.svg"
     alt: "Figma"
 tags: ["HTML", "CSS"]
-abstract: "The creation of the website you are on. Take a behind the scenes look of the creation of this website. Look at the struggles and concepts that occurred during the creation. As well as in depth analysis of it’s creation."
+abstract: "The creation of the website you are on. Take a behind the scenes look of the creation of this website. Look at the struggles and concepts that occurred during the creation. As well as in depth analysis of its creation."
 ---
 
 ## Introduction {#intro}

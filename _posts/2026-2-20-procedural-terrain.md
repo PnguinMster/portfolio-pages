@@ -2,7 +2,7 @@
 layout: blog
 article: "Procedural Terrain"
 subheading: "This information is to become, soon. Check in, on another time"
-last_updated: "May 5, 2026"
+last_updated: "November 19, 2026"
 panel_image: /images/Blogs/procedural_terrain/procedural_terrain_showcase
 panel_image_alt: "Procedural Terrain Showcase Image"
 toc:
@@ -14,8 +14,8 @@ toc:
     title: "Learning"
   - id: going-further
     title: "Going Further"
-  - id: Optimizations
-    title: "optimizations"
+  - id: optimizations
+    title: "Optimizations"
   - id: visual-changes
     title: "Visual Changes"
   - id: conclusion

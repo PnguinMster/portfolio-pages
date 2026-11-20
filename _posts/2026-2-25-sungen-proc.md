@@ -2,17 +2,9 @@
 layout: blog
 article: "Sungen Proc"
 subheading: "This information is to become, soon. Check in, on another time"
-last_updated: "November 5, 2026"
+last_updated: "November 19, 2026"
 panel_image: 
 panel_image_alt: 
-toc:
-  - id: intro
-    title: "Introduction"
-    subheading:
-      - id: design-flow
-        title: "Design Flow"
-  - id: conclusion
-    title: "Conclusion?"
 info:
   - type: image
     href: "https://www.behance.net/gallery/170485387/Sungen-Proc"
