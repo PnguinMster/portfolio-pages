@@ -1,0 +1,26 @@
+---
+layout: default
+title: "Page Not Found"
+permalink: /404.html
+---
+
+<section aria-label="404 Hero" class="flex-column secondary-page-hero">
+  <h1 class="hero-text-main other-hero-text--font">404</h1>
+  <p class="hero-text-secondary">This page threw a NullReferenceException.</p>
+</section>
+
+<hr class="hr-separator hr--gradient-secondary" />
+
+<section class="flex-column secondary-page-hero">
+  <p class="body-text">The page you were looking for doesn't exist or was moved.</p>
+  <div class="flex home-about-buttons-container">
+    <a class="button-link button-link--primary body-text background-hover-color" href="{{ '/' | relative_url }}"
+      >Go Home</a
+    >
+    <a
+      class="button-link button-link--secondary body-text background-hover-color"
+      href="{{ '/html/projects.html' | relative_url }}"
+      >See Projects</a
+    >
+  </div>
+</section>

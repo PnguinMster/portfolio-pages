@@ -47,7 +47,7 @@ title: "Contact"
         <!-- Contact Info Mail -->
         <a
           class="flex contact-info-link-panel"
-          href="{{ 'mailto:marco0ga7@gmail.com?subject=Mail from Portfolio Website' | relative_url }}"
+          href="{{ 'mailto:marco0ga7@gmail.com?subject=Mail from Portfolio Website' }}"
         >
           <img
             class="contact-info-link-img"
@@ -71,15 +71,16 @@ title: "Contact"
             <p class="contact-info-link-name">Marco Gamboa</p>
           </div>
         </a>
-        <!-- Contact Info Download Resume -->
-        <a class="flex contact-info-link-panel" href="{{ '/images/MarcoGamboa_DotNet_Dev_CV.pdf' | relative_url }}" download>
-          <img
-            class="contact-info-link-img"
-            src="{{ '/images/Logos/file_docs.svg' | relative_url }}"
-            alt="File Logo"
-          />
+        <!-- Contact Info View Resume -->
+        <a
+          class="flex contact-info-link-panel"
+          href="{{ '/images/MarcoGamboa_DotNet_Dev_CV.pdf' | relative_url }}"
+          target="_blank"
+          rel="noopener"
+        >
+          <img class="contact-info-link-img" src="{{ '/images/Logos/file_docs.svg' | relative_url }}" alt="File Logo" />
           <div>
-            <h3 class="subheading--medium-rubik contact-info-link-title">Download Resume:</h3>
+            <h3 class="subheading--medium-rubik contact-info-link-title">View Resume:</h3>
             <p class="contact-info-link-name">Resume</p>
           </div>
         </a>
@@ -89,17 +90,17 @@ title: "Contact"
 
   <!-- Contact Animation -->
   <div class="contact-animation-container">
-    <input class="hero-play-toggle" type="checkbox" id="hero-toggle" aria-label="Toggle Animation" />
+    <input class="hero-play-toggle" type="checkbox" id="hero-toggle" aria-label="Play or pause animation" />
     <label for="hero-toggle" class="hero-animation-wrapper">
       <img
         class="hero-img hero-img-border--secondary hero-static background-hover-color"
         src="{{ '/images/Animations/HeroStatic_BogoSort.webp' | relative_url }}"
-        alt="Contact Hero Static"
+        alt="Code snippet of a bogosort algorithm"
       />
       <img
         class="hero-img hero-img-border--secondary hero-animation background-hover-color"
         src="{{ '/images/Animations/HeroAnimation_QuakeIII.webp' | relative_url }}"
-        alt="Contact Hero Animation"
+        alt="Animation of the Quake III fast inverse square root code"
         loading="lazy"
       />
     </label>

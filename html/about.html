@@ -35,23 +35,24 @@ title: "About"
       <a
         class="button-link button-link--primary body-text background-hover-color"
         href="{{ '/images/MarcoGamboa_DotNet_Dev_CV.pdf' | relative_url }}"
-        download
-        >Download Resume</a
+        target="_blank"
+        rel="noopener"
+        >View Resume</a
       >
     </div>
   </div>
   <div class="about-bio-animation-container">
-    <input class="hero-play-toggle" type="checkbox" id="hero-toggle" aria-label="Toggle Animation" />
+    <input class="hero-play-toggle" type="checkbox" id="hero-toggle" aria-label="Play or pause animation" />
     <label for="hero-toggle" class="hero-animation-wrapper">
       <img
         class="hero-img hero-img-border--secondary hero-static background-hover-color"
         src="{{ '/images/Animations/HeroStatic_BogoSort.webp' | relative_url }}"
-        alt="About Bio Hero Static"
+        alt="Bogo sort code snippet"
       />
       <img
         class="hero-img hero-img-border--secondary hero-animation background-hover-color"
         src="{{ '/images/Animations/HeroAnimation_BogoSort.webp' | relative_url }}"
-        alt="About Bio Hero Animation"
+        alt="Animation of bogosort code being typed out"
         loading="lazy"
       />
     </label>

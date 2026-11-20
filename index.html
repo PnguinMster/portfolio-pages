@@ -9,17 +9,17 @@ layout: default
     <p class="home-hero-text-secondary">Because imposter syndrome exists</p>
   </div>
   <div class="home-hero-animation-container">
-    <input class="hero-play-toggle" type="checkbox" id="hero-toggle" aria-label="Toggle Animation" />
+    <input class="hero-play-toggle" type="checkbox" id="hero-toggle" aria-label="Play or pause animation" />
     <label for="hero-toggle" class="hero-animation-wrapper">
       <img
         class="hero-img hero-static background-hover-color"
         src="{{ '/images/Animations/HeroStatic_HelloWorld.webp' | relative_url }}"
-        alt="Home Hero Static"
+        alt="Code editor showing a Hello World program"
       />
       <img
         class="hero-img hero-animation background-hover-color"
         src="{{ '/images/Animations/HeroAnimation_HelloWorld.webp' | relative_url }}"
-        alt="Home Hero Animation"
+        alt="Animation of a Hello World program being typed"
         loading="lazy"
       />
     </label>
@@ -159,9 +159,11 @@ layout: default
       <a
         class="button-link button-link--primary body-text background-hover-color"
         href="{{ '/images/MarcoGamboa_DotNet_Dev_CV.pdf' | relative_url }}"
-        download
-        >Download Resume</a
+        target="_blank"
+        rel="noopener"
+        >View Resume</a
       >
+
       <a
         class="button-link button-link--primary45 body-text background-hover-color"
         href="{{ '/html/about.html' | relative_url }}"
@@ -177,8 +179,13 @@ layout: default
 
   <div class="home-contact-container">
     <p class="home-contact-text body-text">
-      If you would like to know more about me or have a question, feel free to contact me and ask. I am
-      happy to answer it here: <b>marco0ga7@gmail.com</b>
+      If you would like to know more about me or have a question, feel free to contact me and ask. I am happy to answer
+      it here:
+      <a
+        class="border-underline border-underline--secondary"
+        href="mailto:marco0ga7@gmail.com?subject=Mail%20from%20Portfolio%20Website"
+        ><b>marco0ga7@gmail.com</b></a
+      >
     </p>
     <div class="flex home-contact-button-container">
       <a
