@@ -3,7 +3,7 @@ layout: blog
 article: "Hurley Ball"
 subheading: "Play this silly game created in a game jam. About attempting to aim at the opponent."
 last_updated: "November 21, 2026"
-panel_image: /images/Blogs/hurley_ball/hurly_ball_showcase
+panel_image: /images/Blogs/hurley_ball/hurley_ball_showcase
 panel_image_alt: "Hurley Ball Showcase Image"
 info:
   - type: image
