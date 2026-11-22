@@ -1,8 +1,8 @@
 ---
 layout: blog
 article: "Cariteed"
-subheading: "This information is to become, soon. Check in, on another time"
-last_updated: "March 21, 2026"
+subheading: "A Unity game based on the Speed card game."
+last_updated: "November 21, 2026"
 panel_image: /images/Blogs/cariteed/main_menu_cariteed
 panel_image_alt: "Cariteed Game Image"
 toc:

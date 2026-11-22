@@ -1,8 +1,10 @@
 ---
 layout: blog
 article: "Broxy Path"
-subheading: "This information is to become, soon. Check in, on another time"
+subheading: "A simple 2d platformer, created in Lua. Controlling a box with hovering physics."
 last_updated: "November 19, 2026"
+panel_image: /images/Blogs/broxy_path/broxy_path_showcase
+panel_image_alt: "Broxy Path Showcase Image"
 info:
   - type: image
     href: "https://github.com/PnguinMster/broxy-path"

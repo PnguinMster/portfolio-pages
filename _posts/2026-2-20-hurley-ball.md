@@ -1,8 +1,10 @@
 ---
 layout: blog
 article: "Hurley Ball"
-subheading: "This information is to become, soon. Check in, on another time"
-last_updated: "November 19, 2026"
+subheading: "Play this silly game created in a game jam. About attempting to aim at the opponent."
+last_updated: "November 21, 2026"
+panel_image: /images/Blogs/hurley_ball/hurly_ball_showcase
+panel_image_alt: "Hurley Ball Showcase Image"
 info:
   - type: image
     href: "https://casual-costa.itch.io/hurleyball"
