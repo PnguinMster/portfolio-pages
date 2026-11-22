@@ -1,7 +1,7 @@
 ---
 layout: blog
 article: "Project Manager LE"
-subheading: "This information is to become, soon. Check in, on another time"
+subheading: "Created a simple project manager web app, using MVC and other best practices"
 last_updated: "November 21, 2026"
 panel_image: /images/Blogs/project_manager_le/project_manager_le_showcase
 panel_image_alt: "Project Manager Showcase Image"
