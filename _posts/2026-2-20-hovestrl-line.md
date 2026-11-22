@@ -1,8 +1,10 @@
 ---
 layout: blog
 article: "Hovestrl Line"
-subheading: "This information is to become, soon. Check in, on another time"
-last_updated: "November 19, 2026"
+subheading: "Control a ragdoll, hovering character. Try not to fall over or crash along the 2D level."
+last_updated: "November 21, 2026"
+panel_image: /images/Blogs/hovestrl_line/hovestrl_line_showcase
+panel_image_alt: "Hovestrl Line Showcase Image"
 info:
   - type: image
     href: "https://pnguinmster.itch.io/hovestrl-line"

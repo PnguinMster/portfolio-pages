@@ -1,8 +1,8 @@
 ---
 layout: blog
 article: "Single Neovim Editor"
-subheading: "This information is to become, soon. Check in, on another time"
-last_updated: "May 09, 2026"
+subheading: "Follow the journey of transitioning into a keyboard editor."
+last_updated: "November 21, 2026"
 panel_image: /images/Blogs/neovim_editor/lazyvim_window_base
 panel_image_alt: "Neovim Editor Showcase Image"
 toc:

@@ -1,8 +1,10 @@
 ---
 layout: blog
 article: "Level Editor"
-subheading: "This information is to become, soon. Check in, on another time"
-last_updated: "November 19, 2026"
+subheading: "A level editor created for unity, to quickly create 3D levels for a game being developed."
+last_updated: "November 21, 2026"
+panel_image: /images/Blogs/level_editor/level_editor_showcase
+panel_image_alt: "Level Editor Showcase Image"
 info:
   - type: image
     href: "https://github.com/PnguinMster/Unity-Level-Editor"

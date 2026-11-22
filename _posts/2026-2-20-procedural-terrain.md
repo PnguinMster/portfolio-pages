@@ -1,7 +1,7 @@
 ---
 layout: blog
 article: "Procedural Terrain"
-subheading: "This information is to become, soon. Check in, on another time"
+subheading: "A procedurally generated world in the Unreal Engine."
 last_updated: "November 19, 2026"
 panel_image: /images/Blogs/procedural_terrain/procedural_terrain_showcase
 panel_image_alt: "Procedural Terrain Showcase Image"

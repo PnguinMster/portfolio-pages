@@ -1,8 +1,10 @@
 ---
 layout: blog
 article: "Recoup Oneself"
-subheading: "This information is to become, soon. Check in, on another time"
+subheading: "A simple made solo for a game jam. Try and move around the level without loosing too much of yourself."
 last_updated: "November 19, 2026"
+panel_image: /images/Blogs/recoup_oneself/recoup_oneself_showcase
+panel_image_alt: "Recoup Oneself Showcase Image"
 info:
   - type: image
     href: "https://pnguinmster.itch.io/recoup-oneself"
